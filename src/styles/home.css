@@ -1,3 +1,108 @@
+.layer1 {
+  position: absolute;
+  left: 3%;
+  top: 20%;
+}
+.layer2 {
+  position: absolute;
+  left: 20%;
+  top: 70%;
+}
+.layer3 {
+  position: absolute;
+  left: 3%;
+  top: 10%;
+}
+.layer4 {
+  position: absolute;
+  left: 95%;
+  top: 60%;
+}
+.layer5 {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+}
+.layer6 {
+  position: absolute;
+  left: 85%;
+  top: 30%;
+}
+.layer7 {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+}
+.layer8 {
+  position: absolute;
+  left: 85%;
+  top: 10%;
+}
+.layer9 {
+  position: absolute;
+  left: 5%;
+  top: 8%;
+}
+.layer10 {
+  position: absolute;
+  left: 30%;
+  top: 70%;
+}
+.layer11 {
+  position: absolute;
+  left: 30%;
+  top: 0%;
+}
+.layer12 {
+  position: absolute;
+  left: 75%;
+  top: 15%;
+}
+.layer13 {
+  position: absolute;
+  left: 20%;
+  top: 0%;
+}
+.layer14 {
+  position: absolute;
+  left: 30%;
+  top: 0%;
+}
+.layer15 {
+  position: absolute;
+  left: 65%;
+  top: 10%;
+}
+.layer16 {
+  position: absolute;
+  left: 40%;
+  top: 5%;
+}
+.layer17 {
+  position: absolute;
+  left: 70%;
+  top: 25%;
+}
+.layer18 {
+  position: absolute;
+  left: 25%;
+  top: 8%;
+}
+.layer19 {
+  position: absolute;
+  left: 27%;
+  top: 70%;
+}
+.layer20 {
+  position: absolute;
+  left: 25%;
+  top: 70%;
+}
+.layer21 {
+  position: absolute;
+  left: 75%;
+  top: 70%;
+}
 .main-text {
   padding-left: 5%;
   padding-right: 5%;
@@ -12,15 +117,15 @@
   font-weight: 600;
   margin-bottom: 0;
   width: 80%;
-  line-height: 130%;
+  line-height: 84px;
 }
 .main-text-sub-title {
-  color: #1b1b1bb2;
+  color: #1b1b1b;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 140%;
+  line-height: 34px;
   width: 70%;
+  opacity: 80%;
 }
 .support-button {
   display: flex;
@@ -40,17 +145,20 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  position: relative;
 }
 .upcoming-batch {
   display: flex;
   flex-direction: column;
   gap: 40px;
   margin-top: 8%;
+  position: relative;
 }
 .Gallery-page {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .services-text {
   margin-top: 5%;
@@ -75,7 +183,7 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  width: 50%;
+  width: 40%;
   line-height: 140%;
 }
 .services-card-container {
@@ -138,6 +246,7 @@
   text-align: center;
   color: #1b1b1bb2;
   line-height: "140%";
+  width: 30%;
 }
 .faq-content {
   width: 100%;
@@ -308,6 +417,7 @@
   border-radius: 20px;
   background-color: #0780fd;
 }
+
 .testimonial-name {
   font-size: 20px;
   font-weight: 400;

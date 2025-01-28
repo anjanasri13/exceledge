@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footerlogo from "../assests/Footerlogo.png";
-// import twitter from "../assests/twitter.png";
-// import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
-// import { TiSocialLinkedin } from "react-icons/ti";
 import facebook from "../assests/facebook.png";
 import twitter from "../assests/twitter.png";
 import linkedin from "../assests/linkedin.png";
@@ -29,21 +26,29 @@ export default function Footer() {
             justifyContent: "space-between",
           }}
         >
-          <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 40 }}>
             <Link>
               <img src={Footerlogo} width="242px" height="34px" alt="logo" />
             </Link>
-            <div style={{ display: "flex", gap: 20 }}>
-              <img src={phone} width="32px" height="32px" alt="" />
-              <Link to="" style={{ textDecoration: "none" }}>
-                +1 8888 8888
-              </Link>
-            </div>
-            <div style={{ display: "flex", gap: 20 }}>
-              <img src={mail} width="32px" height="32px" alt="" />
-              <Link to="" style={{ textDecoration: "none" }}>
-                info@exceledge.com
-              </Link>
+            <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+              <div style={{ display: "flex", gap: 20 }}>
+                <img src={phone} width="32px" height="32px" alt="" />
+                <Link
+                  to=""
+                  style={{ textDecoration: "none", color: "#1B1B1B" }}
+                >
+                  +1 8888 8888
+                </Link>
+              </div>
+              <div style={{ display: "flex", gap: 20 }}>
+                <img src={mail} width="32px" height="32px" alt="" />
+                <Link
+                  to=""
+                  style={{ textDecoration: "none", color: "#1B1B1B" }}
+                >
+                  info@exceledge.com
+                </Link>
+              </div>
             </div>
           </div>
 

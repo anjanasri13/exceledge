@@ -96,6 +96,50 @@ export default function Home() {
           gap: 40,
         }}
       >
+        <div className="layer1">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="29" cy="8" r="8" fill="#0780FD" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
+            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+          </svg>
+        </div>
+        <div className="layer2">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="#0780FD"
+            />
+          </svg>
+        </div>
         <div className="main-text">
           <p className="main-text-title">Empowering Future Tech Leaders</p>
           <p className="main-text-sub-title">
@@ -131,6 +175,7 @@ export default function Home() {
           padding: "2%",
           gap: "20px",
           justifyContent: "space-evenly",
+          position: "relative",
         }}
       >
         <div
@@ -140,6 +185,50 @@ export default function Home() {
             flexDirection: "column",
           }}
         >
+          <div className="layer3">
+            <svg
+              width="37"
+              height="42"
+              viewBox="0 0 37 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="29" cy="8" r="8" fill="#0780FD" />
+              <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
+              <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            </svg>
+          </div>
+          <div className="layer4">
+            <svg
+              width="37"
+              height="42"
+              viewBox="0 0 37 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="8"
+                cy="34"
+                r="8"
+                transform="rotate(-180 8 34)"
+                fill="#0780FD"
+              />
+              <circle
+                cx="20.5"
+                cy="10.5"
+                r="10.5"
+                transform="rotate(-180 20.5 10.5)"
+                fill="#0780FD"
+              />
+              <circle
+                cx="31"
+                cy="28"
+                r="6"
+                transform="rotate(-180 31 28)"
+                fill="#0780FD"
+              />
+            </svg>
+          </div>
           <p
             style={{
               color: "#0780FD",
@@ -212,6 +301,50 @@ export default function Home() {
       </div>
 
       <div className="services-page">
+        <div className="layer5">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="29" cy="8" r="8" fill="#0780FD" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
+            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+          </svg>
+        </div>
+        <div className="layer6">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="#0780FD"
+            />
+          </svg>
+        </div>
         <div className="services-text">
           <p className="services-title"> Explore Our Courses</p>
           <p className="services-sub-title">
@@ -262,11 +395,68 @@ export default function Home() {
         </div>
       </div>
 
-      <div style={{ display: "flex", gap: 70, marginTop: "8%" }}>
+      <div
+        style={{
+          display: "flex",
+          gap: 70,
+          marginTop: "8%",
+          position: "relative",
+        }}
+      >
+        <div className="layer7">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="29" cy="8" r="8" fill="#0780FD" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
+            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+          </svg>
+        </div>
+        <div className="layer8">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="#0780FD"
+            />
+          </svg>
+        </div>
         <div>
           <img src={Image5} width="708px" height="466px" alt="" />
         </div>
-        <div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
           <p style={{ fontSize: 56, fontWeight: 600 }}>About Us</p>
           <p style={{ fontSize: 18, fontWeight: 400, width: "80%" }}>
             Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
@@ -301,9 +491,54 @@ export default function Home() {
           backgroundColor: "#0780FD",
           display: "flex",
           marginTop: "8%",
-          padding: "5%",
+          padding: "5% 6%",
+          position: "relative",
         }}
       >
+        <div className="layer9">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="29" cy="8" r="8" fill="white" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="white" />
+            <circle cx="6" cy="14" r="6" fill="white" />
+          </svg>
+        </div>
+        <div className="layer10">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="white"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="white"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="white"
+            />
+          </svg>
+        </div>
         <div
           style={{
             width: "70%",
@@ -426,6 +661,50 @@ export default function Home() {
       </div>
 
       <div className="upcoming-batch">
+        <div className="layer11">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="29" cy="8" r="8" fill="#0780FD" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
+            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+          </svg>
+        </div>
+        <div className="layer12">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="#0780FD"
+            />
+          </svg>
+        </div>
         <div className="services-text">
           <p className="services-title">Upcoming Batches</p>
           <p className="services-sub-title">
@@ -722,8 +1001,53 @@ export default function Home() {
           margin: "8%",
           padding: "5%",
           display: "flex",
+          position: "relative",
         }}
       >
+        <div className="layer18">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="29" cy="8" r="8" fill="white" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="white" />
+            <circle cx="6" cy="14" r="6" fill="white" />
+          </svg>
+        </div>
+        <div className="layer19">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="white"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="white"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="white"
+            />
+          </svg>
+        </div>
         <div>
           <Button
             style={{
@@ -782,6 +1106,50 @@ export default function Home() {
       </div>
 
       <div className="Gallery-page">
+        <div className="layer13">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="29" cy="8" r="8" fill="#0780FD" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
+            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+          </svg>
+        </div>
+        <div className="layer12">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="#0780FD"
+            />
+          </svg>
+        </div>
         <div className="services-text">
           <p className="services-title">Students Work Activity</p>
           <p className="services-sub-title">
@@ -819,264 +1187,356 @@ export default function Home() {
         </div>
       </div>
 
-      <p className="testimonials-heading">Testimonials!</p>
-      <Carousel
-        dotListClass="custom-dots"
-        showDots={!isDesktop}
-        swipeable={true}
-        customLeftArrow={isDesktop ? <CustomLeftArrow /> : null}
-        customRightArrow={isDesktop ? <CustomRightArrow /> : null}
-        additionalTransfrom={0}
-        arrows={isDesktop}
-        autoPlaySpeed={3000}
-        centerMode={false}
-        className=""
-        containerClass="container"
-        // dotListClass=""
-        draggable
-        focusOnSelect={false}
-        infinite
-        itemClass="carousel-item-padding"
-        keyBoardControl
-        minimumTouchDrag={80}
-        pauseOnHover
-        renderArrowsWhenDisabled={false}
-        renderButtonGroupOutside={false}
-        renderDotsOutside={false}
-        responsive={{
-          desktop: {
-            breakpoint: {
-              max: 3000,
-              min: 1024,
+      <div style={{ position: "relative" }}>
+        <div className="layer14">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="29" cy="8" r="8" fill="#0780FD" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
+            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+          </svg>
+        </div>
+        <div className="layer15">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="#0780FD"
+            />
+          </svg>
+        </div>
+        <p className="testimonials-heading">Testimonials!</p>
+        <Carousel
+          dotListClass="custom-dots"
+          showDots={!isDesktop}
+          swipeable={true}
+          customLeftArrow={isDesktop ? <CustomLeftArrow /> : null}
+          customRightArrow={isDesktop ? <CustomRightArrow /> : null}
+          additionalTransfrom={0}
+          arrows={isDesktop}
+          autoPlaySpeed={3000}
+          centerMode={false}
+          className=""
+          containerClass="container"
+          // dotListClass=""
+          draggable
+          focusOnSelect={false}
+          infinite
+          itemClass="carousel-item-padding"
+          keyBoardControl
+          minimumTouchDrag={80}
+          pauseOnHover
+          renderArrowsWhenDisabled={false}
+          renderButtonGroupOutside={false}
+          renderDotsOutside={false}
+          responsive={{
+            desktop: {
+              breakpoint: {
+                max: 3000,
+                min: 1024,
+              },
+              items: 3,
+              partialVisibilityGutter: 40,
             },
-            items: 3,
-            partialVisibilityGutter: 40,
-          },
-          mobile: {
-            breakpoint: {
-              max: 768,
-              min: 0,
+            mobile: {
+              breakpoint: {
+                max: 768,
+                min: 0,
+              },
+              items: 1,
+              partialVisibilityGutter: 40,
             },
-            items: 1,
-            partialVisibilityGutter: 40,
-          },
-          tablet: {
-            breakpoint: {
-              max: 1024,
-              min: 768,
+            tablet: {
+              breakpoint: {
+                max: 1024,
+                min: 768,
+              },
+              items: 2,
+              partialVisibilityGutter: 30,
             },
-            items: 2,
-            partialVisibilityGutter: 30,
-          },
-        }}
-        rewind={false}
-        rewindWithAnimation={false}
-        rtl={false}
-        shouldResetAutoplay
-        sliderClass=""
-        slidesToSlide={1}
-      >
-        <div className="testimonial-card1">
-          <p className="testimonial-name">
-            Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-            velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
-            nisi velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
-            enim nisi velit.
-          </p>
-          <div style={{ display: "flex", gap: 10 }}>
-            <img src={cimg} width="46px" height="46px" alt="" />
-            <div>
-              <p
-                style={{
-                  fontSize: 24,
-                  fontWeight: 500,
-                  color: "#FFFFFF",
-                  margin: 0,
-                }}
-              >
-                Sara
-              </p>
-              <p
-                style={{
-                  fontSize: 16,
-                  fontWeight: 400,
-                  color: "#ffffff",
-                }}
-              >
-                Full Stack{" "}
-              </p>
+          }}
+          rewind={false}
+          rewindWithAnimation={false}
+          rtl={false}
+          shouldResetAutoplay
+          sliderClass=""
+          slidesToSlide={1}
+        >
+          <div className="testimonial-card1">
+            <p className="testimonial-name">
+              Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
+              velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
+              nisi velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
+              enim nisi velit.
+            </p>
+            <div style={{ display: "flex", gap: 10 }}>
+              <img src={cimg} width="46px" height="46px" alt="" />
+              <div>
+                <p
+                  style={{
+                    fontSize: 24,
+                    fontWeight: 500,
+                    color: "#FFFFFF",
+                    margin: 0,
+                  }}
+                >
+                  Sara
+                </p>
+                <p
+                  style={{
+                    fontSize: 16,
+                    fontWeight: 400,
+                    color: "#ffffff",
+                  }}
+                >
+                  Full Stack{" "}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="testimonial-card1">
-          <p className="testimonial-name">
-            Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-            velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
-            nisi velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
-            enim nisi velit.
-          </p>
-          <div style={{ display: "flex", gap: 10 }}>
-            <img src={cimg2} width="46px" height="46px" alt="" />
-            <div>
-              <p
-                style={{
-                  fontSize: 24,
-                  fontWeight: 500,
-                  color: "#FFFFFF",
-                  margin: 0,
-                }}
-              >
-                Franklin
-              </p>
-              <p
-                style={{
-                  fontSize: 16,
-                  fontWeight: 400,
-                  color: "#ffffff",
-                }}
-              >
-                Data Analysis
-              </p>
-            </div>
-          </div>{" "}
-        </div>
-        <div className="testimonial-card1">
-          <p className="testimonial-name">
-            Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-            velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
-            nisi velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
-            enim nisi velit.
-          </p>
-          <div style={{ display: "flex", gap: 10 }}>
-            <img src={cimg3} width="46px" height="46px" alt="" />
-            <div>
-              <p
-                style={{
-                  fontSize: 24,
-                  fontWeight: 500,
-                  color: "#FFFFFF",
-                  margin: 0,
-                }}
-              >
-                Annie
-              </p>
-              <p
-                style={{
-                  fontSize: 16,
-                  fontWeight: 400,
-                  color: "#ffffff",
-                }}
-              >
-                Full Stack
-              </p>
-            </div>
-          </div>{" "}
-        </div>
-        <div className="testimonial-card1">
-          <p className="testimonial-name">
-            Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-            velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
-            nisi velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
-            enim nisi velit.
-          </p>
-          <div style={{ display: "flex", gap: 10 }}>
-            <img src={cimg} width="46px" height="46px" alt="" />
-            <div>
-              <p
-                style={{
-                  fontSize: 24,
-                  fontWeight: 500,
-                  color: "#FFFFFF",
-                  margin: 0,
-                }}
-              >
-                Sara
-              </p>
-              <p
-                style={{
-                  fontSize: 16,
-                  fontWeight: 400,
-                  color: "#ffffff",
-                }}
-              >
-                Full Stack{" "}
-              </p>
+          <div className="testimonial-card1">
+            <p className="testimonial-name">
+              Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
+              velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
+              nisi velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
+              enim nisi velit.
+            </p>
+            <div style={{ display: "flex", gap: 10 }}>
+              <img src={cimg2} width="46px" height="46px" alt="" />
+              <div>
+                <p
+                  style={{
+                    fontSize: 24,
+                    fontWeight: 500,
+                    color: "#FFFFFF",
+                    margin: 0,
+                  }}
+                >
+                  Franklin
+                </p>
+                <p
+                  style={{
+                    fontSize: 16,
+                    fontWeight: 400,
+                    color: "#ffffff",
+                  }}
+                >
+                  Data Analysis
+                </p>
+              </div>
+            </div>{" "}
+          </div>
+          <div className="testimonial-card1">
+            <p className="testimonial-name">
+              Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
+              velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
+              nisi velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
+              enim nisi velit.
+            </p>
+            <div style={{ display: "flex", gap: 10 }}>
+              <img src={cimg3} width="46px" height="46px" alt="" />
+              <div>
+                <p
+                  style={{
+                    fontSize: 24,
+                    fontWeight: 500,
+                    color: "#FFFFFF",
+                    margin: 0,
+                  }}
+                >
+                  Annie
+                </p>
+                <p
+                  style={{
+                    fontSize: 16,
+                    fontWeight: 400,
+                    color: "#ffffff",
+                  }}
+                >
+                  Full Stack
+                </p>
+              </div>
+            </div>{" "}
+          </div>
+          <div className="testimonial-card1">
+            <p className="testimonial-name">
+              Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
+              velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
+              nisi velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
+              enim nisi velit.
+            </p>
+            <div style={{ display: "flex", gap: 10 }}>
+              <img src={cimg} width="46px" height="46px" alt="" />
+              <div>
+                <p
+                  style={{
+                    fontSize: 24,
+                    fontWeight: 500,
+                    color: "#FFFFFF",
+                    margin: 0,
+                  }}
+                >
+                  Sara
+                </p>
+                <p
+                  style={{
+                    fontSize: 16,
+                    fontWeight: 400,
+                    color: "#ffffff",
+                  }}
+                >
+                  Full Stack{" "}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="testimonial-card1">
-          <p className="testimonial-name">
-            Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-            velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
-            nisi velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
-            enim nisi velit.
-          </p>
-          <div style={{ display: "flex", gap: 10 }}>
-            <img src={cimg2} width="46px" height="46px" alt="" />
-            <div>
-              <p
-                style={{
-                  fontSize: 24,
-                  fontWeight: 500,
-                  color: "#FFFFFF",
-                  margin: 0,
-                }}
-              >
-                Franklin
-              </p>
-              <p
-                style={{
-                  fontSize: 16,
-                  fontWeight: 400,
-                  color: "#ffffff",
-                }}
-              >
-                Data Analysis
-              </p>
-            </div>
-          </div>{" "}
-        </div>
-        <div className="testimonial-card1">
-          <p className="testimonial-name">
-            Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-            velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
-            nisi velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
-            enim nisi velit.
-          </p>
-          <div style={{ display: "flex", gap: 10 }}>
-            <img src={cimg3} width="46px" height="46px" alt="" />
-            <div>
-              <p
-                style={{
-                  fontSize: 24,
-                  fontWeight: 500,
-                  color: "#FFFFFF",
-                  margin: 0,
-                }}
-              >
-                Annie
-              </p>
-              <p
-                style={{
-                  fontSize: 16,
-                  fontWeight: 400,
-                  color: "#ffffff",
-                }}
-              >
-                Full Stack
-              </p>
-            </div>
-          </div>{" "}
-        </div>
-      </Carousel>
+          <div className="testimonial-card1">
+            <p className="testimonial-name">
+              Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
+              velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
+              nisi velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
+              enim nisi velit.
+            </p>
+            <div style={{ display: "flex", gap: 10 }}>
+              <img src={cimg2} width="46px" height="46px" alt="" />
+              <div>
+                <p
+                  style={{
+                    fontSize: 24,
+                    fontWeight: 500,
+                    color: "#FFFFFF",
+                    margin: 0,
+                  }}
+                >
+                  Franklin
+                </p>
+                <p
+                  style={{
+                    fontSize: 16,
+                    fontWeight: 400,
+                    color: "#ffffff",
+                  }}
+                >
+                  Data Analysis
+                </p>
+              </div>
+            </div>{" "}
+          </div>
+          <div className="testimonial-card1">
+            <p className="testimonial-name">
+              Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
+              velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
+              nisi velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
+              enim nisi velit.
+            </p>
+            <div style={{ display: "flex", gap: 10 }}>
+              <img src={cimg3} width="46px" height="46px" alt="" />
+              <div>
+                <p
+                  style={{
+                    fontSize: 24,
+                    fontWeight: 500,
+                    color: "#FFFFFF",
+                    margin: 0,
+                  }}
+                >
+                  Annie
+                </p>
+                <p
+                  style={{
+                    fontSize: 16,
+                    fontWeight: 400,
+                    color: "#ffffff",
+                  }}
+                >
+                  Full Stack
+                </p>
+              </div>
+            </div>{" "}
+          </div>
+        </Carousel>
+      </div>
 
-      <div style={{ position: "relative", marginTop: "8%" }}>
-        <p className="faq-title">FAQ</p>
-        <p className="faq-sub-title">
-          Lorem ipsum dolor sit amet consectetur. Adipiscing duis lobortis
-          pulvinar sit neque massa mauris.
-        </p>
-        <Faq />
+      <div className="upcoming-batch">
+        <div className="layer16">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="29" cy="8" r="8" fill="#0780FD" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
+            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+          </svg>
+        </div>
+        <div className="layer17">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="#0780FD"
+            />
+          </svg>
+        </div>
+        <div className="services-text">
+          <p className="faq-title">FAQ</p>
+          <p className="faq-sub-title">
+            Lorem ipsum dolor sit amet consectetur. Adipiscing duis lobortis
+            pulvinar sit neque massa mauris.
+          </p>
+          <Faq />
+        </div>
       </div>
 
       <div
@@ -1088,8 +1548,53 @@ export default function Home() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          position: "relative",
         }}
       >
+        <div className="layer20">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="29" cy="8" r="8" fill="white" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="white" />
+            <circle cx="6" cy="14" r="6" fill="white" />
+          </svg>
+        </div>
+        <div className="layer21">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="white"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="white"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="white"
+            />
+          </svg>
+        </div>
         <p
           style={{
             fontSize: 56,
