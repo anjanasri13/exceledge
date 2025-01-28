@@ -47,9 +47,6 @@ const companyItems = [
 ];
 
 export default function Header() {
-  const [solutionsOpen, setSolutionsOpen] = useState(false);
-  const [companyOpen, setCompanyOpen] = useState(false);
-
   return (
     <div
       style={{
@@ -76,10 +73,13 @@ export default function Header() {
         <Link to="/" style={{ textDecoration: "none", color: "#1b1b1b" }}>
           About Us
         </Link>{" "}
-        <Link to="/" style={{ textDecoration: "none", color: "#1b1b1b" }}>
+        <Link to="/course" style={{ textDecoration: "none", color: "#1b1b1b" }}>
           Courses{" "}
         </Link>
-        <Link to="" style={{ textDecoration: "none", color: "#1b1b1b" }}>
+        <Link
+          to="/gallery"
+          style={{ textDecoration: "none", color: "#1b1b1b" }}
+        >
           Gallery
         </Link>
         <Link to="" style={{ textDecoration: "none", color: "#1b1b1b" }}>

@@ -184,7 +184,7 @@
   font-style: normal;
   font-weight: 400;
   width: 40%;
-  line-height: 140%;
+  line-height: 34px;
 }
 .services-card-container {
   display: flex;
