@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Header from "../components/Header";
 import { Button, Card } from "antd";
 import frame from "../assests/frame.png";
@@ -25,6 +25,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import "../styles/about.css";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
+import CountUp from "react-countup";
 
 const cardData = [
   {
@@ -97,6 +98,35 @@ export default function About() {
     handleResize();
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const [startCount, setStartCount] = useState(false);
+  const statsRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setStartCount(true);
+          } else {
+            setStartCount(false);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    if (statsRef.current) {
+      observer.observe(statsRef.current);
+    }
+
+    return () => {
+      if (statsRef.current) {
+        observer.unobserve(statsRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div>
       <Header />
@@ -107,6 +137,50 @@ export default function About() {
           gap: 40,
         }}
       >
+        <div className="layer1">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="29" cy="8" r="8" fill="#0780FD" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
+            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+          </svg>
+        </div>
+        <div className="layer2">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="#0780FD"
+            />
+          </svg>
+        </div>
         <div className="a-main-text">
           <p className="a-main-text-title" style={{ fontSize: "" }}>
             Welcome to <span style={{ color: "#0780FD" }}>ExcelEdge</span>{" "}
@@ -135,96 +209,129 @@ export default function About() {
         </div>
       </div>
 
-      <div
-        style={{
-          backgroundColor: "#0780FD29",
-          borderRadius: "40px",
-          display: "flex",
-          margin: "8% 5%",
-          padding: "2%",
-          gap: "20px",
-          justifyContent: "space-evenly",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "column",
-          }}
-        >
-          <p
-            style={{
-              color: "#0780FD",
-              fontSize: 62,
-              fontWeight: 600,
-              margin: 0,
-            }}
+      <div className="stats-grid" ref={statsRef}>
+        <div className="layer3">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            10+
-          </p>
+            <circle cx="29" cy="8" r="8" fill="#0780FD" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
+            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+          </svg>
+        </div>
+        <div className="layer4">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="#0780FD"
+            />
+          </svg>
+        </div>
+        <div className="stat-item">
+          <h4>
+            <CountUp start={0} end={startCount ? 10 : 0} duration={2} />+
+          </h4>
           <p>Skilled Trainers</p>
         </div>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "column",
-          }}
-        >
-          <p
-            style={{
-              color: "#0780FD",
-              fontSize: 62,
-              fontWeight: 600,
-              margin: 0,
-            }}
-          >
-            100+
-          </p>
+        <div className="stat-item">
+          <h4>
+            <CountUp start={0} end={startCount ? 100 : 0} duration={2} />+
+          </h4>
           <p>Students Placed</p>
-        </div>{" "}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "column",
-          }}
-        >
-          <p
-            style={{
-              color: "#0780FD",
-              fontSize: 62,
-              fontWeight: 600,
-              margin: 0,
-            }}
-          >
-            50+
-          </p>
+        </div>
+        <div className="stat-item">
+          <h4>
+            <CountUp start={0} end={startCount ? 50 : 0} duration={2} />+
+          </h4>
           <p>Students Enrolled</p>
-        </div>{" "}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "column",
-          }}
-        >
-          <p
-            style={{
-              color: "#0780FD",
-              fontSize: 62,
-              fontWeight: 600,
-              margin: 0,
-            }}
-          >
-            20+
-          </p>
+        </div>
+        <div className="stat-item">
+          <h4>
+            <CountUp start={0} end={startCount ? 20 : 0} duration={2} />+
+          </h4>
           <p>Workshop Conducted</p>
         </div>
       </div>
 
-      <div style={{ display: "flex", gap: "12%", marginTop: "17%" }}>
+      <div
+        style={{
+          display: "flex",
+          gap: "12%",
+          marginTop: "17%",
+          position: "relative",
+        }}
+      >
+        <div className="Alayer1">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="29" cy="8" r="8" fill="#0780FD" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
+            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+          </svg>
+        </div>
+        <div className="Alayer2">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="#0780FD"
+            />
+          </svg>
+        </div>
         <div>
           <img
             src={image12}
@@ -245,8 +352,8 @@ export default function About() {
               height: 239,
               borderRadius: 50,
               position: "absolute",
-              top: "133%",
-              left: "23%",
+              top: "-17%",
+              left: "22%",
             }}
           />
         </div>
@@ -338,8 +445,53 @@ export default function About() {
           display: "flex",
           gap: 40,
           marginTop: "10%",
+          position: "relative",
         }}
       >
+        <div className="Alayer3">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="29" cy="8" r="8" fill="#0780FD" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
+            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+          </svg>
+        </div>
+        <div className="Alayer4">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="#0780FD"
+            />
+          </svg>
+        </div>
         <div className="a-main-text">
           <p className="a-main-text-title" style={{ fontSize: "" }}>
             Build your <span style={{ color: "#0780FD" }}>Career</span> And
@@ -375,7 +527,51 @@ export default function About() {
         </div>
       </div>
 
-      <div style={{ marginTop: "10%" }}>
+      <div style={{ marginTop: "10%", position: "relative" }}>
+        <div className="Alayer5">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="29" cy="8" r="8" fill="#0780FD" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
+            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+          </svg>
+        </div>
+        <div className="Alayer6">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="#0780FD"
+            />
+          </svg>
+        </div>
         <p className="academy-text">Our Academy Way of Learning</p>
         <p className="academy-sub-text">
           Learn Full Stack Engineering, Business Analysis, and Data Science with
@@ -453,7 +649,51 @@ export default function About() {
         </div>
       </div>
 
-      <div style={{ marginTop: "10%" }}>
+      <div style={{ marginTop: "10%", position: "relative" }}>
+        <div className="layer14">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="29" cy="8" r="8" fill="#0780FD" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
+            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+          </svg>
+        </div>
+        <div className="layer15">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="#0780FD"
+            />
+          </svg>
+        </div>
         <p className="testimonials-heading">Testimonials!</p>
         <Carousel
           dotListClass="custom-dots"
@@ -706,13 +946,59 @@ export default function About() {
         </Carousel>
       </div>
 
-      <div style={{ position: "relative", marginTop: "10%" }}>
-        <p className="faq-title">FAQ</p>
-        <p className="faq-sub-title">
-          Lorem ipsum dolor sit amet consectetur. Adipiscing duis lobortis
-          pulvinar sit neque massa mauris.
-        </p>
-        <Faq />
+      <div className="upcoming-batch">
+        <div className="layer16">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="29" cy="8" r="8" fill="#0780FD" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
+            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+          </svg>
+        </div>
+        <div className="layer17">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="#0780FD"
+            />
+          </svg>
+        </div>
+        <div className="services-text">
+          <p className="faq-title">FAQ</p>
+          <p className="faq-sub-title">
+            Lorem ipsum dolor sit amet consectetur. Adipiscing duis lobortis
+            pulvinar sit neque massa mauris.
+          </p>
+          <Faq />
+        </div>
       </div>
 
       <div
@@ -724,8 +1010,53 @@ export default function About() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          position: "relative",
         }}
       >
+        <div className="layer20">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="29" cy="8" r="8" fill="white" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="white" />
+            <circle cx="6" cy="14" r="6" fill="white" />
+          </svg>
+        </div>
+        <div className="layer21">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="white"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="white"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="white"
+            />
+          </svg>
+        </div>
         <p
           style={{
             fontSize: 56,
