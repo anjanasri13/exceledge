@@ -50,6 +50,10 @@ export default function Header() {
   return (
     <div
       style={{
+        position: "sticky",
+        top: 0,
+        zIndex: 1000,
+        backgroundColor: "#fff",
         display: "flex",
         justifyContent: "space-around",
         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
@@ -82,7 +86,10 @@ export default function Header() {
         >
           Gallery
         </Link>
-        <Link to="" style={{ textDecoration: "none", color: "#1b1b1b" }}>
+        <Link
+          to="/contact-us"
+          style={{ textDecoration: "none", color: "#1b1b1b" }}
+        >
           Contact Us
         </Link>
       </div>

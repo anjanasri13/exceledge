@@ -4,6 +4,7 @@ import Home from "./screens/Home";
 import { Route, Routes } from "react-router-dom";
 import Course from "./screens/Course";
 import Gallery from "./screens/Gallery";
+import ContactUs from "./screens/ContactUs";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/course" element={<Course />} />
       <Route path="/gallery" element={<Gallery />} />
+      <Route path="/contact-us" element={<ContactUs />} />
     </Routes>
   );
 }

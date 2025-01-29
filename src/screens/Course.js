@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Header from "../components/Header";
 import { Button, Card, Carousel } from "antd";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -14,6 +14,7 @@ import Footer from "../components/Footer";
 import Faq from "../components/Faq";
 import calltoimg from "../assests/calltoimg.png";
 import "../styles/course.css";
+import CountUp from "react-countup";
 
 const services = [
   {
@@ -41,6 +42,34 @@ const services = [
 ];
 
 export default function Course() {
+  const [startCount, setStartCount] = useState(false);
+  const statsRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setStartCount(true);
+          } else {
+            setStartCount(false);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    if (statsRef.current) {
+      observer.observe(statsRef.current);
+    }
+
+    return () => {
+      if (statsRef.current) {
+        observer.unobserve(statsRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div>
       <Header />
@@ -137,136 +166,73 @@ export default function Course() {
         </Button>
       </div>
 
-      <div
-        style={{
-          backgroundColor: "#0780FD29",
-          borderRadius: "40px",
-          display: "flex",
-          margin: "8% 5%",
-          padding: "2%",
-          gap: "20px",
-          justifyContent: "space-evenly",
-          position: "relative",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "column",
-          }}
-        >
-          <div className="layer3">
-            <svg
-              width="37"
-              height="42"
-              viewBox="0 0 37 42"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="29" cy="8" r="8" fill="#0780FD" />
-              <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-              <circle cx="6" cy="14" r="6" fill="#0780FD" />
-            </svg>
-          </div>
-          <div className="layer4">
-            <svg
-              width="37"
-              height="42"
-              viewBox="0 0 37 42"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="8"
-                cy="34"
-                r="8"
-                transform="rotate(-180 8 34)"
-                fill="#0780FD"
-              />
-              <circle
-                cx="20.5"
-                cy="10.5"
-                r="10.5"
-                transform="rotate(-180 20.5 10.5)"
-                fill="#0780FD"
-              />
-              <circle
-                cx="31"
-                cy="28"
-                r="6"
-                transform="rotate(-180 31 28)"
-                fill="#0780FD"
-              />
-            </svg>
-          </div>
-          <p
-            style={{
-              color: "#0780FD",
-              fontSize: 62,
-              fontWeight: 600,
-              margin: 0,
-            }}
+      <div className="stats-grid" ref={statsRef}>
+        <div className="layer3">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            10+
-          </p>
+            <circle cx="29" cy="8" r="8" fill="#0780FD" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
+            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+          </svg>
+        </div>
+        <div className="layer4">
+          <svg
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
+              fill="#0780FD"
+            />
+            <circle
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
+              fill="#0780FD"
+            />
+          </svg>
+        </div>
+        <div className="stat-item">
+          <h4>
+            <CountUp start={0} end={startCount ? 10 : 0} duration={2} />+
+          </h4>
           <p>Skilled Trainers</p>
         </div>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "column",
-          }}
-        >
-          <p
-            style={{
-              color: "#0780FD",
-              fontSize: 62,
-              fontWeight: 600,
-              margin: 0,
-            }}
-          >
-            100+
-          </p>
+        <div className="stat-item">
+          <h4>
+            <CountUp start={0} end={startCount ? 100 : 0} duration={2} />+
+          </h4>
           <p>Students Placed</p>
-        </div>{" "}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "column",
-          }}
-        >
-          <p
-            style={{
-              color: "#0780FD",
-              fontSize: 62,
-              fontWeight: 600,
-              margin: 0,
-            }}
-          >
-            50+
-          </p>
+        </div>
+        <div className="stat-item">
+          <h4>
+            <CountUp start={0} end={startCount ? 50 : 0} duration={2} />+
+          </h4>
           <p>Students Enrolled</p>
-        </div>{" "}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            flexDirection: "column",
-          }}
-        >
-          <p
-            style={{
-              color: "#0780FD",
-              fontSize: 62,
-              fontWeight: 600,
-              margin: 0,
-            }}
-          >
-            20+
-          </p>
+        </div>
+        <div className="stat-item">
+          <h4>
+            <CountUp start={0} end={startCount ? 20 : 0} duration={2} />+
+          </h4>
           <p>Workshop Conducted</p>
         </div>
       </div>
@@ -335,7 +301,7 @@ export default function Course() {
                   marginTop: "5%",
                 }}
               >
-                <p className="card-title">{service.title}</p>
+                <p className="service-card-title">{service.title}</p>
                 <p className="service-card-description">
                   {service.description}
                 </p>
@@ -423,7 +389,6 @@ export default function Course() {
           style={{
             borderRadius: "130px",
             border: "2px solid #0780FD",
-            marginTop: "3%",
             marginRight: "8%",
             marginLeft: "8%",
             padding: "2% 0%",
@@ -432,7 +397,7 @@ export default function Course() {
             justifyContent: "space-around",
           }}
         >
-          <div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
             <Button
               style={{
                 fontSize: 18,
@@ -442,6 +407,7 @@ export default function Course() {
                 width: "196px",
                 height: "40px",
                 color: "#0780FD",
+                border: "none",
               }}
             >
               Offline Classroom
@@ -451,41 +417,79 @@ export default function Course() {
             </p>
           </div>
 
-          <div style={{ display: "flex", gap: 40 }}>
+          <div
+            style={{
+              display: "flex",
+              gap: 40,
+              alignItems: "center",
+            }}
+          >
             <div>
-              <div style={{ display: "flex", alignItems: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 10,
+                }}
+              >
                 <img
                   src={month}
                   alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
+                  style={{
+                    color: "#1B1B1B",
+                    width: "38px",
+                    height: "38px",
+                  }}
                 />
-                <p>03 Months</p>
+                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
+                  03 Months
+                </p>
               </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 10,
+                }}
+              >
                 <img
                   src={languages}
                   alt=""
                   style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
                 />
-                <p>Tamil & English</p>
+                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
+                  Tamil & English
+                </p>
               </div>
             </div>
+
             <div>
-              <div style={{ display: "flex", alignItems: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 10,
+                  justifyContent: "center",
+                }}
+              >
                 <img
                   src={clock}
                   alt=""
                   style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
                 />
-                <p>10:00 AM - 1:00 PM</p>
+                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
+                  10:00 AM - 1:00 PM
+                </p>
               </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <img
                   src={slots}
                   alt=""
                   style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
                 />
-                <p>Slots left - 05</p>
+                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
+                  Slots left - <span style={{ fontWeight: 600 }}>05</span>
+                </p>
               </div>
             </div>
           </div>
@@ -519,7 +523,7 @@ export default function Course() {
             justifyContent: "space-around",
           }}
         >
-          <div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
             <Button
               style={{
                 fontSize: 18,
@@ -529,6 +533,7 @@ export default function Course() {
                 width: "196px",
                 height: "40px",
                 color: "#0780FD",
+                border: "none",
               }}
             >
               Offline Classroom
@@ -536,41 +541,79 @@ export default function Course() {
             <p style={{ fontSize: 24, fontWeight: 500 }}>Business Analyst</p>
           </div>
 
-          <div style={{ display: "flex", gap: 40 }}>
+          <div
+            style={{
+              display: "flex",
+              gap: 40,
+              alignItems: "center",
+            }}
+          >
             <div>
-              <div style={{ display: "flex", alignItems: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 10,
+                }}
+              >
                 <img
                   src={month}
                   alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
+                  style={{
+                    color: "#1B1B1B",
+                    width: "38px",
+                    height: "38px",
+                  }}
                 />
-                <p>03 Months</p>
+                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
+                  03 Months
+                </p>
               </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 10,
+                }}
+              >
                 <img
                   src={languages}
                   alt=""
                   style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
                 />
-                <p>Tamil & English</p>
+                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
+                  Tamil & English
+                </p>
               </div>
             </div>
+
             <div>
-              <div style={{ display: "flex", alignItems: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 10,
+                  justifyContent: "center",
+                }}
+              >
                 <img
                   src={clock}
                   alt=""
                   style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
                 />
-                <p>10:00 AM - 1:00 PM</p>
+                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
+                  10:00 AM - 1:00 PM
+                </p>
               </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <img
                   src={slots}
                   alt=""
                   style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
                 />
-                <p>Slots left - 05</p>
+                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
+                  Slots left - <span style={{ fontWeight: 600 }}>05</span>
+                </p>
               </div>
             </div>
           </div>
@@ -604,7 +647,7 @@ export default function Course() {
             justifyContent: "space-around",
           }}
         >
-          <div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
             <Button
               style={{
                 fontSize: 18,
@@ -614,6 +657,7 @@ export default function Course() {
                 width: "196px",
                 height: "40px",
                 color: "#0780FD",
+                border: "none",
               }}
             >
               Offline Classroom
@@ -621,41 +665,79 @@ export default function Course() {
             <p style={{ fontSize: 24, fontWeight: 500 }}>Data Science</p>
           </div>
 
-          <div style={{ display: "flex", gap: 40 }}>
+          <div
+            style={{
+              display: "flex",
+              gap: 40,
+              alignItems: "center",
+            }}
+          >
             <div>
-              <div style={{ display: "flex", alignItems: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 10,
+                }}
+              >
                 <img
                   src={month}
                   alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
+                  style={{
+                    color: "#1B1B1B",
+                    width: "38px",
+                    height: "38px",
+                  }}
                 />
-                <p>03 Months</p>
+                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
+                  03 Months
+                </p>
               </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 10,
+                }}
+              >
                 <img
                   src={languages}
                   alt=""
                   style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
                 />
-                <p>Tamil & English</p>
+                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
+                  Tamil & English
+                </p>
               </div>
             </div>
+
             <div>
-              <div style={{ display: "flex", alignItems: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 10,
+                  justifyContent: "center",
+                }}
+              >
                 <img
                   src={clock}
                   alt=""
                   style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
                 />
-                <p>10:00 AM - 1:00 PM</p>
+                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
+                  10:00 AM - 1:00 PM
+                </p>
               </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <img
                   src={slots}
                   alt=""
                   style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
                 />
-                <p>Slots left - 05</p>
+                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
+                  Slots left - <span style={{ fontWeight: 600 }}>05</span>
+                </p>
               </div>
             </div>
           </div>

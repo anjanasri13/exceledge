@@ -8,13 +8,20 @@
   left: 75%;
   top: 70%;
 }
-.Clayer3 {
-  position: absolute;
-  left: 20%;
-  top: 0%;
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 40px;
+  margin: 5%;
 }
-.Clayer4 {
-  position: absolute;
-  left: 75%;
-  top: 70%;
+.image-container {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 600px;
+  height: 420px;
+  object-fit: cover;
 }

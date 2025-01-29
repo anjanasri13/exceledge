@@ -103,6 +103,16 @@
   left: 75%;
   top: 70%;
 }
+.Glayer3 {
+  position: absolute;
+  left: 15%;
+  top: 0%;
+}
+.Glayer4 {
+  position: absolute;
+  left: 75%;
+  top: 70%;
+}
 .main-text {
   padding-left: 5%;
   padding-right: 5%;
@@ -186,6 +196,15 @@
   width: 40%;
   line-height: 34px;
 }
+.Gallery-sub-title {
+  color: #1b1b1bb2;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  width: 60%;
+  line-height: 34px;
+}
 .services-card-container {
   display: flex;
   gap: 24px;
@@ -217,7 +236,7 @@
   visibility: visible;
   transform: translateX(5px);
 } */
-.card-title {
+.service-card-title {
   font-size: 24px;
   font-weight: 500;
   color: #ffffff;
@@ -533,4 +552,40 @@
 .react-multi-carousel-item {
   /* width: 100% !important; */
   margin: 0 !important;
+}
+.stats-grid {
+  border-radius: 40px;
+  background-color: #0780fd29;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  margin: 8% 5%;
+  padding: 2%;
+  gap: 20px;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-item h4 {
+  font-size: 62px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  color: #0780fd;
+}
+
+.stat-item p {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 500;
+  color: #1b1b1bcc;
 }
