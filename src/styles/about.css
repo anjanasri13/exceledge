@@ -1,3 +1,33 @@
+.Alayer1 {
+  position: absolute;
+  left: 5%;
+  top: -10%;
+}
+.Alayer2 {
+  position: absolute;
+  left: 70%;
+  top: 2%;
+}
+.Alayer3 {
+  position: absolute;
+  left: 2%;
+  top: 0%;
+}
+.Alayer4 {
+  position: absolute;
+  left: 25%;
+  top: 85%;
+}
+.Alayer5 {
+  position: absolute;
+  left: 20%;
+  top: 0%;
+}
+.Alayer6 {
+  position: absolute;
+  left: 77%;
+  top: 15%;
+}
 .a-main-text {
   padding-left: 5%;
   padding-right: 5%;
@@ -103,7 +133,6 @@
   margin-bottom: 10px;
 }
 .card-title {
-  font-family: Poppins;
   font-size: 22px;
   font-weight: 600;
   line-height: 32px;
@@ -111,7 +140,6 @@
 }
 .card-subtitle {
   width: 100%;
-  font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
