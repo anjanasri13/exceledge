@@ -1,0 +1,119 @@
+.a-main-text {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+.a-main-text-title {
+  color: #1b1b1b;
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 0;
+  line-height: 130%;
+}
+.a-main-text-sub-title {
+  color: #1b1b1bb2;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  width: 90%;
+}
+.a-support-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-text {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 84px;
+}
+.about-sub-text {
+  width: 80%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+}
+.customer-image-container {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+}
+.youtube-image {
+  width: 555;
+  height: 415;
+  border-radius: 30;
+}
+.academy-text {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 84px;
+  text-align: center;
+}
+.academy-sub-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1b1b1b;
+  opacity: 0.8;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card-container-1 {
+  display: flex;
+  padding: 0 5%;
+  gap: 30px;
+  margin-top: 5%;
+}
+.card-container-2 {
+  display: flex;
+  padding: 0 5%;
+  gap: 30px;
+}
+.academy-card {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 20px;
+  border: 3;
+  opacity: 0px;
+  border-color: #0780fd;
+}
+.card-image {
+  width: 62px;
+  height: 62px;
+  opacity: 0px;
+  margin-bottom: 10px;
+}
+.card-title {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+.card-subtitle {
+  width: 100%;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 10px;
+}

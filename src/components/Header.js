@@ -73,7 +73,10 @@ export default function Header() {
         <Link to="/" style={{ textDecoration: "none", color: "#1b1b1b" }}>
           Home
         </Link>
-        <Link to="/" style={{ textDecoration: "none", color: "#1b1b1b" }}>
+        <Link
+          to="/about-us"
+          style={{ textDecoration: "none", color: "#1b1b1b" }}
+        >
           About Us
         </Link>{" "}
         <Link to="/" style={{ textDecoration: "none", color: "#1b1b1b" }}>
