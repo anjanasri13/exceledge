@@ -7,45 +7,27 @@ import linkedin from "../assests/linkedin.png";
 import insta from "../assests/insta.png";
 import phone from "../assests/phone.png";
 import mail from "../assests/mail.png";
+import "../styles/Footer.css";
 
 export default function Footer() {
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          backgroundColor: "#0780FD1F",
-          padding: "5%",
-          gap: 40,
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-          }}
-        >
-          <div style={{ display: "flex", flexDirection: "column", gap: 40 }}>
+      <div className="footer">
+        <div className="footer-container">
+          <div className="footer-column">
             <Link>
               <img src={Footerlogo} width="242px" height="34px" alt="logo" />
             </Link>
-            <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-              <div style={{ display: "flex", gap: 20 }}>
+            <div className="footer-column">
+              <div className="footer-contact">
                 <img src={phone} width="32px" height="32px" alt="" />
-                <Link
-                  to=""
-                  style={{ textDecoration: "none", color: "#1B1B1B" }}
-                >
+                <Link to="" className="nav-link">
                   +1 8888 8888
                 </Link>
               </div>
-              <div style={{ display: "flex", gap: 20 }}>
+              <div className="footer-contact">
                 <img src={mail} width="32px" height="32px" alt="" />
-                <Link
-                  to=""
-                  style={{ textDecoration: "none", color: "#1B1B1B" }}
-                >
+                <Link to="" className="nav-link">
                   info@exceledge.com
                 </Link>
               </div>
@@ -53,91 +35,33 @@ export default function Footer() {
           </div>
 
           <div>
-            <p
-              style={{
-                fontSize: 18,
-                fontWeight: 600,
-                color: "#1B1B1B",
-                marginTop: 0,
-              }}
-            >
-              Quick Links
-            </p>
+            <p className="footer-title">Quick Links</p>
 
-            <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-              <Link
-                to="/services"
-                style={{
-                  textDecoration: "none",
-                  color: "#1B1B1B",
-                  fontSize: 18,
-                  fontWeight: 400,
-                }}
-              >
+            <div className="footer-column">
+              <Link to="/services" className="footer-nav">
                 Home
               </Link>
-              <Link
-                to="/education"
-                style={{
-                  textDecoration: "none",
-                  color: "#1B1B1B",
-                  fontSize: 18,
-                  fontWeight: 400,
-                }}
-              >
+              <Link to="/education" className="footer-nav">
                 Solutions
               </Link>
-              <Link
-                to="/about"
-                style={{
-                  textDecoration: "none",
-                  color: "#1B1B1B",
-                  fontSize: 18,
-                  fontWeight: 400,
-                }}
-              >
+              <Link to="/about" className="footer-nav">
                 Company
               </Link>
-              <Link
-                to="/contact"
-                style={{
-                  textDecoration: "none",
-                  color: "#1B1B1B",
-                  fontSize: 18,
-                  fontWeight: 400,
-                }}
-              >
+              <Link to="/contact" className="footer-nav">
                 Resources
               </Link>
             </div>
           </div>
 
-          <div style={{ width: "25%" }}>
-            <p
-              style={{
-                fontSize: 18,
-                fontWeight: 600,
-                color: "#1B1B1B",
-                marginTop: 0,
-              }}
-            >
-              Address
-            </p>
-            <p
-              style={{
-                fontSize: 18,
-                fontWeight: 400,
-                color: "#1B1B1B",
-                marginTop: 0,
-                lineHeight: "23.44px",
-              }}
-            >
+          <div className="footer-column address">
+            <p className="footer-title">Address</p>
+            <p className="footer-desc">
               Lorem ipsum dolor sit amet consectetur. Sed mattis id suspendisse
               pulvinar velit velit sed.
             </p>
           </div>
 
-          <div style={{ display: "flex", gap: 12 }}>
+          <div className="social-icons">
             <Link to="">
               <img src={facebook} width="32px" height="32px" alt="" />
             </Link>
@@ -154,20 +78,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <p
-        style={{
-          fontSize: 18,
-          fontWeight: 400,
-          color: "#FFFFFF",
-          marginBottom: 0,
-          marginTop: 0,
-          textAlign: "center",
-          backgroundColor: "#0780FD",
-          padding: "1% 0%",
-        }}
-      >
-        © 2024 Copyright | All Rights Reserved
-      </p>
+      <p className="footer-bottom">© 2024 Copyright | All Rights Reserved</p>
     </>
   );
 }
