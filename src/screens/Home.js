@@ -1372,6 +1372,37 @@ export default function Home() {
           slidesToSlide={1}
         >
           <div className="testimonial-card1">
+            <div className="layer21">
+              <svg
+                width="37"
+                height="42"
+                viewBox="0 0 37 42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="8"
+                  cy="34"
+                  r="8"
+                  transform="rotate(-180 8 34)"
+                  fill="white"
+                />
+                <circle
+                  cx="20.5"
+                  cy="10.5"
+                  r="10.5"
+                  transform="rotate(-180 20.5 10.5)"
+                  fill="white"
+                />
+                <circle
+                  cx="31"
+                  cy="28"
+                  r="6"
+                  transform="rotate(-180 31 28)"
+                  fill="white"
+                />
+              </svg>
+            </div>
             <p className="testimonial-name">
               Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
               velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
@@ -1404,6 +1435,37 @@ export default function Home() {
             </div>
           </div>
           <div className="testimonial-card1">
+            <div className="layer21">
+              <svg
+                width="37"
+                height="42"
+                viewBox="0 0 37 42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="8"
+                  cy="34"
+                  r="8"
+                  transform="rotate(-180 8 34)"
+                  fill="white"
+                />
+                <circle
+                  cx="20.5"
+                  cy="10.5"
+                  r="10.5"
+                  transform="rotate(-180 20.5 10.5)"
+                  fill="white"
+                />
+                <circle
+                  cx="31"
+                  cy="28"
+                  r="6"
+                  transform="rotate(-180 31 28)"
+                  fill="white"
+                />
+              </svg>
+            </div>
             <p className="testimonial-name">
               Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
               velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
@@ -1436,6 +1498,37 @@ export default function Home() {
             </div>{" "}
           </div>
           <div className="testimonial-card1">
+            <div className="layer21">
+              <svg
+                width="37"
+                height="42"
+                viewBox="0 0 37 42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="8"
+                  cy="34"
+                  r="8"
+                  transform="rotate(-180 8 34)"
+                  fill="white"
+                />
+                <circle
+                  cx="20.5"
+                  cy="10.5"
+                  r="10.5"
+                  transform="rotate(-180 20.5 10.5)"
+                  fill="white"
+                />
+                <circle
+                  cx="31"
+                  cy="28"
+                  r="6"
+                  transform="rotate(-180 31 28)"
+                  fill="white"
+                />
+              </svg>
+            </div>
             <p className="testimonial-name">
               Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
               velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
@@ -1468,6 +1561,37 @@ export default function Home() {
             </div>{" "}
           </div>
           <div className="testimonial-card1">
+            <div className="layer21">
+              <svg
+                width="37"
+                height="42"
+                viewBox="0 0 37 42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="8"
+                  cy="34"
+                  r="8"
+                  transform="rotate(-180 8 34)"
+                  fill="white"
+                />
+                <circle
+                  cx="20.5"
+                  cy="10.5"
+                  r="10.5"
+                  transform="rotate(-180 20.5 10.5)"
+                  fill="white"
+                />
+                <circle
+                  cx="31"
+                  cy="28"
+                  r="6"
+                  transform="rotate(-180 31 28)"
+                  fill="white"
+                />
+              </svg>
+            </div>
             <p className="testimonial-name">
               Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
               velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
@@ -1500,6 +1624,37 @@ export default function Home() {
             </div>
           </div>
           <div className="testimonial-card1">
+            <div className="layer21">
+              <svg
+                width="37"
+                height="42"
+                viewBox="0 0 37 42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="8"
+                  cy="34"
+                  r="8"
+                  transform="rotate(-180 8 34)"
+                  fill="white"
+                />
+                <circle
+                  cx="20.5"
+                  cy="10.5"
+                  r="10.5"
+                  transform="rotate(-180 20.5 10.5)"
+                  fill="white"
+                />
+                <circle
+                  cx="31"
+                  cy="28"
+                  r="6"
+                  transform="rotate(-180 31 28)"
+                  fill="white"
+                />
+              </svg>
+            </div>
             <p className="testimonial-name">
               Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
               velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
@@ -1532,6 +1687,37 @@ export default function Home() {
             </div>{" "}
           </div>
           <div className="testimonial-card1">
+            <div className="layer21">
+              <svg
+                width="37"
+                height="42"
+                viewBox="0 0 37 42"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="8"
+                  cy="34"
+                  r="8"
+                  transform="rotate(-180 8 34)"
+                  fill="white"
+                />
+                <circle
+                  cx="20.5"
+                  cy="10.5"
+                  r="10.5"
+                  transform="rotate(-180 20.5 10.5)"
+                  fill="white"
+                />
+                <circle
+                  cx="31"
+                  cy="28"
+                  r="6"
+                  transform="rotate(-180 31 28)"
+                  fill="white"
+                />
+              </svg>
+            </div>
             <p className="testimonial-name">
               Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
               velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus enim

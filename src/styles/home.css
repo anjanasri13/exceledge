@@ -436,6 +436,7 @@
   padding: 7%;
   border-radius: 20px;
   background-color: #0780fd;
+  position: relative;
 }
 
 .testimonial-name {
