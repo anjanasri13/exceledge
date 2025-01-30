@@ -18,7 +18,106 @@
   left: 70%;
   top: 10%;
 }
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  position: relative;
+}
+.contact-title {
+  font-size: 56px;
+  font-weight: 600;
+  color: #1b1b1b;
+  width: 60%;
+  text-align: center;
+}
+.contact-description {
+  font-size: 18px;
+  font-weight: 400;
+  color: #1b1b1b;
+  opacity: 0.8;
+  width: 35%;
+  text-align: center;
+  line-height: 34px;
+}
+.contact-container {
+  margin-top: 15%;
+  position: relative;
+}
 
+.contact-links {
+  display: flex;
+  gap: 30px;
+  margin: 5% 5%;
+}
+
+.contact-card {
+  text-decoration: none;
+  border: 1px solid #0780fd;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 2%;
+  gap: 20px;
+  width: 100%;
+}
+.contact-card-para {
+  font-size: 20px;
+  font-weight: 400;
+  color: #1b1b1b;
+  width: 60%;
+}
+.contact-card p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #1b1b1b;
+}
+.contact-icon {
+  width: 62px;
+  height: 62px;
+}
+.contact-form-container {
+  background-color: #0780fd;
+  border-radius: 50px;
+  margin: 10%;
+  padding: 5%;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.form-row {
+  display: flex;
+  gap: 30px;
+}
+.form-label {
+  font-size: 24px;
+  font-weight: 400;
+}
+.form-input {
+  margin-top: 15%;
+}
+.form-textarea {
+  margin-top: 5%;
+  width: 100%;
+  background-color: #0780fd;
+  color: #ffffff;
+  overflow: hidden;
+  resize: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom-color: #ffffff;
+  outline: none;
+}
+.form-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .btn:focus {
   outline: 0;
 }
@@ -75,6 +174,8 @@
   top: 15px;
   left: 0;
   pointer-events: none;
+  font-size: 24;
+  font-weight: 400;
 }
 
 .form-control label span {

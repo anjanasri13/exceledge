@@ -119,12 +119,7 @@ export default function Home() {
     <div>
       <Header />
 
-      <div
-        style={{
-          display: "flex",
-          gap: 40,
-        }}
-      >
+      <div className="main-div">
         <div className="layer1">
           <svg
             width="37"

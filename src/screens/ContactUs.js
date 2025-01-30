@@ -12,16 +12,7 @@ export default function ContactUs() {
   return (
     <div>
       <Header />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          marginTop: "5%",
-          position: "relative",
-        }}
-      >
+      <div className="contact-section">
         <div className="Clayer1">
           <svg
             width="70"
@@ -66,28 +57,8 @@ export default function ContactUs() {
             />
           </svg>
         </div>
-        <p
-          style={{
-            fontSize: 56,
-            fontWeight: 600,
-            color: "#1B1B1B",
-            width: "60%",
-            textAlign: "center",
-          }}
-        >
-          Contact Us
-        </p>
-        <p
-          style={{
-            fontSize: 18,
-            fontWeight: 400,
-            color: "#1B1B1B",
-            opacity: "80%",
-            width: "35%",
-            textAlign: "center",
-            lineHeight: "34px",
-          }}
-        >
+        <p className="contact-title">Contact Us</p>
+        <p className="contact-description">
           Explore industry-aligned programs designed to prepare you for success
           in tech.
         </p>
@@ -106,7 +77,7 @@ export default function ContactUs() {
         </Button>
       </div>
 
-      <div style={{ marginTop: "15%", position: "relative" }}>
+      <div className="contact-container">
         <div className="Clayer3">
           <svg
             width="37"
@@ -154,78 +125,27 @@ export default function ContactUs() {
         <div className="services-text">
           <p className="services-title">Get in Touch</p>
         </div>
-        <div
-          style={{
-            display: "flex",
-            gap: 30,
-            margin: "5% 5%",
-          }}
-        >
-          <Link
-            style={{
-              textDecoration: "none",
-              border: "1px solid #0780FD",
-              borderRadius: "20px",
-              display: "flex",
-              padding: "2%",
-              gap: 20,
-              width: "100%",
-            }}
-          >
-            <img src={location} width="62px" height="62px" alt="" />
-            <p
-              style={{
-                fontSize: 20,
-                fontWeight: 400,
-                color: "#1B1B1B",
-                width: "60%",
-              }}
-            >
+        <div className="contact-links">
+          <Link className="contact-card">
+            <img src={location} className="contact-icon" alt="" />
+            <p className="contact-card-p">
               Lorem ipsum dolor sit amet consectetur.
             </p>
           </Link>
 
-          <Link
-            to="/contact"
-            style={{
-              textDecoration: "none",
-              border: "1px solid #0780FD",
-              borderRadius: "20px",
-              display: "flex",
-              padding: "2%",
-              alignItems: "center",
-              gap: 20,
-              width: "100%",
-            }}
-          >
-            <img src={phone} width="62px" height="62px" alt="" />
-            <p style={{ fontSize: 20, fontWeight: 400, color: "#1B1B1B" }}>
-              +1 8888 8888
-            </p>
+          <Link className="contact-card">
+            <img src={phone} className="contact-icon" alt="" />
+            <p>+1 8888 8888</p>
           </Link>
 
-          <Link
-            to="/email"
-            style={{
-              textDecoration: "none",
-              border: "1px solid #0780FD",
-              borderRadius: "20px",
-              display: "flex",
-              padding: "2%",
-              alignItems: "center",
-              gap: 20,
-              width: "100%",
-            }}
-          >
-            <img src={mail} width="62px" height="62px" alt="" />
-            <p style={{ fontSize: 20, fontWeight: 400, color: "#1B1B1B" }}>
-              info@scalegreat.group
-            </p>
+          <Link className="contact-card">
+            <img src={mail} className="contact-icon" alt="" />
+            <p>info@scalegreat.group</p>
           </Link>
         </div>
       </div>
 
-      <div style={{ marginTop: "15%", position: "relative" }}>
+      <div className="contact-container">
         <div className="Clayer5">
           <svg
             width="37"
@@ -273,64 +193,28 @@ export default function ContactUs() {
         <div className="services-text">
           <p className="services-title">Send Us A Message</p>
         </div>
-        <div
-          style={{
-            backgroundColor: "#0780FD",
-            borderRadius: "50px",
-            margin: "10%",
-            padding: "5%",
-          }}
-        >
+        <div className="contact-form-container">
           <form>
-            <div style={{ display: "flex", gap: 30 }}>
+            <div className="form-row">
               <div className="form-control">
-                <label style={{ fontSize: 24, fontWeight: 400 }}>
-                  Your Name
-                </label>
-                <input type="text" required style={{ marginTop: "15%" }} />
+                <label className="form-label">Your Name</label>
+                <input type="text" required className="form-input" />
               </div>
               <div className="form-control">
-                <label style={{ fontSize: 24, fontWeight: 400 }}>
-                  Your Email
-                </label>
-                <input type="email" required style={{ marginTop: "15%" }} />
+                <label className="form-label">Your Email</label>
+                <input type="email" required className="form-input" />
               </div>
               <div className="form-control">
-                <label style={{ fontSize: 24, fontWeight: 400 }}>
-                  Phone Number
-                </label>
-                <input type="tel" required style={{ marginTop: "15%" }} />
+                <label className="form-label">Phone Number</label>
+                <input type="tel" required className="form-input" />
               </div>
             </div>
             <div className="form-control">
-              <label style={{ fontSize: 24, fontWeight: 400 }}>Message</label>
-              <textarea
-                type="tel"
-                required
-                style={{
-                  marginTop: "5%",
-                  width: "100%",
-                  backgroundColor: "#0780FD",
-                  borderRight: "none",
-                  borderLeft: "none",
-                  borderTop: "none",
-                  borderBottomColor: "#FFFFFF",
-                  resize: "none",
-                  overflow: "hidden",
-                  outline: "none",
-                  color: "#ffffff",
-                }}
-              />
+              <label className="form-label">Message</label>
+              <textarea type="tel" required className="form-textarea" />
             </div>
 
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
+            <div className="form-button-container">
               <button
                 style={{
                   fontSize: 16,
