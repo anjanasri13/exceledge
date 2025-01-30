@@ -1323,12 +1323,11 @@ export default function Home() {
           customLeftArrow={isDesktop ? <CustomLeftArrow /> : null}
           customRightArrow={isDesktop ? <CustomRightArrow /> : null}
           additionalTransfrom={0}
-          arrows={isDesktop}
+          arrows
           autoPlaySpeed={3000}
           centerMode={false}
           className=""
-          containerClass="container"
-          // dotListClass=""
+          containerClass=""
           draggable
           focusOnSelect={false}
           infinite
