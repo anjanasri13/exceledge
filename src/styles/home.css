@@ -522,11 +522,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
 }
 
 .custom-arrow-left {
-  left: 80%;
+  left: 81%;
 }
 
 .custom-arrow-right {
