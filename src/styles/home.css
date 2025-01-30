@@ -290,7 +290,7 @@
   font-size: 56px;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 2%;
+  margin-bottom: 0%;
 }
 .faq-sub-title {
   font-size: 18px;
@@ -300,6 +300,7 @@
   color: #1b1b1bb2;
   line-height: "140%";
   width: 30%;
+  margin-bottom: 0;
 }
 .faq-content {
   width: 100%;
