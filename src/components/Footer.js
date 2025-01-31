@@ -14,20 +14,20 @@ export default function Footer() {
     <>
       <div className="footer">
         <div className="footer-container">
-          <div className="footer-column">
-            <Link>
-              <img src={Footerlogo} width="242px" height="34px" alt="logo" />
-            </Link>
+          <div className="footer-column-container">
+            <div>
+              <img src={Footerlogo} width="242px" height="23px" alt="logo" />
+            </div>
             <div className="footer-column">
-              <div className="footer-contact">
-                <img src={phone} width="32px" height="32px" alt="" />
-                <Link to="" className="nav-link">
+              <div>
+                <Link to="" className="footer-contact">
+                  <img src={phone} width="32px" height="32px" alt="" />
                   +1 8888 8888
                 </Link>
               </div>
-              <div className="footer-contact">
-                <img src={mail} width="32px" height="32px" alt="" />
-                <Link to="" className="nav-link">
+              <div>
+                <Link to="" className="footer-contact">
+                  <img src={mail} width="32px" height="32px" alt="" />
                   info@exceledge.com
                 </Link>
               </div>
@@ -54,7 +54,7 @@ export default function Footer() {
           </div>
 
           <div className="footer-column address">
-            <p className="footer-title">Address</p>
+            <p className="footer-address-title">Address</p>
             <p className="footer-desc">
               Lorem ipsum dolor sit amet consectetur. Sed mattis id suspendisse
               pulvinar velit velit sed.
