@@ -263,6 +263,88 @@
 .card-image {
   display: flex;
 }
+.about-us-container {
+  display: flex;
+  gap: 70px;
+  margin-top: 8%;
+  position: relative;
+}
+.about-image {
+  width: 708px;
+  height: 466px;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-title {
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.about-description {
+  font-size: 18px;
+  font-weight: 400;
+  width: 80%;
+}
+.why-choose-us-container {
+  background-color: #0780fd;
+  display: flex;
+  margin-top: 8%;
+  padding: 5% 6%;
+  position: relative;
+}
+.why-choose-text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.why-choose-title {
+  font-size: 56px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  line-height: 84px;
+}
+
+.why-choose-description {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 80%;
+  width: 70%;
+  line-height: 28px;
+}
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.benefit-img {
+  width: 46px;
+  height: 46px;
+}
+
+.benefit-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.benefit-description {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 70%;
+  opacity: 80%;
+}
+
 .upcoming-batch {
   display: flex;
   flex-direction: column;
@@ -285,6 +367,25 @@
   font-weight: 400;
   width: 60%;
   line-height: 34px;
+}
+.gallery-images-row1 {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 5%;
+  width: 100%;
+}
+.gallery-images-column {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.gallery-images-row2 {
+  display: flex;
+  gap: 18px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
 }
 .faq-title {
   font-size: 56px;

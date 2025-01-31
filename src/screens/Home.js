@@ -37,7 +37,7 @@ const services = [
   {
     title: "Full Stack Engineering",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Proin ipsum vitae proin dui sed risus morbi.",
+      "Master front-end & back-end development with React, Node.js, and databases.",
     icon: <img src={Image2} width="80px" height="80px" alt="" />,
 
     backgroundColor: "#377dff1a",
@@ -45,14 +45,14 @@ const services = [
   {
     title: "Business Analyst",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Proin ipsum vitae proin dui sed risus morbi.",
+      "Gain skills in data analysis, market research, and business strategy.",
     icon: <img src={Image3} width="80px" height="80px" alt="" />,
     backgroundColor: "#FF9EC533",
   },
   {
     title: "Data Science",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Proin ipsum vitae proin dui sed risus morbi.",
+      "Learn Python, machine learning, and AI to analyze and predict data trends.",
     icon: <img src={Image4} width="80px" height="80px" alt="" />,
     backgroundColor: "#FFCB2A24",
   },
@@ -317,36 +317,14 @@ export default function Home() {
           {services.map((service, index) => (
             <Card key={index} className="services-card">
               <div className="card-image">{service.icon}</div>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "12px",
-                  marginTop: "5%",
-                }}
-              >
+              <div className="card-details">
                 <p className="service-card-title">{service.title}</p>
                 <p className="service-card-description">
                   {service.description}
                 </p>
               </div>
-              <Link
-                style={{
-                  fontSize: 16,
-                  fontWeight: 600,
-                  color: "#FFFFFF",
-                  display: "flex",
-                  alignItems: "center",
-                  textDecoration: "none",
-                }}
-              >
-                <div
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "10px",
-                  }}
-                >
+              <Link className="learn-more-link">
+                <div className="learn-more-container">
                   <span>Learn more</span>
                   <FaArrowRightLong className="fa-arrow-right-long" />
                 </div>
@@ -356,14 +334,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          gap: 70,
-          marginTop: "8%",
-          position: "relative",
-        }}
-      >
+      <div className="about-us-container">
         <div className="layer7">
           <svg
             width="37"
@@ -409,25 +380,19 @@ export default function Home() {
           </svg>
         </div>
         <div>
-          <img src={Image5} width="708px" height="466px" alt="" />
+          <img src={Image5} className="about-image" alt="" />
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
-          <p style={{ fontSize: 56, fontWeight: 600 }}>About Us</p>
-          <p style={{ fontSize: 18, fontWeight: 400, width: "80%" }}>
-            Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-            elementum cursus pellentesque velit. Lorem ipsum dolor sit amet
-            consectetur. Fringilla mus enim nisi velit.
+        <div className="about-container">
+          <p className="about-title">About Us</p>
+          <p className="about-description">
+            At Exceledge, we are dedicated to empowering learners with
+            industry-relevant skills. Our expert-led courses in Full Stack
+            Engineering, Business Analysis, and Data Science help you stay ahead
+            in the ever-evolving tech landscape.
           </p>
-          <p style={{ fontSize: 18, fontWeight: 400, width: "80%" }}>
-            Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-            elementum cursus pellentesque velit. Lorem ipsum dolor sit amet
-            consectetur. Fringilla mus enim nisi velit.
+          <p className="about-description">
+            Join a vibrant learning community, gain hands-on experience, and
+            take the next step toward a successful career.
           </p>
           <div>
             <Button
@@ -447,15 +412,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div
-        style={{
-          backgroundColor: "#0780FD",
-          display: "flex",
-          marginTop: "8%",
-          padding: "5% 6%",
-          position: "relative",
-        }}
-      >
+      <div className="why-choose-us-container">
         <div className="layer9">
           <svg
             width="37"
@@ -500,39 +457,11 @@ export default function Home() {
             />
           </svg>
         </div>
-        <div
-          style={{
-            width: "70%",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            gap: 20,
-          }}
-        >
-          <p
-            style={{
-              fontSize: 56,
-              fontWeight: 600,
-              color: "#FFFFFF",
-              margin: 0,
-              lineHeight: "84px",
-            }}
-          >
-            Why choose us
-          </p>
-          <p
-            style={{
-              fontSize: 18,
-              fontWeight: 400,
-              color: "#FFFFFF",
-              opacity: "80%",
-              width: "70%",
-              lineHeight: "28px",
-            }}
-          >
-            Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-            elementum cursus pellentesque velit. Lorem ipsum dolor sit amet
-            consectetur. Fringilla mus enim nisi velit.
+        <div className="why-choose-text">
+          <p className="why-choose-title">Why choose us</p>
+          <p className="why-choose-description">
+            At Exceledge, we are committed to providing top-notch education and
+            career growth opportunities. Here's what sets us apart:
           </p>
           <div>
             <Button
@@ -552,69 +481,33 @@ export default function Home() {
         </div>
 
         <div>
-          <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <img src={img1} width="46px" height="46px" alt="" />
+          <div className="benefit-item">
+            <img src={img1} className="benefit-img" alt="" />
             <div>
-              <p
-                style={{
-                  fontSize: 24,
-                  fontWeight: 500,
-                  color: "#FFFFFF",
-                }}
-              >
-                Experienced instructors
-              </p>
-              <p
-                style={{
-                  fontSize: 18,
-                  fontWeight: 400,
-                  color: "#FFFFFF",
-                  width: "70%",
-                  opacity: "80%",
-                }}
-              >
-                Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-                velit.
+              <p className="benefit-title">Experienced instructors</p>
+              <p className="benefit-description">
+                Learn from industry experts with real-world experience and deep
+                knowledge.
               </p>
             </div>
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <img src={img2} width="46px" height="46px" alt="" />
+          <div className="benefit-item">
+            <img src={img2} className="benefit-img" alt="" />
             <div>
-              <p style={{ fontSize: 24, fontWeight: 500, color: "#FFFFFF" }}>
-                Job placement support
-              </p>
-              <p
-                style={{
-                  fontSize: 18,
-                  fontWeight: 400,
-                  color: "#FFFFFF",
-                  width: "70%",
-                  opacity: "80%",
-                }}
-              >
-                Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-                velit.
+              <p className="benefit-title">Job placement support</p>
+              <p className="benefit-description">
+                Get career guidance, resume building, and access to job
+                opportunities with our dedicated placement support.
               </p>
             </div>
           </div>
-          <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-            <img src={img3} width="46px" height="46px" alt="" />
+          <div className="benefit-item">
+            <img src={img3} className="benefit-img" alt="" />
             <div>
-              <p style={{ fontSize: 24, fontWeight: 500, color: "#FFFFFF" }}>
-                Industry-aligned curriculum
-              </p>
-              <p
-                style={{
-                  fontSize: 18,
-                  fontWeight: 400,
-                  color: "#FFFFFF",
-                  width: "70%",
-                  opacity: "80%",
-                }}
-              >
-                Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-                velit.
+              <p className="benefit-title">Industry-aligned curriculum</p>
+              <p className="benefit-description">
+                Stay ahead with courses designed to meet current industry
+                demands and skill requirements.
               </p>
             </div>
           </div>
@@ -674,19 +567,8 @@ export default function Home() {
           </p>
         </div>
 
-        <div
-          style={{
-            borderRadius: "130px",
-            border: "2px solid #0780FD",
-            marginRight: "8%",
-            marginLeft: "8%",
-            padding: "2% 0%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-around",
-          }}
-        >
-          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+        <div className="batch-container">
+          <div className="batch-header">
             <Button
               style={{
                 fontSize: 18,
@@ -701,83 +583,32 @@ export default function Home() {
             >
               Offline Classroom
             </Button>
-            <p style={{ fontSize: 24, fontWeight: 500 }}>
-              Full Stack Engineering
-            </p>
+            <p className="course-title">Full Stack Engineering</p>
           </div>
 
-          <div
-            style={{
-              display: "flex",
-              gap: 40,
-              alignItems: "center",
-            }}
-          >
+          <div className="batch-details">
             <div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                }}
-              >
-                <img
-                  src={month}
-                  alt=""
-                  style={{
-                    color: "#1B1B1B",
-                    width: "38px",
-                    height: "38px",
-                  }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
-                  03 Months
-                </p>
+              <div className="info-item">
+                <img src={month} alt="" className="info-icon" />
+                <p className="info-text">03 Months</p>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                }}
-              >
-                <img
-                  src={languages}
-                  alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
-                  Tamil & English
-                </p>
+              <div className="info-item">
+                <img src={languages} alt="" className="info-icon" />
+                <p className="info-text">Tamil & English</p>
               </div>
             </div>
 
             <div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                  justifyContent: "center",
-                }}
-              >
-                <img
-                  src={clock}
-                  alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
+              <div className="batch-info">
+                <img src={clock} alt="" className="info-icon" />
+                <p s className="info-text">
                   10:00 AM - 1:00 PM
                 </p>
               </div>
-              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                <img
-                  src={slots}
-                  alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
-                  Slots left - <span style={{ fontWeight: 600 }}>05</span>
+              <div className="info-item">
+                <img src={slots} alt="" className="info-icon" />
+                <p className="info-text">
+                  Slots left - <span className="slots-left">05</span>
                 </p>
               </div>
             </div>
@@ -800,19 +631,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div
-          style={{
-            borderRadius: "130px",
-            border: "2px solid #0780FD",
-            marginRight: "8%",
-            marginLeft: "8%",
-            padding: "2% 0%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-around",
-          }}
-        >
-          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+        <div className="batch-container">
+          <div className="batch-header">
             <Button
               style={{
                 fontSize: 18,
@@ -827,81 +647,32 @@ export default function Home() {
             >
               Offline Classroom
             </Button>
-            <p style={{ fontSize: 24, fontWeight: 500 }}>Business Analyst</p>
+            <p className="course-title">Business Analyst</p>
           </div>
 
-          <div
-            style={{
-              display: "flex",
-              gap: 40,
-              alignItems: "center",
-            }}
-          >
+          <div className="batch-details">
             <div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                }}
-              >
-                <img
-                  src={month}
-                  alt=""
-                  style={{
-                    color: "#1B1B1B",
-                    width: "38px",
-                    height: "38px",
-                  }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
-                  03 Months
-                </p>
+              <div className="info-item">
+                <img src={month} alt="" className="info-icon" />
+                <p className="info-text">03 Months</p>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                }}
-              >
-                <img
-                  src={languages}
-                  alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
-                  Tamil & English
-                </p>
+              <div className="info-item">
+                <img src={languages} alt="" className="info-icon" />
+                <p className="info-text">Tamil & English</p>
               </div>
             </div>
 
             <div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                  justifyContent: "center",
-                }}
-              >
-                <img
-                  src={clock}
-                  alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
+              <div className="batch-info">
+                <img src={clock} alt="" className="info-icon" />
+                <p s className="info-text">
                   10:00 AM - 1:00 PM
                 </p>
               </div>
-              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                <img
-                  src={slots}
-                  alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
-                  Slots left - <span style={{ fontWeight: 600 }}>05</span>
+              <div className="info-item">
+                <img src={slots} alt="" className="info-icon" />
+                <p className="info-text">
+                  Slots left - <span className="slots-left">05</span>
                 </p>
               </div>
             </div>
@@ -924,19 +695,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div
-          style={{
-            borderRadius: "130px",
-            border: "2px solid #0780FD",
-            marginRight: "8%",
-            marginLeft: "8%",
-            padding: "2% 0%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-around",
-          }}
-        >
-          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+        <div className="batch-container">
+          <div className="batch-header">
             <Button
               style={{
                 fontSize: 18,
@@ -951,81 +711,32 @@ export default function Home() {
             >
               Offline Classroom
             </Button>
-            <p style={{ fontSize: 24, fontWeight: 500 }}>Data Science</p>
+            <p className="course-title">Data Science</p>
           </div>
 
-          <div
-            style={{
-              display: "flex",
-              gap: 40,
-              alignItems: "center",
-            }}
-          >
+          <div className="batch-details">
             <div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                }}
-              >
-                <img
-                  src={month}
-                  alt=""
-                  style={{
-                    color: "#1B1B1B",
-                    width: "38px",
-                    height: "38px",
-                  }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
-                  03 Months
-                </p>
+              <div className="info-item">
+                <img src={month} alt="" className="info-icon" />
+                <p className="info-text">03 Months</p>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                }}
-              >
-                <img
-                  src={languages}
-                  alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
-                  Tamil & English
-                </p>
+              <div className="info-item">
+                <img src={languages} alt="" className="info-icon" />
+                <p className="info-text">Tamil & English</p>
               </div>
             </div>
 
             <div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                  justifyContent: "center",
-                }}
-              >
-                <img
-                  src={clock}
-                  alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
+              <div className="batch-info">
+                <img src={clock} alt="" className="info-icon" />
+                <p s className="info-text">
                   10:00 AM - 1:00 PM
                 </p>
               </div>
-              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                <img
-                  src={slots}
-                  alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
-                  Slots left - <span style={{ fontWeight: 600 }}>05</span>
+              <div className="info-item">
+                <img src={slots} alt="" className="info-icon" />
+                <p className="info-text">
+                  Slots left - <span className="slots-left">05</span>
                 </p>
               </div>
             </div>
@@ -1071,16 +782,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div
-        style={{
-          backgroundColor: "#0780FD",
-          borderRadius: "80px",
-          margin: "8%",
-          padding: "5%",
-          display: "flex",
-          position: "relative",
-        }}
-      >
+      <div className="demo-container">
         <div className="layer18">
           <svg
             width="37"
@@ -1135,32 +837,12 @@ export default function Home() {
               width: "187px",
               height: "40px",
               color: "#FFFFFF",
-              border: "none",
             }}
           >
             Free Demo Class
           </Button>
-          <p
-            style={{
-              fontSize: 49,
-              fontWeight: 600,
-              color: "#FFFFFF",
-              width: "70%",
-              lineHeight: "68.6px",
-            }}
-          >
-            Enroll your FREE Demo class
-          </p>
-          <p
-            style={{
-              fontSize: 18,
-              fontWeight: 400,
-              opacity: "80%",
-              color: "#FFFFFF",
-              width: "70%",
-              lineHeight: "34px",
-            }}
-          >
+          <p className="demo-title">Enroll your FREE Demo class</p>
+          <p className="demo-description">
             Learn Full Stack Engineering, Business Analysis, and Data Science
             with Industry Experts.
           </p>
@@ -1231,35 +913,19 @@ export default function Home() {
         <div className="services-text">
           <p className="services-title">Students Work Activity</p>
           <p className="Gallery-sub-title">
-            Lorem ipsum dolor sit amet consectetur. Adipiscing duis lobortis
-            pulvinar sit neque massa mauris.
+            Our students engage in hands-on projects and real-world learning to
+            build practical skills.
           </p>
         </div>
-        <div
-          style={{
-            display: "flex",
-            marginTop: "5%",
-            gap: 18,
-            width: "100%",
-            justifyContent: "center",
-          }}
-        >
+        <div className="gallery-images-row1">
           <img src={Gallery1} width="417px" height="356px" alt="" />
-          <div style={{ display: "flex", flexDirection: "column", gap: 21 }}>
+          <div className="gallery-images-column">
             <img src={Gallery2} width="368px" height="168px" alt="" />{" "}
             <img src={Gallery3} width="368px" height="168px" alt="" />
           </div>
           <img src={Gallery4} width="417px" height="356px" alt="" />
         </div>
-        <div
-          style={{
-            display: "flex",
-            gap: 18,
-            marginLeft: "5%",
-            marginRight: "5%",
-            marginTop: "2%",
-          }}
-        >
+        <div className="gallery-images-row2">
           <img src={Gallery5} width="610px" height="320px" alt="" />
           <img src={Gallery6} width="610px" height="320px" alt="" />
         </div>
@@ -1400,10 +1066,10 @@ export default function Home() {
                 </svg>
               </div>
               <p className="testimonial-name">
-                Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-                velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
-                enim nisi velit. Lorem ipsum dolor sit amet consectetur.
-                Fringilla mus enim nisi velit.
+                Working with this team was an incredible experience! They
+                provided excellent support, and their attention to detail is
+                unmatched. The project was completed on time, and the final
+                product exceeded our expectations.
               </p>
               <div style={{ display: "flex", gap: 10 }}>
                 <img src={cimg} width="46px" height="46px" alt="" />
@@ -1463,10 +1129,10 @@ export default function Home() {
                 </svg>
               </div>
               <p className="testimonial-name">
-                Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-                velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
-                enim nisi velit. Lorem ipsum dolor sit amet consectetur.
-                Fringilla mus enim nisi velit.
+                I had the pleasure of working with this team, and I was
+                impressed by their professionalism and expertise. The results
+                were fantastic, and I couldn't be happier with the end product.
+                They really understand how to deliver value.
               </p>
               <div style={{ display: "flex", gap: 10 }}>
                 <img src={cimg2} width="46px" height="46px" alt="" />
@@ -1526,10 +1192,10 @@ export default function Home() {
                 </svg>
               </div>
               <p className="testimonial-name">
-                Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-                velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
-                enim nisi velit. Lorem ipsum dolor sit amet consectetur.
-                Fringilla mus enim nisi velit.
+                An amazing experience! The lessons were clear, and the hands-on
+                projects made a big difference. I feel more confident in my
+                skills now. Definitely worth it! and I feel fully prepared to
+                take the next step in my career.
               </p>
               <div style={{ display: "flex", gap: 10 }}>
                 <img src={cimg3} width="46px" height="46px" alt="" />
@@ -1589,10 +1255,10 @@ export default function Home() {
                 </svg>
               </div>
               <p className="testimonial-name">
-                Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-                velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
-                enim nisi velit. Lorem ipsum dolor sit amet consectetur.
-                Fringilla mus enim nisi velit.
+                This platform is truly revolutionary! It’s not only helped me
+                improve my coding skills but also inspired me to create my own
+                projects from scratch. I feel more confident than ever in my
+                development abilities.
               </p>
               <div style={{ display: "flex", gap: 10 }}>
                 <img src={cimg} width="46px" height="46px" alt="" />
@@ -1652,10 +1318,10 @@ export default function Home() {
                 </svg>
               </div>
               <p className="testimonial-name">
-                Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-                velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
-                enim nisi velit. Lorem ipsum dolor sit amet consectetur.
-                Fringilla mus enim nisi velit.
+                The resources available here are top-notch! The course material
+                is easy to follow, and the hands-on exercises really helped me
+                solidify my learning. This platform has been a game-changer for
+                my career.
               </p>
               <div style={{ display: "flex", gap: 10 }}>
                 <img src={cimg2} width="46px" height="46px" alt="" />
@@ -1715,10 +1381,10 @@ export default function Home() {
                 </svg>
               </div>
               <p className="testimonial-name">
-                Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-                velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
-                enim nisi velit. Lorem ipsum dolor sit amet consectetur.
-                Fringilla mus enim nisi velit.
+                I can’t thank this platform enough for helping me boost my
+                skills. The in-depth tutorials and the community of experts have
+                truly accelerated my learning. I feel much more confident in my
+                job now!
               </p>
               <div style={{ display: "flex", gap: 10 }}>
                 <img src={cimg3} width="46px" height="46px" alt="" />
@@ -1797,25 +1463,14 @@ export default function Home() {
         <div className="services-text">
           <p className="faq-title">FAQ</p>
           <p className="faq-sub-title">
-            Lorem ipsum dolor sit amet consectetur. Adipiscing duis lobortis
-            pulvinar sit neque massa mauris.
+            Find answers to common questions about our courses, enrollment, and
+            more.
           </p>
           <Faq />
         </div>
       </div>
 
-      <div
-        style={{
-          backgroundColor: "#0780FD",
-          borderRadius: "50px",
-          margin: "8% 5%",
-          padding: "5%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          position: "relative",
-        }}
-      >
+      <div className="cta-container">
         <div className="layer20">
           <svg
             width="37"
@@ -1860,28 +1515,8 @@ export default function Home() {
             />
           </svg>
         </div>
-        <p
-          style={{
-            fontSize: 56,
-            fontWeight: 600,
-            color: "#FFFFFF",
-            margin: 0,
-            lineHeight: "78.4px",
-          }}
-        >
-          Kickstart Your Career in Tech Today!
-        </p>
-        <p
-          style={{
-            fontSize: 18,
-            fontWeight: 400,
-            opacity: "80%",
-            color: "#FFFFFF",
-            textAlign: "center",
-            width: "40%",
-            lineHeight: "34px",
-          }}
-        >
+        <p className="cta-title">Kickstart Your Career in Tech Today!</p>
+        <p className="cta-subtitle">
           Learn Full Stack Engineering, Business Analysis, and Data Science with
           Industry Experts.
         </p>

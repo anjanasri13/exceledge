@@ -131,12 +131,7 @@ export default function About() {
     <div>
       <Header />
 
-      <div
-        style={{
-          display: "flex",
-          gap: 40,
-        }}
-      >
+      <div className="aboutus-container">
         <div className="layer1">
           <svg
             width="37"
@@ -182,7 +177,7 @@ export default function About() {
           </svg>
         </div>
         <div className="a-main-text">
-          <p className="a-main-text-title" style={{ fontSize: "" }}>
+          <p className="a-main-text-title">
             Welcome to <span style={{ color: "#0780FD" }}>ExcelEdge</span>{" "}
           </p>
           <p className="a-main-text-sub-title">
@@ -280,14 +275,7 @@ export default function About() {
         </div>
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          gap: "12%",
-          marginTop: "17%",
-          position: "relative",
-        }}
-      >
+      <div className="about-section">
         <div className="Alayer1">
           <svg
             width="37"
@@ -333,105 +321,44 @@ export default function About() {
           </svg>
         </div>
         <div>
-          <img
-            src={image12}
-            style={{
-              width: 567,
-              height: 548,
-              borderRadius: 50,
-              marginLeft: "5%",
-              marginRight: "5%",
-            }}
-            alt=""
-          />
-          <img
-            src={image13}
-            alt=""
-            style={{
-              width: 307,
-              height: 239,
-              borderRadius: 50,
-              position: "absolute",
-              top: "-17%",
-              left: "22%",
-            }}
-          />
+          <img src={image12} className="main-image" alt="" />
+          <img src={image13} alt="" className="overlay-image" />
         </div>
         <div>
           <div>
             <p className="about-text">About Us</p>
             <p className="about-sub-text">
-              Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-              elementum cursus pellentesque velit.
+              Join a vibrant learning community, gain hands-on experience, and
+              take the next step toward a successful career.
             </p>
-            <div style={{ marginTop: "5%", marginLeft: "6%" }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-                <img src={frame} width="46px" height="46px" alt="" />
+            <div className="benefits-list">
+              <div className="benefit-item">
+                <img src={frame} className="benefit-icon" alt="" />
                 <div>
-                  <p
-                    style={{
-                      fontSize: 24,
-                      fontWeight: 500,
-                      color: "#1B1B1B",
-                    }}
-                  >
-                    Experienced instructors
-                  </p>
-                  <p
-                    style={{
-                      fontSize: 18,
-                      fontWeight: 400,
-                      color: "#1B1B1B",
-                      width: "70%",
-                      opacity: "80%",
-                    }}
-                  >
-                    Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
-                    nisi velit.
+                  <p className="benefits-title">Experienced instructors</p>
+                  <p className="benefits-description">
+                    Learn from industry experts with real-world experience and
+                    deep knowledge.
                   </p>
                 </div>
               </div>
-              <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-                <img src={frame1} width="46px" height="46px" alt="" />
+              <div className="benefit-item">
+                <img src={frame1} className="benefit-icon" alt="" />
                 <div>
-                  <p
-                    style={{ fontSize: 24, fontWeight: 500, color: "#1B1B1B" }}
-                  >
-                    Job placement support
-                  </p>
-                  <p
-                    style={{
-                      fontSize: 18,
-                      fontWeight: 400,
-                      color: "#1B1B1B",
-                      width: "70%",
-                      opacity: "80%",
-                    }}
-                  >
-                    Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
-                    nisi velit.
+                  <p className="benefits-title">Job placement support</p>
+                  <p className="benefits-description">
+                    Get career guidance, resume building, and access to job
+                    opportunities with our dedicated placement support.
                   </p>
                 </div>
               </div>
-              <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-                <img src={frame2} width="46px" height="46px" alt="" />
+              <div className="benefit-item">
+                <img src={frame2} className="benefit-icon" alt="" />
                 <div>
-                  <p
-                    style={{ fontSize: 24, fontWeight: 500, color: "#1B1B1B" }}
-                  >
-                    Industry-aligned curriculum
-                  </p>
-                  <p
-                    style={{
-                      fontSize: 18,
-                      fontWeight: 400,
-                      color: "#1B1B1B",
-                      width: "70%",
-                      opacity: "80%",
-                    }}
-                  >
-                    Lorem ipsum dolor sit amet consectetur. Fringilla mus enim
-                    nisi velit.
+                  <p className="benefits-title">Industry-aligned curriculum</p>
+                  <p className="benefits-description">
+                    Stay ahead with courses designed to meet current industry
+                    demands and skill requirements.
                   </p>
                 </div>
               </div>
@@ -440,14 +367,7 @@ export default function About() {
         </div>
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          gap: 40,
-          marginTop: "10%",
-          position: "relative",
-        }}
-      >
+      <div className="a-main-container">
         <div className="Alayer3">
           <svg
             width="37"
@@ -498,14 +418,13 @@ export default function About() {
             Upgrade <span style={{ color: "#0780FD" }}>Your Life</span>{" "}
           </p>
           <p className="a-main-text-sub-title">
-            Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-            elementum cursus pellentesque velit. Lorem ipsum dolor sit amet
-            consectetur. Fringilla mus enim nisi velit.
+            Unlock endless possibilities with our comprehensive learning
+            solutions. Gain industry-relevant skills, hands-on experience, and
+            expert guidance to stay ahead in today's competitive world.
           </p>
           <p className="a-main-text-sub-title">
-            Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-            elementum cursus pellentesque velit. Lorem ipsum dolor sit amet
-            consectetur. Fringilla mus enim nisi velit.
+            Our mission is to empower you with the knowledge and confidence
+            needed to achieve your career and personal growth goals.
           </p>
           <Button
             style={{
@@ -527,7 +446,7 @@ export default function About() {
         </div>
       </div>
 
-      <div style={{ marginTop: "10%", position: "relative" }}>
+      <div className="academy-container">
         <div className="Alayer5">
           <svg
             width="37"
@@ -649,7 +568,7 @@ export default function About() {
         </div>
       </div>
 
-      <div style={{ marginTop: "10%", position: "relative" }}>
+      <div className="academy-container">
         <div className="layer14">
           <svg
             width="37"
@@ -784,10 +703,10 @@ export default function About() {
                 </svg>
               </div>
               <p className="testimonial-name">
-                Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-                velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
-                enim nisi velit. Lorem ipsum dolor sit amet consectetur.
-                Fringilla mus enim nisi velit.
+                Working with this team was an incredible experience! They
+                provided excellent support, and their attention to detail is
+                unmatched. The project was completed on time, and the final
+                product exceeded our expectations.
               </p>
               <div style={{ display: "flex", gap: 10 }}>
                 <img src={cimg} width="46px" height="46px" alt="" />
@@ -847,10 +766,10 @@ export default function About() {
                 </svg>
               </div>
               <p className="testimonial-name">
-                Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-                velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
-                enim nisi velit. Lorem ipsum dolor sit amet consectetur.
-                Fringilla mus enim nisi velit.
+                I had the pleasure of working with this team, and I was
+                impressed by their professionalism and expertise. The results
+                were fantastic, and I couldn't be happier with the end product.
+                They really understand how to deliver value.
               </p>
               <div style={{ display: "flex", gap: 10 }}>
                 <img src={cimg2} width="46px" height="46px" alt="" />
@@ -910,10 +829,10 @@ export default function About() {
                 </svg>
               </div>
               <p className="testimonial-name">
-                Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-                velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
-                enim nisi velit. Lorem ipsum dolor sit amet consectetur.
-                Fringilla mus enim nisi velit.
+                An amazing experience! The lessons were clear, and the hands-on
+                projects made a big difference. I feel more confident in my
+                skills now. Definitely worth it! and I feel fully prepared to
+                take the next step in my career.
               </p>
               <div style={{ display: "flex", gap: 10 }}>
                 <img src={cimg3} width="46px" height="46px" alt="" />
@@ -973,10 +892,10 @@ export default function About() {
                 </svg>
               </div>
               <p className="testimonial-name">
-                Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-                velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
-                enim nisi velit. Lorem ipsum dolor sit amet consectetur.
-                Fringilla mus enim nisi velit.
+                This platform is truly revolutionary! It’s not only helped me
+                improve my coding skills but also inspired me to create my own
+                projects from scratch. I feel more confident than ever in my
+                development abilities.
               </p>
               <div style={{ display: "flex", gap: 10 }}>
                 <img src={cimg} width="46px" height="46px" alt="" />
@@ -1036,10 +955,10 @@ export default function About() {
                 </svg>
               </div>
               <p className="testimonial-name">
-                Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-                velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
-                enim nisi velit. Lorem ipsum dolor sit amet consectetur.
-                Fringilla mus enim nisi velit.
+                The resources available here are top-notch! The course material
+                is easy to follow, and the hands-on exercises really helped me
+                solidify my learning. This platform has been a game-changer for
+                my career.
               </p>
               <div style={{ display: "flex", gap: 10 }}>
                 <img src={cimg2} width="46px" height="46px" alt="" />
@@ -1099,10 +1018,10 @@ export default function About() {
                 </svg>
               </div>
               <p className="testimonial-name">
-                Lorem ipsum dolor sit amet consectetur. Fringilla mus enim nisi
-                velit. Lorem ipsum dolor sit amet consectetur. Fringilla mus
-                enim nisi velit. Lorem ipsum dolor sit amet consectetur.
-                Fringilla mus enim nisi velit.
+                I can’t thank this platform enough for helping me boost my
+                skills. The in-depth tutorials and the community of experts have
+                truly accelerated my learning. I feel much more confident in my
+                job now!
               </p>
               <div style={{ display: "flex", gap: 10 }}>
                 <img src={cimg3} width="46px" height="46px" alt="" />
@@ -1181,25 +1100,14 @@ export default function About() {
         <div className="services-text">
           <p className="faq-title">FAQ</p>
           <p className="faq-sub-title">
-            Lorem ipsum dolor sit amet consectetur. Adipiscing duis lobortis
-            pulvinar sit neque massa mauris.
+            Find answers to common questions about our courses, enrollment, and
+            more.
           </p>
           <Faq />
         </div>
       </div>
 
-      <div
-        style={{
-          backgroundColor: "#0780FD",
-          borderRadius: "50px",
-          margin: "8% 5%",
-          padding: "5%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          position: "relative",
-        }}
-      >
+      <div className="cta-container">
         <div className="layer20">
           <svg
             width="37"
@@ -1244,28 +1152,8 @@ export default function About() {
             />
           </svg>
         </div>
-        <p
-          style={{
-            fontSize: 56,
-            fontWeight: 600,
-            color: "#FFFFFF",
-            margin: 0,
-            lineHeight: "78.4px",
-          }}
-        >
-          Kickstart Your Career in Tech Today!
-        </p>
-        <p
-          style={{
-            fontSize: 18,
-            fontWeight: 400,
-            opacity: "80%",
-            color: "#FFFFFF",
-            textAlign: "center",
-            width: "40%",
-            lineHeight: "34px",
-          }}
-        >
+        <p className="cta-title">Kickstart Your Career in Tech Today!</p>
+        <p className="cta-subtitle">
           Learn Full Stack Engineering, Business Analysis, and Data Science with
           Industry Experts.
         </p>

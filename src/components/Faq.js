@@ -93,13 +93,12 @@ export default function Faq() {
                     <span style={getIconStyle("0")}>
                       {activeKey === "0" ? <HiMiniMinusSmall /> : <GoPlus />}
                     </span>
-                    01. Can i upgrade my class?
+                    01. Can I upgrade my class?
                   </Accordion.Header>
                   <Accordion.Body>
-                    Lorem ipsum dolor sit amet consectetur. Dapibus velit neque
-                    nec eleifend elementum phasellus viverra. Vitae non duis sem
-                    augue sit at in turpis. Ut consequat integer in duis
-                    laoreet.
+                    Yes, you can upgrade your class based on seat availability
+                    and meeting the required eligibility criteria. Please
+                    contact the support team for more details.
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
@@ -107,13 +106,12 @@ export default function Faq() {
                     <span style={getIconStyle("1")}>
                       {activeKey === "1" ? <HiMiniMinusSmall /> : <GoPlus />}
                     </span>
-                    02. Can i upgrade my class?
+                    02. What is the refund policy?
                   </Accordion.Header>
                   <Accordion.Body>
-                    Lorem ipsum dolor sit amet consectetur. Dapibus velit neque
-                    nec eleifend elementum phasellus viverra. Vitae non duis sem
-                    augue sit at in turpis. Ut consequat integer in duis
-                    laoreet.
+                    We offer a refund within the first 7 days of enrollment.
+                    After this period, refunds are not provided. Please review
+                    our refund policy for specific details.
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
@@ -121,13 +119,12 @@ export default function Faq() {
                     <span style={getIconStyle("2")}>
                       {activeKey === "2" ? <HiMiniMinusSmall /> : <GoPlus />}
                     </span>
-                    03. Can i upgrade my class?
+                    03. How can I access the course materials?
                   </Accordion.Header>
                   <Accordion.Body>
-                    Lorem ipsum dolor sit amet consectetur. Dapibus velit neque
-                    nec eleifend elementum phasellus viverra. Vitae non duis sem
-                    augue sit at in turpis. Ut consequat integer in duis
-                    laoreet.
+                    Course materials are available in your student dashboard
+                    after enrollment. You can download and access the resources
+                    at any time.
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="3">
@@ -135,13 +132,11 @@ export default function Faq() {
                     <span style={getIconStyle("3")}>
                       {activeKey === "3" ? <HiMiniMinusSmall /> : <GoPlus />}
                     </span>
-                    04. Can i upgrade my class?
+                    04. Do you provide certificates upon course completion?
                   </Accordion.Header>
                   <Accordion.Body>
-                    Lorem ipsum dolor sit amet consectetur. Dapibus velit neque
-                    nec eleifend elementum phasellus viverra. Vitae non duis sem
-                    augue sit at in turpis. Ut consequat integer in duis
-                    laoreet.
+                    Yes, all successfully completed courses come with a verified
+                    digital certificate.
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="4">
@@ -149,13 +144,11 @@ export default function Faq() {
                     <span style={getIconStyle("4")}>
                       {activeKey === "4" ? <HiMiniMinusSmall /> : <GoPlus />}
                     </span>
-                    05. Can i upgrade my class?
+                    05. Can I take multiple courses at the same time?
                   </Accordion.Header>
                   <Accordion.Body>
-                    Lorem ipsum dolor sit amet consectetur. Dapibus velit neque
-                    nec eleifend elementum phasellus viverra. Vitae non duis sem
-                    augue sit at in turpis. Ut consequat integer in duis
-                    laoreet.
+                    Absolutely! We encourage learners to take multiple courses
+                    based on their interest and availability
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>

@@ -11,6 +11,7 @@ import Gimg6 from "../assests/Gimg6.png";
 import Gimg7 from "../assests/Gimg7.png";
 import Gimg8 from "../assests/Gimg8.png";
 import Gimg9 from "../assests/Gimg9.png";
+import "../styles/Gallery.css";
 
 const images = [
   { id: 1, src: Gimg1, alt: "Image 1" },
@@ -29,16 +30,7 @@ export default function Gallery() {
   return (
     <div>
       <Header />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          marginTop: "5%",
-          position: "relative",
-        }}
-      >
+      <div className="hero-section">
         <div className="Clayer1">
           <svg
             width="70"
@@ -83,34 +75,16 @@ export default function Gallery() {
             />
           </svg>
         </div>
-        <p
-          style={{
-            fontSize: 56,
-            fontWeight: 600,
-            color: "#1B1B1B",
-            width: "60%",
-            textAlign: "center",
-          }}
-        >
+        <p className="hero-title">
           Transform Your Career with Our Expert-Led Courses
         </p>
-        <p
-          style={{
-            fontSize: 18,
-            fontWeight: 400,
-            color: "#1B1B1B",
-            opacity: "80%",
-            width: "30%",
-            textAlign: "center",
-            lineHeight: "34px",
-          }}
-        >
+        <p className="hero-description">
           Explore industry-aligned programs designed to prepare you for success
           in tech.
         </p>
       </div>
 
-      <div style={{ marginTop: "15%", position: "relative" }}>
+      <div className="service-container">
         <div className="Glayer3">
           <svg
             width="37"
@@ -172,18 +146,7 @@ export default function Gallery() {
         ))}
       </div>
 
-      <div
-        style={{
-          backgroundColor: "#0780FD",
-          borderRadius: "50px",
-          margin: "8% 5%",
-          padding: "5%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          position: "relative",
-        }}
-      >
+      <div className="cta-container">
         <div className="layer20">
           <svg
             width="37"
@@ -228,28 +191,8 @@ export default function Gallery() {
             />
           </svg>
         </div>
-        <p
-          style={{
-            fontSize: 56,
-            fontWeight: 600,
-            color: "#FFFFFF",
-            margin: 0,
-            lineHeight: "78.4px",
-          }}
-        >
-          Kickstart Your Career in Tech Today!
-        </p>
-        <p
-          style={{
-            fontSize: 18,
-            fontWeight: 400,
-            opacity: "80%",
-            color: "#FFFFFF",
-            textAlign: "center",
-            width: "40%",
-            lineHeight: "34px",
-          }}
-        >
+        <p className="cta-title">Kickstart Your Career in Tech Today!</p>
+        <p className="cta-subtitle">
           Learn Full Stack Engineering, Business Analysis, and Data Science with
           Industry Experts.
         </p>

@@ -20,7 +20,7 @@ const services = [
   {
     title: "Full Stack Engineering",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Proin ipsum vitae proin dui sed risus morbi.",
+      "Master front-end & back-end development with React, Node.js, and databases.",
     icon: <img src={Image2} width="80px" height="80px" alt="" />,
 
     backgroundColor: "#377dff1a",
@@ -28,14 +28,14 @@ const services = [
   {
     title: "Business Analyst",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Proin ipsum vitae proin dui sed risus morbi.",
+      "Gain skills in data analysis, market research, and business strategy.",
     icon: <img src={Image3} width="80px" height="80px" alt="" />,
     backgroundColor: "#FF9EC533",
   },
   {
     title: "Data Science",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Proin ipsum vitae proin dui sed risus morbi.",
+      "Learn Python, machine learning, and AI to analyze and predict data trends.",
     icon: <img src={Image4} width="80px" height="80px" alt="" />,
     backgroundColor: "#FFCB2A24",
   },
@@ -73,16 +73,7 @@ export default function Course() {
   return (
     <div>
       <Header />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          marginTop: "5%",
-          position: "relative",
-        }}
-      >
+      <div className="hero-section">
         <div className="Clayer1">
           <svg
             width="70"
@@ -127,27 +118,10 @@ export default function Course() {
             />
           </svg>
         </div>
-        <p
-          style={{
-            fontSize: 56,
-            fontWeight: 600,
-            color: "#1B1B1B",
-            width: "60%",
-            textAlign: "center",
-          }}
-        >
+        <p className="hero-title">
           Transform Your Career with Our Expert-Led Courses
         </p>
-        <p
-          style={{
-            fontSize: 18,
-            fontWeight: 400,
-            color: "#1B1B1B",
-            opacity: "80%",
-            width: "50%",
-            textAlign: "center",
-          }}
-        >
+        <p className="course-desc">
           Explore industry-aligned programs designed to prepare you for success
           in tech.
         </p>
@@ -293,36 +267,14 @@ export default function Course() {
           {services.map((service, index) => (
             <Card key={index} className="services-card">
               <div className="card-image">{service.icon}</div>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "12px",
-                  marginTop: "5%",
-                }}
-              >
+              <div className="card-details">
                 <p className="service-card-title">{service.title}</p>
                 <p className="service-card-description">
                   {service.description}
                 </p>
               </div>
-              <Link
-                style={{
-                  fontSize: 16,
-                  fontWeight: 600,
-                  color: "#FFFFFF",
-                  display: "flex",
-                  alignItems: "center",
-                  textDecoration: "none",
-                }}
-              >
-                <div
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "10px",
-                  }}
-                >
+              <Link className="learn-more-link">
+                <div className="learn-more-container">
                   <span>Learn more</span>
                   <FaArrowRightLong className="fa-arrow-right-long" />
                 </div>
@@ -385,19 +337,8 @@ export default function Course() {
           </p>
         </div>
 
-        <div
-          style={{
-            borderRadius: "130px",
-            border: "2px solid #0780FD",
-            marginRight: "8%",
-            marginLeft: "8%",
-            padding: "2% 0%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-around",
-          }}
-        >
-          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+        <div className="batch-container">
+          <div className="batch-header">
             <Button
               style={{
                 fontSize: 18,
@@ -412,83 +353,32 @@ export default function Course() {
             >
               Offline Classroom
             </Button>
-            <p style={{ fontSize: 24, fontWeight: 500 }}>
-              Full Stack Engineering
-            </p>
+            <p className="course-title">Full Stack Engineering</p>
           </div>
 
-          <div
-            style={{
-              display: "flex",
-              gap: 40,
-              alignItems: "center",
-            }}
-          >
+          <div className="batch-details">
             <div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                }}
-              >
-                <img
-                  src={month}
-                  alt=""
-                  style={{
-                    color: "#1B1B1B",
-                    width: "38px",
-                    height: "38px",
-                  }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
-                  03 Months
-                </p>
+              <div className="info-item">
+                <img src={month} alt="" className="info-icon" />
+                <p className="info-text">03 Months</p>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                }}
-              >
-                <img
-                  src={languages}
-                  alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
-                  Tamil & English
-                </p>
+              <div className="info-item">
+                <img src={languages} alt="" className="info-icon" />
+                <p className="info-text">Tamil & English</p>
               </div>
             </div>
 
             <div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                  justifyContent: "center",
-                }}
-              >
-                <img
-                  src={clock}
-                  alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
+              <div className="batch-info">
+                <img src={clock} alt="" className="info-icon" />
+                <p s className="info-text">
                   10:00 AM - 1:00 PM
                 </p>
               </div>
-              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                <img
-                  src={slots}
-                  alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
-                  Slots left - <span style={{ fontWeight: 600 }}>05</span>
+              <div className="info-item">
+                <img src={slots} alt="" className="info-icon" />
+                <p className="info-text">
+                  Slots left - <span className="slots-left">05</span>
                 </p>
               </div>
             </div>
@@ -511,19 +401,8 @@ export default function Course() {
           </div>
         </div>
 
-        <div
-          style={{
-            borderRadius: "130px",
-            border: "2px solid #0780FD",
-            marginRight: "8%",
-            marginLeft: "8%",
-            padding: "2% 0%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-around",
-          }}
-        >
-          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+        <div className="batch-container">
+          <div className="batch-header">
             <Button
               style={{
                 fontSize: 18,
@@ -538,81 +417,32 @@ export default function Course() {
             >
               Offline Classroom
             </Button>
-            <p style={{ fontSize: 24, fontWeight: 500 }}>Business Analyst</p>
+            <p className="course-title">Business Analyst</p>
           </div>
 
-          <div
-            style={{
-              display: "flex",
-              gap: 40,
-              alignItems: "center",
-            }}
-          >
+          <div className="batch-details">
             <div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                }}
-              >
-                <img
-                  src={month}
-                  alt=""
-                  style={{
-                    color: "#1B1B1B",
-                    width: "38px",
-                    height: "38px",
-                  }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
-                  03 Months
-                </p>
+              <div className="info-item">
+                <img src={month} alt="" className="info-icon" />
+                <p className="info-text">03 Months</p>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                }}
-              >
-                <img
-                  src={languages}
-                  alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
-                  Tamil & English
-                </p>
+              <div className="info-item">
+                <img src={languages} alt="" className="info-icon" />
+                <p className="info-text">Tamil & English</p>
               </div>
             </div>
 
             <div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                  justifyContent: "center",
-                }}
-              >
-                <img
-                  src={clock}
-                  alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
+              <div className="batch-info">
+                <img src={clock} alt="" className="info-icon" />
+                <p s className="info-text">
                   10:00 AM - 1:00 PM
                 </p>
               </div>
-              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                <img
-                  src={slots}
-                  alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
-                  Slots left - <span style={{ fontWeight: 600 }}>05</span>
+              <div className="info-item">
+                <img src={slots} alt="" className="info-icon" />
+                <p className="info-text">
+                  Slots left - <span className="slots-left">05</span>
                 </p>
               </div>
             </div>
@@ -635,19 +465,8 @@ export default function Course() {
           </div>
         </div>
 
-        <div
-          style={{
-            borderRadius: "130px",
-            border: "2px solid #0780FD",
-            marginRight: "8%",
-            marginLeft: "8%",
-            padding: "2% 0%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-around",
-          }}
-        >
-          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+        <div className="batch-container">
+          <div className="batch-header">
             <Button
               style={{
                 fontSize: 18,
@@ -662,81 +481,32 @@ export default function Course() {
             >
               Offline Classroom
             </Button>
-            <p style={{ fontSize: 24, fontWeight: 500 }}>Data Science</p>
+            <p className="course-title">Data Science</p>
           </div>
 
-          <div
-            style={{
-              display: "flex",
-              gap: 40,
-              alignItems: "center",
-            }}
-          >
+          <div className="batch-details">
             <div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                }}
-              >
-                <img
-                  src={month}
-                  alt=""
-                  style={{
-                    color: "#1B1B1B",
-                    width: "38px",
-                    height: "38px",
-                  }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
-                  03 Months
-                </p>
+              <div className="info-item">
+                <img src={month} alt="" className="info-icon" />
+                <p className="info-text">03 Months</p>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                }}
-              >
-                <img
-                  src={languages}
-                  alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
-                  Tamil & English
-                </p>
+              <div className="info-item">
+                <img src={languages} alt="" className="info-icon" />
+                <p className="info-text">Tamil & English</p>
               </div>
             </div>
 
             <div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 10,
-                  justifyContent: "center",
-                }}
-              >
-                <img
-                  src={clock}
-                  alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
+              <div className="batch-info">
+                <img src={clock} alt="" className="info-icon" />
+                <p s className="info-text">
                   10:00 AM - 1:00 PM
                 </p>
               </div>
-              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                <img
-                  src={slots}
-                  alt=""
-                  style={{ color: "#1B1B1B", width: "38px", height: "38px" }}
-                />
-                <p style={{ fontSize: 18, fontWeight: 400, marginBottom: 0 }}>
-                  Slots left - <span style={{ fontWeight: 600 }}>05</span>
+              <div className="info-item">
+                <img src={slots} alt="" className="info-icon" />
+                <p className="info-text">
+                  Slots left - <span className="slots-left">05</span>
                 </p>
               </div>
             </div>
@@ -782,16 +552,7 @@ export default function Course() {
         </div>
       </div>
 
-      <div
-        style={{
-          backgroundColor: "#0780FD",
-          borderRadius: "80px",
-          margin: "8%",
-          padding: "5%",
-          display: "flex",
-          position: "relative",
-        }}
-      >
+      <div className="demo-container">
         <div className="layer18">
           <svg
             width="37"
@@ -850,27 +611,8 @@ export default function Course() {
           >
             Free Demo Class
           </Button>
-          <p
-            style={{
-              fontSize: 49,
-              fontWeight: 600,
-              color: "#FFFFFF",
-              width: "70%",
-              lineHeight: "68.6px",
-            }}
-          >
-            Enroll your FREE Demo class
-          </p>
-          <p
-            style={{
-              fontSize: 18,
-              fontWeight: 400,
-              opacity: "80%",
-              color: "#FFFFFF",
-              width: "70%",
-              lineHeight: "34px",
-            }}
-          >
+          <p className="demo-title">Enroll your FREE Demo class</p>
+          <p className="demo-description">
             Learn Full Stack Engineering, Business Analysis, and Data Science
             with Industry Experts.
           </p>
@@ -941,25 +683,14 @@ export default function Course() {
         <div className="services-text">
           <p className="faq-title">FAQ</p>
           <p className="faq-sub-title">
-            Lorem ipsum dolor sit amet consectetur. Adipiscing duis lobortis
-            pulvinar sit neque massa mauris.
+            Find answers to common questions about our courses, enrollment, and
+            more.
           </p>
           <Faq />
         </div>
       </div>
 
-      <div
-        style={{
-          backgroundColor: "#0780FD",
-          borderRadius: "50px",
-          margin: "8% 5%",
-          padding: "5%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          position: "relative",
-        }}
-      >
+      <div className="cta-container">
         <div className="layer20">
           <svg
             width="37"
@@ -1004,28 +735,8 @@ export default function Course() {
             />
           </svg>
         </div>
-        <p
-          style={{
-            fontSize: 56,
-            fontWeight: 600,
-            color: "#FFFFFF",
-            margin: 0,
-            lineHeight: "78.4px",
-          }}
-        >
-          Kickstart Your Career in Tech Today!
-        </p>
-        <p
-          style={{
-            fontSize: 18,
-            fontWeight: 400,
-            opacity: "80%",
-            color: "#FFFFFF",
-            textAlign: "center",
-            width: "40%",
-            lineHeight: "34px",
-          }}
-        >
+        <p className="cta-title">Kickstart Your Career in Tech Today!</p>
+        <p className="cta-subtitle">
           Learn Full Stack Engineering, Business Analysis, and Data Science with
           Industry Experts.
         </p>

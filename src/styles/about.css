@@ -28,6 +28,10 @@
   left: 77%;
   top: 15%;
 }
+.aboutus-container {
+  display: flex;
+  gap: 40px;
+}
 .a-main-text {
   padding-left: 5%;
   padding-right: 5%;
@@ -51,10 +55,61 @@
   line-height: 160%;
   width: 90%;
 }
+
 .a-support-button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.about-section {
+  display: flex;
+  gap: 12%;
+  margin-top: 17%;
+  position: relative;
+}
+.main-image {
+  width: 567px;
+  height: 548px;
+  border-radius: 50;
+  margin: 0% 5%;
+}
+.overlay-image {
+  width: 307px;
+  height: 239px;
+  border-radius: 50;
+  position: absolute;
+  top: -17%;
+  left: 22%;
+}
+
+.benefits-list {
+  margin-top: 5%;
+  margin-left: 6%;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.benefit-icon {
+  width: 46px;
+  height: 46px;
+}
+
+.benefits-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #1b1b1b;
+}
+
+.benefits-description {
+  font-size: 18px;
+  font-weight: 400;
+  color: #1b1b1b;
+  width: 70%;
+  opacity: 0.8;
 }
 .about-text {
   font-size: 56px;
@@ -67,6 +122,12 @@
   font-weight: 400;
   line-height: 28.8px;
 }
+.a-main-container {
+  display: flex;
+  gap: 40px;
+  margin-top: 10%;
+  position: relative;
+}
 .customer-image-container {
   padding-left: 5%;
   padding-right: 5%;
@@ -76,6 +137,10 @@
   width: 555;
   height: 415;
   border-radius: 30;
+}
+.academy-container {
+  margin-top: 10%;
+  position: relative;
 }
 .academy-text {
   font-size: 56px;
@@ -104,7 +169,6 @@
   flex-direction: column;
   gap: 30px;
 }
-
 .card-container-1 {
   display: flex;
   padding: 0 5%;
