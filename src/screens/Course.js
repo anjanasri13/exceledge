@@ -338,6 +338,40 @@ export default function Course() {
         </div>
 
         <div className="batch-container">
+          <div
+            style={{
+              backgroundColor: "#0780FD1F",
+              borderRadius: "50%",
+              width: "98px",
+              height: "98px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <p
+              style={{
+                fontSize: 34,
+                fontWeight: 500,
+                color: "#0780FD",
+                margin: 0,
+              }}
+            >
+              06
+            </p>
+            <p
+              style={{
+                fontSize: 18,
+                fontWeight: 300,
+                margin: 0,
+                color: "#0780FD",
+              }}
+            >
+              Feb
+            </p>
+          </div>
+
           <div className="batch-header">
             <Button
               style={{
@@ -392,7 +426,7 @@ export default function Course() {
                 backgroundColor: "#0780FD",
                 borderRadius: "100px",
                 width: "176px",
-                height: "43px",
+                height: "56px",
                 color: "#FFFFFF",
               }}
             >
@@ -402,6 +436,39 @@ export default function Course() {
         </div>
 
         <div className="batch-container">
+          <div
+            style={{
+              backgroundColor: "#0780FD1F",
+              borderRadius: "50%",
+              width: "98px",
+              height: "98px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <p
+              style={{
+                fontSize: 34,
+                fontWeight: 500,
+                color: "#0780FD",
+                margin: 0,
+              }}
+            >
+              06
+            </p>
+            <p
+              style={{
+                fontSize: 18,
+                fontWeight: 300,
+                margin: 0,
+                color: "#0780FD",
+              }}
+            >
+              Feb
+            </p>
+          </div>
           <div className="batch-header">
             <Button
               style={{
@@ -456,7 +523,7 @@ export default function Course() {
                 backgroundColor: "#0780FD",
                 borderRadius: "100px",
                 width: "176px",
-                height: "43px",
+                height: "56px",
                 color: "#FFFFFF",
               }}
             >
@@ -466,6 +533,39 @@ export default function Course() {
         </div>
 
         <div className="batch-container">
+          <div
+            style={{
+              backgroundColor: "#0780FD1F",
+              borderRadius: "50%",
+              width: "98px",
+              height: "98px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <p
+              style={{
+                fontSize: 34,
+                fontWeight: 500,
+                color: "#0780FD",
+                margin: 0,
+              }}
+            >
+              06
+            </p>
+            <p
+              style={{
+                fontSize: 18,
+                fontWeight: 300,
+                margin: 0,
+                color: "#0780FD",
+              }}
+            >
+              Feb
+            </p>
+          </div>
           <div className="batch-header">
             <Button
               style={{
@@ -520,7 +620,7 @@ export default function Course() {
                 backgroundColor: "#0780FD",
                 borderRadius: "100px",
                 width: "176px",
-                height: "43px",
+                height: "56px",
                 color: "#FFFFFF",
               }}
             >
@@ -607,6 +707,7 @@ export default function Course() {
               width: "187px",
               height: "40px",
               color: "#FFFFFF",
+              borderStyle: "none",
             }}
           >
             Free Demo Class

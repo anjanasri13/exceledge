@@ -622,7 +622,7 @@ export default function Home() {
                 backgroundColor: "#0780FD",
                 borderRadius: "100px",
                 width: "176px",
-                height: "43px",
+                height: "56px",
                 color: "#FFFFFF",
               }}
             >
@@ -686,7 +686,7 @@ export default function Home() {
                 backgroundColor: "#0780FD",
                 borderRadius: "100px",
                 width: "176px",
-                height: "43px",
+                height: "56px",
                 color: "#FFFFFF",
               }}
             >
@@ -750,7 +750,7 @@ export default function Home() {
                 backgroundColor: "#0780FD",
                 borderRadius: "100px",
                 width: "176px",
-                height: "43px",
+                height: "56px",
                 color: "#FFFFFF",
               }}
             >
@@ -773,7 +773,7 @@ export default function Home() {
               backgroundColor: "#0780FD",
               borderRadius: "100px",
               width: "176px",
-              height: "43px",
+              height: "56px",
               color: "#FFFFFF",
             }}
           >
@@ -837,6 +837,7 @@ export default function Home() {
               width: "187px",
               height: "40px",
               color: "#FFFFFF",
+              borderStyle: "none",
             }}
           >
             Free Demo Class
