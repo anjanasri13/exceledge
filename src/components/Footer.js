@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Footerlogo from "../assests/Footerlogo.png";
+import Footerlogo from "../assests/footerlogo.png";
 import facebook from "../assests/facebook.png";
 import twitter from "../assests/twitter.png";
 import linkedin from "../assests/linkedin.png";
@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="footer-container">
           <div className="footer-column-container">
             <div>
-              <img src={Footerlogo} width="242px" height="23px" alt="logo" />
+              <img src={Footerlogo} width="144px" height="53px" alt="logo" />
             </div>
             <div className="footer-column">
               <div>
