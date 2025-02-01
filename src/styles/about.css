@@ -186,21 +186,18 @@
   flex-direction: column;
   gap: 15px;
   border-radius: 20px;
-  border: 3;
-  opacity: 0px;
-  border-color: #0780fd;
 }
 .card-image {
   width: 62px;
   height: 62px;
-  opacity: 0px;
   margin-bottom: 10px;
 }
 .card-title {
   font-size: 22px;
-  font-weight: 600;
+  font-weight: "600";
   line-height: 32px;
   margin-bottom: 10px;
+  color: #1b1b1b;
 }
 .card-subtitle {
   width: 100%;

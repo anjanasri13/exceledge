@@ -20,7 +20,6 @@ import cimg3 from "../assests/cimg3.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
-import { FaArrowRightLong } from "react-icons/fa6";
 import "../styles/about.css";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
@@ -70,6 +69,8 @@ const cardData = [
       "Gain access to career counseling, interview preparation, and placement assistance to launch your dream career in tech.",
   },
 ];
+console.log("img", frame11);
+
 const CustomLeftArrow = ({ onClick }) => {
   return (
     <button className="custom-arrow custom-arrow-left" onClick={onClick}>
