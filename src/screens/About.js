@@ -69,7 +69,57 @@ const cardData = [
       "Gain access to career counseling, interview preparation, and placement assistance to launch your dream career in tech.",
   },
 ];
-console.log("img", frame11);
+
+const testimonials = [
+  {
+    id: 1,
+    name: "Sara",
+    image: cimg,
+    designation: "Full Stack",
+    review:
+      "Working with this team was an incredible experience! They provided excellent support, and their attention to detail is unmatched. The project was completed on time, and the final product exceeded our expectations.",
+  },
+  {
+    id: 2,
+    name: "Franklin",
+    image: cimg2,
+    designation: "Data Analysis",
+    review:
+      "I had the pleasure of working with this team, and I was impressed by their professionalism and expertise. The results were fantastic, and I couldn't be happier with the end product. They really understand how to deliver value.",
+  },
+  {
+    id: 3,
+    name: "Annie",
+    image: cimg3,
+    designation: "Full Stack",
+    review:
+      "An amazing experience! The lessons were clear, and the hands-on projects made a big difference. I feel more confident in my skills now. Definitely worth it! I feel fully prepared to take the next step in my career.",
+  },
+  {
+    id: 4,
+    name: "Sara",
+    image: cimg,
+    designation: "Full Stack",
+    review:
+      "This platform is truly revolutionary! It’s not only helped me improve my coding skills but also inspired me to create my own projects from scratch. I feel more confident than ever in my development abilities.",
+  },
+  {
+    id: 5,
+    name: "Franklin",
+    image: cimg2,
+    designation: "Data Analysis",
+    review:
+      "The resources available here are top-notch! The course material is easy to follow, and the hands-on exercises really helped me solidify my learning. This platform has been a game-changer for my career.",
+  },
+  {
+    id: 6,
+    name: "Annie",
+    image: cimg3,
+    designation: "Full Stack",
+    review:
+      "I can’t thank this platform enough for helping me boost my skills. The in-depth tutorials and the community of experts have truly accelerated my learning. I feel much more confident in my job now!",
+  },
+];
 
 const CustomLeftArrow = ({ onClick }) => {
   return (
@@ -670,384 +720,71 @@ export default function About() {
             sliderClass=""
             slidesToSlide={1}
           >
-            <div className="testimonial-card1">
-              <div className="layer21">
-                <svg
-                  width="37"
-                  height="42"
-                  viewBox="0 0 37 42"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="8"
-                    cy="34"
-                    r="8"
-                    transform="rotate(-180 8 34)"
-                    fill="white"
-                  />
-                  <circle
-                    cx="20.5"
-                    cy="10.5"
-                    r="10.5"
-                    transform="rotate(-180 20.5 10.5)"
-                    fill="white"
-                  />
-                  <circle
-                    cx="31"
-                    cy="28"
-                    r="6"
-                    transform="rotate(-180 31 28)"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-              <p className="testimonial-name">
-                Working with this team was an incredible experience! They
-                provided excellent support, and their attention to detail is
-                unmatched. The project was completed on time, and the final
-                product exceeded our expectations.
-              </p>
-              <div style={{ display: "flex", gap: 10 }}>
-                <img src={cimg} width="46px" height="46px" alt="" />
-                <div>
-                  <p
-                    style={{
-                      fontSize: 24,
-                      fontWeight: 500,
-                      color: "#FFFFFF",
-                      margin: 0,
-                    }}
+            {testimonials.map((testimonial) => (
+              <div key={testimonial.id} className="testimonial-card1">
+                <div className="layer21">
+                  <svg
+                    width="37"
+                    height="42"
+                    viewBox="0 0 37 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    Sara
-                  </p>
-                  <p
-                    style={{
-                      fontSize: 16,
-                      fontWeight: 400,
-                      color: "#ffffff",
-                    }}
-                  >
-                    Full Stack{" "}
-                  </p>
+                    <circle
+                      cx="8"
+                      cy="34"
+                      r="8"
+                      transform="rotate(-180 8 34)"
+                      fill="white"
+                    />
+                    <circle
+                      cx="20.5"
+                      cy="10.5"
+                      r="10.5"
+                      transform="rotate(-180 20.5 10.5)"
+                      fill="white"
+                    />
+                    <circle
+                      cx="31"
+                      cy="28"
+                      r="6"
+                      transform="rotate(-180 31 28)"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <p className="testimonial-name">{testimonial.review}</p>
+                <div style={{ display: "flex", gap: 10 }}>
+                  <img
+                    src={testimonial.image}
+                    width="46px"
+                    height="46px"
+                    alt={testimonial.name}
+                  />
+                  <div>
+                    <p
+                      style={{
+                        fontSize: 24,
+                        fontWeight: 500,
+                        color: "#FFFFFF",
+                        margin: 0,
+                      }}
+                    >
+                      {testimonial.name}
+                    </p>
+                    <p
+                      style={{
+                        fontSize: 16,
+                        fontWeight: 400,
+                        color: "#ffffff",
+                      }}
+                    >
+                      {testimonial.designation}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="testimonial-card1">
-              <div className="layer21">
-                <svg
-                  width="37"
-                  height="42"
-                  viewBox="0 0 37 42"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="8"
-                    cy="34"
-                    r="8"
-                    transform="rotate(-180 8 34)"
-                    fill="white"
-                  />
-                  <circle
-                    cx="20.5"
-                    cy="10.5"
-                    r="10.5"
-                    transform="rotate(-180 20.5 10.5)"
-                    fill="white"
-                  />
-                  <circle
-                    cx="31"
-                    cy="28"
-                    r="6"
-                    transform="rotate(-180 31 28)"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-              <p className="testimonial-name">
-                I had the pleasure of working with this team, and I was
-                impressed by their professionalism and expertise. The results
-                were fantastic, and I couldn't be happier with the end product.
-                They really understand how to deliver value.
-              </p>
-              <div style={{ display: "flex", gap: 10 }}>
-                <img src={cimg2} width="46px" height="46px" alt="" />
-                <div>
-                  <p
-                    style={{
-                      fontSize: 24,
-                      fontWeight: 500,
-                      color: "#FFFFFF",
-                      margin: 0,
-                    }}
-                  >
-                    Franklin
-                  </p>
-                  <p
-                    style={{
-                      fontSize: 16,
-                      fontWeight: 400,
-                      color: "#ffffff",
-                    }}
-                  >
-                    Data Analysis
-                  </p>
-                </div>
-              </div>{" "}
-            </div>
-            <div className="testimonial-card1">
-              <div className="layer21">
-                <svg
-                  width="37"
-                  height="42"
-                  viewBox="0 0 37 42"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="8"
-                    cy="34"
-                    r="8"
-                    transform="rotate(-180 8 34)"
-                    fill="white"
-                  />
-                  <circle
-                    cx="20.5"
-                    cy="10.5"
-                    r="10.5"
-                    transform="rotate(-180 20.5 10.5)"
-                    fill="white"
-                  />
-                  <circle
-                    cx="31"
-                    cy="28"
-                    r="6"
-                    transform="rotate(-180 31 28)"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-              <p className="testimonial-name">
-                An amazing experience! The lessons were clear, and the hands-on
-                projects made a big difference. I feel more confident in my
-                skills now. Definitely worth it! and I feel fully prepared to
-                take the next step in my career.
-              </p>
-              <div style={{ display: "flex", gap: 10 }}>
-                <img src={cimg3} width="46px" height="46px" alt="" />
-                <div>
-                  <p
-                    style={{
-                      fontSize: 24,
-                      fontWeight: 500,
-                      color: "#FFFFFF",
-                      margin: 0,
-                    }}
-                  >
-                    Annie
-                  </p>
-                  <p
-                    style={{
-                      fontSize: 16,
-                      fontWeight: 400,
-                      color: "#ffffff",
-                    }}
-                  >
-                    Full Stack
-                  </p>
-                </div>
-              </div>{" "}
-            </div>
-            <div className="testimonial-card1">
-              <div className="layer21">
-                <svg
-                  width="37"
-                  height="42"
-                  viewBox="0 0 37 42"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="8"
-                    cy="34"
-                    r="8"
-                    transform="rotate(-180 8 34)"
-                    fill="white"
-                  />
-                  <circle
-                    cx="20.5"
-                    cy="10.5"
-                    r="10.5"
-                    transform="rotate(-180 20.5 10.5)"
-                    fill="white"
-                  />
-                  <circle
-                    cx="31"
-                    cy="28"
-                    r="6"
-                    transform="rotate(-180 31 28)"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-              <p className="testimonial-name">
-                This platform is truly revolutionary! It’s not only helped me
-                improve my coding skills but also inspired me to create my own
-                projects from scratch. I feel more confident than ever in my
-                development abilities.
-              </p>
-              <div style={{ display: "flex", gap: 10 }}>
-                <img src={cimg} width="46px" height="46px" alt="" />
-                <div>
-                  <p
-                    style={{
-                      fontSize: 24,
-                      fontWeight: 500,
-                      color: "#FFFFFF",
-                      margin: 0,
-                    }}
-                  >
-                    Sara
-                  </p>
-                  <p
-                    style={{
-                      fontSize: 16,
-                      fontWeight: 400,
-                      color: "#ffffff",
-                    }}
-                  >
-                    Full Stack{" "}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="testimonial-card1">
-              <div className="layer21">
-                <svg
-                  width="37"
-                  height="42"
-                  viewBox="0 0 37 42"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="8"
-                    cy="34"
-                    r="8"
-                    transform="rotate(-180 8 34)"
-                    fill="white"
-                  />
-                  <circle
-                    cx="20.5"
-                    cy="10.5"
-                    r="10.5"
-                    transform="rotate(-180 20.5 10.5)"
-                    fill="white"
-                  />
-                  <circle
-                    cx="31"
-                    cy="28"
-                    r="6"
-                    transform="rotate(-180 31 28)"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-              <p className="testimonial-name">
-                The resources available here are top-notch! The course material
-                is easy to follow, and the hands-on exercises really helped me
-                solidify my learning. This platform has been a game-changer for
-                my career.
-              </p>
-              <div style={{ display: "flex", gap: 10 }}>
-                <img src={cimg2} width="46px" height="46px" alt="" />
-                <div>
-                  <p
-                    style={{
-                      fontSize: 24,
-                      fontWeight: 500,
-                      color: "#FFFFFF",
-                      margin: 0,
-                    }}
-                  >
-                    Franklin
-                  </p>
-                  <p
-                    style={{
-                      fontSize: 16,
-                      fontWeight: 400,
-                      color: "#ffffff",
-                    }}
-                  >
-                    Data Analysis
-                  </p>
-                </div>
-              </div>{" "}
-            </div>
-            <div className="testimonial-card1">
-              <div className="layer21">
-                <svg
-                  width="37"
-                  height="42"
-                  viewBox="0 0 37 42"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    cx="8"
-                    cy="34"
-                    r="8"
-                    transform="rotate(-180 8 34)"
-                    fill="white"
-                  />
-                  <circle
-                    cx="20.5"
-                    cy="10.5"
-                    r="10.5"
-                    transform="rotate(-180 20.5 10.5)"
-                    fill="white"
-                  />
-                  <circle
-                    cx="31"
-                    cy="28"
-                    r="6"
-                    transform="rotate(-180 31 28)"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-              <p className="testimonial-name">
-                I can’t thank this platform enough for helping me boost my
-                skills. The in-depth tutorials and the community of experts have
-                truly accelerated my learning. I feel much more confident in my
-                job now!
-              </p>
-              <div style={{ display: "flex", gap: 10 }}>
-                <img src={cimg3} width="46px" height="46px" alt="" />
-                <div>
-                  <p
-                    style={{
-                      fontSize: 24,
-                      fontWeight: 500,
-                      color: "#FFFFFF",
-                      margin: 0,
-                    }}
-                  >
-                    Annie
-                  </p>
-                  <p
-                    style={{
-                      fontSize: 16,
-                      fontWeight: 400,
-                      color: "#ffffff",
-                    }}
-                  >
-                    Full Stack
-                  </p>
-                </div>
-              </div>{" "}
-            </div>
+            ))}
           </Carousel>
         </div>
       </div>
