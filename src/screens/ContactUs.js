@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import location from "../assests/location.png";
@@ -9,6 +9,21 @@ import { Link } from "react-router-dom";
 import { Button } from "antd";
 
 export default function ContactUs() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form Data:", formData);
+  };
   return (
     <div>
       <Header />
@@ -194,28 +209,57 @@ export default function ContactUs() {
           <p className="services-title">Send Us A Message</p>
         </div>
         <div className="contact-form-container">
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="form-row">
               <div className="form-control">
                 <label className="form-label">Your Name</label>
-                <input type="text" required className="form-input" />
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  className="form-input"
+                  value={formData.name}
+                  onChange={handleChange}
+                />
               </div>
               <div className="form-control">
                 <label className="form-label">Your Email</label>
-                <input type="email" required className="form-input" />
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  className="form-input"
+                  value={formData.email}
+                  onChange={handleChange}
+                />
               </div>
               <div className="form-control">
                 <label className="form-label">Phone Number</label>
-                <input type="tel" required className="form-input" />
+                <input
+                  type="tel"
+                  name="phone"
+                  required
+                  className="form-input"
+                  value={formData.phone}
+                  onChange={handleChange}
+                />
               </div>
             </div>
             <div className="form-control">
               <label className="form-label">Message</label>
-              <textarea type="tel" required className="form-textarea" />
+              <textarea
+                type="msg"
+                name="message"
+                required
+                className="form-textarea"
+                value={formData.message}
+                onChange={handleChange}
+              />
             </div>
 
             <div className="form-button-container">
               <button
+                type="submit"
                 style={{
                   fontSize: 16,
                   fontWeight: 500,

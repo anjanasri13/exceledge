@@ -241,11 +241,11 @@
 /* .services-card .fa-arrow-right-long {
   visibility: hidden;
   transition: visibility 0.3s ease, transform 0.3s ease;
-}
-
-.services-card:hover .fa-arrow-right-long {
+} */
+/* .services-card:hover .fa-arrow-right-long {
   visibility: visible;
   transform: translateX(5px);
+  color: #0780fd;
 } */
 .service-card-title {
   font-size: 24px;

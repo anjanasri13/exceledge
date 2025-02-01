@@ -21,7 +21,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
 import { FaArrowRightLong } from "react-icons/fa6";
-
 import "../styles/about.css";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";

@@ -138,14 +138,12 @@
 .form-control {
   display: block;
   width: 100%;
-  /* padding: 0.375rem 0.75rem; */
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #ffffff !important;
   appearance: none;
   background-color: #0780fd !important;
-  /* background-clip: padding-box; */
   border: none !important;
   border-radius: var(--bs-border-radius);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -154,7 +152,6 @@
   background-color: #0780fd;
   display: block;
   width: 100%;
-  /* padding: 15px 0; */
   font-size: 18px;
   border-bottom-color: #ffffff !important;
   border-left: none;
@@ -187,6 +184,5 @@
 
 .form-control input:focus + label span,
 .form-control input:valid + label span {
-  /* color: lightblue; */
   transform: translateY(-30px);
 }
