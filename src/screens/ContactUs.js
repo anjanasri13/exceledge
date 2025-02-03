@@ -7,23 +7,78 @@ import mail from "../assests/mail.png";
 import "../styles/contactUs.css";
 import { Link } from "react-router-dom";
 import { Button } from "antd";
+import axios from "axios";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
+    mobileNumber: "",
     message: "",
   });
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const [validationError, setValidationError] = useState({
+    name: "",
+    email: "",
+    mobileNumber: "",
+    message: "",
+  });
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  const validateInputs = () => {
+    const errors = {};
+    if (!formData.name) errors.name = "Name is required.";
+    if (!formData.email || !/\S+@\S+\.\S+/.test(formData.email))
+      errors.email = "Valid email is required.";
+    if (!formData.mobileNumber || !/^\d{10}$/.test(formData.mobileNumber))
+      errors.mobileNumber = "Valid 10-digit mobile number is required.";
+    if (!formData.message) errors.message = "Message is required.";
+
+    setValidationError(errors);
+    return Object.keys(errors).length === 0;
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Data:", formData);
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setValidationError({ ...validationError, [e.target.name]: "" });
   };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!validateInputs()) return;
+
+    setIsLoading(true);
+
+    try {
+      const payload = {
+        name: formData.name,
+        email: formData.email,
+        mobileNumber: formData.mobileNumber,
+        message: formData.message,
+      };
+      const response = await axios.post(
+        "https://creativa.academy/backend/api/enquiry",
+        payload
+      );
+      toast.success("Form submitted successfully!");
+      console.log("Response:", response.data);
+      setFormData({
+        name: "",
+        email: "",
+        mobileNumber: "",
+        message: "",
+      });
+    } catch (error) {
+      toast.error("Failed to submit form. Please try again.");
+      console.error("Error:", error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <div>
       <Header />
@@ -221,6 +276,9 @@ export default function ContactUs() {
                   value={formData.name}
                   onChange={handleChange}
                 />
+                {validationError.name && (
+                  <p className="error-message">{validationError.name}</p>
+                )}
               </div>
               <div className="form-control">
                 <label className="form-label">Your Email</label>
@@ -232,17 +290,25 @@ export default function ContactUs() {
                   value={formData.email}
                   onChange={handleChange}
                 />
+                {validationError.email && (
+                  <p className="error-message">{validationError.email}</p>
+                )}
               </div>
               <div className="form-control">
                 <label className="form-label">Phone Number</label>
                 <input
                   type="tel"
-                  name="phone"
+                  name="mobileNumber"
                   required
                   className="form-input"
-                  value={formData.phone}
+                  value={formData.mobileNumber}
                   onChange={handleChange}
                 />
+                {validationError.mobileNumber && (
+                  <p className="error-message">
+                    {validationError.mobileNumber}
+                  </p>
+                )}
               </div>
             </div>
             <div className="form-control">
@@ -255,20 +321,26 @@ export default function ContactUs() {
                 value={formData.message}
                 onChange={handleChange}
               />
+              {validationError.message && (
+                <p className="error-message">{validationError.message}</p>
+              )}
             </div>
 
             <div className="form-button-container">
               <button
                 type="submit"
+                disabled={isLoading}
                 style={{
                   fontSize: 16,
                   fontWeight: 500,
-                  backgroundColor: "#ffffff",
+                  // backgroundColor: "#ffffff",
+                  backgroundColor: isLoading ? "#ccc" : "#ffffff",
                   borderRadius: "100px",
                   width: "156px",
                   height: "56px",
                   color: "#0780FD",
                   border: "none",
+                  cursor: isLoading ? "not-allowed" : "pointer",
                 }}
               >
                 Login
