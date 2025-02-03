@@ -7,7 +7,7 @@ import insta from "../assests/insta.png";
 import phone from "../assests/phone.png";
 import mail from "../assests/mail.png";
 import "../styles/Footer.css";
-import Footerlogo from "../assests/footerlogo.png";
+import Flogo from "../assests/Flogo.png";
 
 export default function Footer() {
   return (
@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="footer-container">
           <div className="footer-column-container">
             <div>
-              <img src={Footerlogo} width="144px" height="53px" alt="logo" />
+              <img src={Flogo} width="144px" height="53px" alt="logo" />
             </div>
             <div className="footer-column">
               <div>
