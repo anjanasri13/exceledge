@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "antd";
 import "../styles/Header.css";
-import logo from "../assests/logo.png";
+// import logo from "../assests/logo.png";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,9 +12,7 @@ export default function Header() {
   };
   return (
     <div className="header">
-      <div className="header-logo">
-        <img src={logo} alt="logo" />
-      </div>
+      <div className="header-logo">{/* <img src={logo} alt="logo" /> */}</div>
       <div className="header-nav">
         <Link to="/" className="nav-link">
           Home
