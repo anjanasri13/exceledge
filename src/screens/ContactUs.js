@@ -8,7 +8,7 @@ import "../styles/contactUs.css";
 import { Link } from "react-router-dom";
 import { Button } from "antd";
 import axios from "axios";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function ContactUs() {
@@ -59,6 +59,7 @@ export default function ContactUs() {
         mobileNumber: formData.mobileNumber,
         message: formData.message,
       };
+      console.log("payload", payload);
       const response = await axios.post(
         "https://creativa.academy/backend/api/enquiry",
         payload
@@ -199,7 +200,8 @@ export default function ContactUs() {
           <Link className="contact-card">
             <img src={location} className="contact-icon" alt="" />
             <p className="contact-card-p">
-              Lorem ipsum dolor sit amet consectetur.
+              31/13, 2nd floor, Burkit Rd, near CANARA BANK, CIT Nagar East, T.
+              Nagar, Chennai, Tamil Nadu 600017
             </p>
           </Link>
 
@@ -350,6 +352,18 @@ export default function ContactUs() {
         </div>
       </div>
       <Footer />
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
     </div>
   );
 }

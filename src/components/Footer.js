@@ -56,8 +56,8 @@ export default function Footer() {
           <div className="footer-column address">
             <p className="footer-address-title">Address</p>
             <p className="footer-desc">
-              Lorem ipsum dolor sit amet consectetur. Sed mattis id suspendisse
-              pulvinar velit velit sed.
+              31/13, 2nd floor, Burkit Rd, near CANARA BANK, CIT Nagar East, T.
+              Nagar, Chennai, Tamil Nadu 600017
             </p>
           </div>
 
