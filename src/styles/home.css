@@ -117,6 +117,10 @@
   display: flex;
   gap: 40px;
 }
+.Toastify__toast-theme--colored.Toastify__toast--success {
+  color: var(--toastify-text-color-success);
+  background: #0780fd !important;
+}
 .main-text {
   padding-left: 5%;
   padding-right: 5%;
