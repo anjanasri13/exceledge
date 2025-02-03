@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Footerlogo from "../assests/footerlogo.png";
 import facebook from "../assests/facebook.png";
 import twitter from "../assests/twitter.png";
 import linkedin from "../assests/linkedin.png";
@@ -8,6 +7,7 @@ import insta from "../assests/insta.png";
 import phone from "../assests/phone.png";
 import mail from "../assests/mail.png";
 import "../styles/Footer.css";
+import Footerlogo from "../assests/footerlogo.png";
 
 export default function Footer() {
   return (
