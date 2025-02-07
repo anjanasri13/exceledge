@@ -10,24 +10,37 @@
   font-size: 56px;
   font-weight: 600;
   color: #1b1b1b;
-  width: 60%;
+  width: 70%;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 24px;
+    width: 75%;
+    text-align: center;
+  }
 }
 .hero-description {
   font-size: 18px;
   font-weight: 400;
   color: #1b1b1b;
   opacity: 80%;
-  width: 30%;
+  width: 50%;
   text-align: center;
   line-height: 34px;
+}
+@media (max-width: 768px) {
+  .hero-description {
+    font-size: 15px;
+    width: 80%;
+  }
 }
 .service-container {
   margin-top: 15%;
   position: relative;
 }
 .cta-container {
-  background-color: #0780fd;
+  background-color: #473fe1;
   border-radius: 50px;
   margin: 8% 5%;
   padding: 5%;
@@ -36,6 +49,14 @@
   align-items: center;
   position: relative;
 }
+@media (max-width: 768px) {
+  .cta-container {
+    margin: 15% 5%;
+    padding: 15% 5%;
+    /* padding: 20px 40px; */
+    gap: 10px;
+  }
+}
 .cta-title {
   font-size: 56px;
   font-weight: 600;
@@ -43,7 +64,13 @@
   margin: 0;
   line-height: 78.4px;
 }
-
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 24px;
+    text-align: center;
+    line-height: 33.6px;
+  }
+}
 .cta-subtitle {
   font-size: 18px;
   font-weight: 400;
@@ -52,6 +79,26 @@
   text-align: center;
   width: 40%;
   line-height: 34px;
+}
+@media (max-width: 768px) {
+  .cta-subtitle {
+    font-size: 14px;
+    line-height: 21px;
+    width: 90%;
+  }
+}
+.enroll-button {
+  font-size: 16px;
+  font-weight: 500;
+  width: 176px;
+  height: 56px;
+}
+@media (max-width: 768px) {
+  .enroll-button {
+    font-size: 15px;
+    width: 134px;
+    height: 44px;
+  }
 }
 .image-grid {
   display: grid;
@@ -68,4 +115,10 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
 }

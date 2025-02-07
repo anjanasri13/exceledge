@@ -14,25 +14,80 @@
   flex-direction: column;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .footer-column {
+    gap: 10px;
+  }
+}
 .footer-column-container {
   display: flex;
   gap: 30px;
+}
+@media (max-width: 768px) {
+  .footer-column-container {
+    gap: 20px;
+  }
+}
+.footer-row {
+  display: flex;
+  gap: 30px;
   flex-direction: column;
+}
+@media (max-width: 768px) {
+  .footer-row {
+    gap: 20px;
+  }
+}
+.footer-logo {
+  width: 159px;
+  height: 50px;
+}
+@media (max-width: 768px) {
+  .footer-logo {
+    width: 120px;
+    height: 37px;
+  }
+}
+.phone-icon {
+  width: 32px;
+  height: 32px;
+}
+@media (max-width: 768px) {
+  .phone-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 .footer-contact {
   display: flex;
   gap: 20px;
   text-decoration: none;
   color: Black;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .footer-contact {
+    gap: 10px;
+  }
 }
 .footer-column.address {
   width: 25%;
+}
+@media (max-width: 768px) {
+  .footer-column.address {
+    width: 100%;
+  }
 }
 .footer-title {
   font-size: 18px;
   font-weight: 600;
   color: #1b1b1b;
   margin-top: 0;
+}
+@media (max-width: 768px) {
+  .footer-title {
+    font-size: 16px;
+  }
 }
 .footer-address-title {
   font-size: 18px;
@@ -41,11 +96,24 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+@media (max-width: 768px) {
+  .footer-address-title {
+    font-size: 16px;
+  }
+}
 .footer-desc {
   font-size: 18px;
   font-weight: 400;
   color: #1b1b1b;
   margin-top: 0;
+}
+@media (max-width: 768px) {
+  .footer-desc {
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 80%;
+    width: 100%;
+  }
 }
 .footer-nav {
   text-decoration: none;
@@ -53,16 +121,47 @@
   font-size: 18px;
   font-weight: 400;
 }
+@media (max-width: 768px) {
+  .footer-nav {
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
 .social-icons {
   display: flex;
   gap: 12px;
 }
+@media (max-width: 768px) {
+  .social-icons {
+    display: none;
+  }
+}
+.social-icons-responsive {
+  display: none;
+}
+@media (max-width: 768px) {
+  .social-icons-responsive {
+    display: flex;
+    gap: 12px;
+  }
+}
 .footer-bottom {
   text-align: center;
-  background-color: #0780fd;
+  background-color: #473fe1;
   padding: 1% 0;
   color: #ffffff;
   font-size: 18px;
   font-weight: 400;
   margin: 0;
+}
+@media (max-width: 768px) {
+  .footer-bottom {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
 }

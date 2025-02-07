@@ -39,9 +39,9 @@ export default function Gallery() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="54.4284" cy="14.8571" r="14.8571" fill="#0780FD" />
-            <circle cx="31.2139" cy="58.5" r="19.5" fill="#0780FD" />
-            <circle cx="11.7141" cy="26" r="11.1429" fill="#0780FD" />
+            <circle cx="54.4284" cy="14.8571" r="14.8571" fill="#473FE1" />
+            <circle cx="31.2139" cy="58.5" r="19.5" fill="#473FE1" />
+            <circle cx="11.7141" cy="26" r="11.1429" fill="#473FE1" />
           </svg>
         </div>
         <div className="Clayer2">
@@ -57,30 +57,31 @@ export default function Gallery() {
               cy="60.7143"
               r="14.2857"
               transform="rotate(-180 14.2856 60.7143)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="36.6074"
               cy="18.75"
               r="18.75"
               transform="rotate(-180 36.6074 18.75)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="55.357"
               cy="50"
               r="10.7143"
               transform="rotate(-180 55.357 50)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
         <p className="hero-title">
-          Transform Your Career with Our Expert-Led Courses
+          Explore Our Academy – A Glimpse into Learning & Innovation!
         </p>
         <p className="hero-description">
-          Explore industry-aligned programs designed to prepare you for success
-          in tech.
+          Step inside our vibrant learning environment, where knowledge meets
+          creativity. From hands-on coding sessions to interactive workshops,
+          experience what makes our academy unique.
         </p>
       </div>
 
@@ -93,9 +94,9 @@ export default function Gallery() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="29" cy="8" r="8" fill="#0780FD" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="Glayer4">
@@ -111,21 +112,21 @@ export default function Gallery() {
               cy="34"
               r="8"
               transform="rotate(-180 8 34)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="20.5"
               cy="10.5"
               r="10.5"
               transform="rotate(-180 20.5 10.5)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="31"
               cy="28"
               r="6"
               transform="rotate(-180 31 28)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
@@ -191,20 +192,17 @@ export default function Gallery() {
             />
           </svg>
         </div>
-        <p className="cta-title">Kickstart Your Career in Tech Today!</p>
+        <p className="cta-title">Kickstart Your Career In Tech Today!</p>
         <p className="cta-subtitle">
           Learn Full Stack Engineering, Business Analysis, and Data Science with
           Industry Experts.
         </p>
         <Button
+          className="enroll-button"
           style={{
-            fontSize: 16,
-            fontWeight: 500,
             backgroundColor: "#FFFFFF",
             borderRadius: "100px",
-            width: "176px",
-            height: "56px",
-            color: "#0780FD",
+            color: "#473FE1",
           }}
         >
           Enrol now

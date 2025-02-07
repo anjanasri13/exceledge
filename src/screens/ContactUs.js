@@ -92,9 +92,9 @@ export default function ContactUs() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="54.4284" cy="14.8571" r="14.8571" fill="#0780FD" />
-            <circle cx="31.2139" cy="58.5" r="19.5" fill="#0780FD" />
-            <circle cx="11.7141" cy="26" r="11.1429" fill="#0780FD" />
+            <circle cx="54.4284" cy="14.8571" r="14.8571" fill="#473FE1" />
+            <circle cx="31.2139" cy="58.5" r="19.5" fill="#473FE1" />
+            <circle cx="11.7141" cy="26" r="11.1429" fill="#473FE1" />
           </svg>
         </div>
         <div className="Clayer2">
@@ -110,21 +110,21 @@ export default function ContactUs() {
               cy="60.7143"
               r="14.2857"
               transform="rotate(-180 14.2856 60.7143)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="36.6074"
               cy="18.75"
               r="18.75"
               transform="rotate(-180 36.6074 18.75)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="55.357"
               cy="50"
               r="10.7143"
               transform="rotate(-180 55.357 50)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
@@ -134,13 +134,10 @@ export default function ContactUs() {
           in tech.
         </p>
         <Button
+          className="contact-btn"
           style={{
-            fontSize: 16,
-            fontWeight: 500,
-            backgroundColor: "#0780FD",
+            backgroundColor: "#473FE1",
             borderRadius: "100px",
-            width: "156px",
-            height: "56px",
             color: "#FFFFFF",
           }}
         >
@@ -157,9 +154,9 @@ export default function ContactUs() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="29" cy="8" r="8" fill="#0780FD" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="Clayer4">
@@ -175,21 +172,21 @@ export default function ContactUs() {
               cy="34"
               r="8"
               transform="rotate(-180 8 34)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="20.5"
               cy="10.5"
               r="10.5"
               transform="rotate(-180 20.5 10.5)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="31"
               cy="28"
               r="6"
               transform="rotate(-180 31 28)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
@@ -226,9 +223,9 @@ export default function ContactUs() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="29" cy="8" r="8" fill="#0780FD" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="Clayer6">
@@ -244,21 +241,21 @@ export default function ContactUs() {
               cy="34"
               r="8"
               transform="rotate(-180 8 34)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="20.5"
               cy="10.5"
               r="10.5"
               transform="rotate(-180 20.5 10.5)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="31"
               cy="28"
               r="6"
               transform="rotate(-180 31 28)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
@@ -340,7 +337,7 @@ export default function ContactUs() {
                   borderRadius: "100px",
                   width: "156px",
                   height: "56px",
-                  color: "#0780FD",
+                  color: "#473FE1",
                   border: "none",
                   cursor: isLoading ? "not-allowed" : "pointer",
                 }}

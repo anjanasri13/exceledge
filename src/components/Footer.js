@@ -15,22 +15,38 @@ export default function Footer() {
       <div className="footer">
         <div className="footer-container">
           <div className="footer-column-container">
-            <div>
-              <img src={Flogo} width="144px" height="53px" alt="logo" />
+            <div className="footer-row">
+              <div>
+                <img src={Flogo} className="footer-logo" alt="logo" />
+              </div>
+              <div className="footer-column">
+                <div>
+                  <Link to="" className="footer-contact">
+                    <img src={phone} className="phone-icon" alt="" />
+                    +1 8888 8888
+                  </Link>
+                </div>
+                <div>
+                  <Link to="" className="footer-contact">
+                    <img src={mail} className="phone-icon" alt="" />
+                    info@exceledge.com
+                  </Link>
+                </div>
+              </div>
             </div>
-            <div className="footer-column">
-              <div>
-                <Link to="" className="footer-contact">
-                  <img src={phone} width="32px" height="32px" alt="" />
-                  +1 8888 8888
-                </Link>
-              </div>
-              <div>
-                <Link to="" className="footer-contact">
-                  <img src={mail} width="32px" height="32px" alt="" />
-                  info@exceledge.com
-                </Link>
-              </div>
+            <div className="social-icons-responsive">
+              <Link to="/">
+                <img src={facebook} width="32px" height="32px" alt="" />
+              </Link>
+              <Link to="/">
+                <img src={twitter} width="32px" height="32px" alt="" />
+              </Link>
+              <Link to="/">
+                <img src={linkedin} width="32px" height="32px" alt="" />
+              </Link>
+              <Link to="/">
+                <img src={insta} width="32px" height="32px" alt="" />
+              </Link>
             </div>
           </div>
 

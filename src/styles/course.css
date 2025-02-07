@@ -3,6 +3,13 @@
   left: 10%;
   top: 0%;
 }
+@media (max-width: 768px) {
+  .Clayer1 {
+    position: absolute;
+    left: 2%;
+    top: 0%;
+  }
+}
 .Clayer2 {
   position: absolute;
   left: 75%;
@@ -41,13 +48,14 @@
 }
 .batch-container {
   border-radius: 130px;
-  border: 2px solid #0780fd;
+  border: 2px solid #473fe1;
   margin-right: 8%;
   margin-left: 8%;
   padding: 2% 0%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  width: auto;
 }
 .batch-header {
   display: flex;
@@ -99,7 +107,7 @@
   color: #ffffff;
 }
 .demo-container {
-  background-color: #0780fd;
+  background-color: #473fe1;
   border-radius: 80px;
   margin: 8%;
   padding: 5%;

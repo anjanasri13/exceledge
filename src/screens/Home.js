@@ -39,22 +39,18 @@ const services = [
     description:
       "Master front-end & back-end development with React, Node.js, and databases.",
     icon: <img src={Image2} width="80px" height="80px" alt="" />,
-
-    backgroundColor: "#377dff1a",
   },
   {
     title: "Business Analyst",
     description:
       "Gain skills in data analysis, market research, and business strategy.",
     icon: <img src={Image3} width="80px" height="80px" alt="" />,
-    backgroundColor: "#FF9EC533",
   },
   {
     title: "Data Science",
     description:
       "Learn Python, machine learning, and AI to analyze and predict data trends.",
     icon: <img src={Image4} width="80px" height="80px" alt="" />,
-    backgroundColor: "#FFCB2A24",
   },
 ];
 
@@ -179,9 +175,9 @@ export default function Home() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="29" cy="8" r="8" fill="#0780FD" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="layer2">
@@ -197,21 +193,21 @@ export default function Home() {
               cy="34"
               r="8"
               transform="rotate(-180 8 34)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="20.5"
               cy="10.5"
               r="10.5"
               transform="rotate(-180 20.5 10.5)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="31"
               cy="28"
               r="6"
               transform="rotate(-180 31 28)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
@@ -225,7 +221,7 @@ export default function Home() {
             style={{
               fontSize: 16,
               fontWeight: 500,
-              backgroundColor: "#0780FD",
+              backgroundColor: "#473FE1",
               borderRadius: "100px",
               width: "176px",
               height: "56px",
@@ -250,9 +246,9 @@ export default function Home() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="29" cy="8" r="8" fill="#0780FD" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="layer4">
@@ -268,21 +264,21 @@ export default function Home() {
               cy="34"
               r="8"
               transform="rotate(-180 8 34)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="20.5"
               cy="10.5"
               r="10.5"
               transform="rotate(-180 20.5 10.5)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="31"
               cy="28"
               r="6"
               transform="rotate(-180 31 28)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
@@ -321,9 +317,9 @@ export default function Home() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="29" cy="8" r="8" fill="#0780FD" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="layer6">
@@ -339,21 +335,21 @@ export default function Home() {
               cy="34"
               r="8"
               transform="rotate(-180 8 34)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="20.5"
               cy="10.5"
               r="10.5"
               transform="rotate(-180 20.5 10.5)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="31"
               cy="28"
               r="6"
               transform="rotate(-180 31 28)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
@@ -394,9 +390,9 @@ export default function Home() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="29" cy="8" r="8" fill="#0780FD" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="layer8">
@@ -412,21 +408,21 @@ export default function Home() {
               cy="34"
               r="8"
               transform="rotate(-180 8 34)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="20.5"
               cy="10.5"
               r="10.5"
               transform="rotate(-180 20.5 10.5)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="31"
               cy="28"
               r="6"
               transform="rotate(-180 31 28)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
@@ -450,7 +446,7 @@ export default function Home() {
               style={{
                 fontSize: 16,
                 fontWeight: 500,
-                backgroundColor: "#0780FD",
+                backgroundColor: "#473FE1",
                 borderRadius: "100px",
                 width: "176px",
                 height: "56px",
@@ -523,7 +519,7 @@ export default function Home() {
                 borderRadius: "100px",
                 width: "176px",
                 height: "56px",
-                color: "#0780FD",
+                color: "#473FE1",
               }}
             >
               Enroll Now
@@ -574,9 +570,9 @@ export default function Home() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="29" cy="8" r="8" fill="#0780FD" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="layer12">
@@ -592,21 +588,21 @@ export default function Home() {
               cy="34"
               r="8"
               transform="rotate(-180 8 34)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="20.5"
               cy="10.5"
               r="10.5"
               transform="rotate(-180 20.5 10.5)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="31"
               cy="28"
               r="6"
               transform="rotate(-180 31 28)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
@@ -624,11 +620,11 @@ export default function Home() {
               style={{
                 fontSize: 18,
                 fontWeight: 500,
-                backgroundColor: "#0780FD1F",
+                backgroundColor: "#473FE11F",
                 borderRadius: "10px",
                 width: "196px",
                 height: "40px",
-                color: "#0780FD",
+                color: "#473FE1",
                 border: "none",
               }}
             >
@@ -670,7 +666,7 @@ export default function Home() {
               style={{
                 fontSize: 16,
                 fontWeight: 500,
-                backgroundColor: "#0780FD",
+                backgroundColor: "#473FE1",
                 borderRadius: "100px",
                 width: "176px",
                 height: "56px",
@@ -688,11 +684,11 @@ export default function Home() {
               style={{
                 fontSize: 18,
                 fontWeight: 500,
-                backgroundColor: "#0780FD1F",
+                backgroundColor: "#473FE11F",
                 borderRadius: "10px",
                 width: "196px",
                 height: "40px",
-                color: "#0780FD",
+                color: "#473FE1",
                 border: "none",
               }}
             >
@@ -734,7 +730,7 @@ export default function Home() {
               style={{
                 fontSize: 16,
                 fontWeight: 500,
-                backgroundColor: "#0780FD",
+                backgroundColor: "#473FE1",
                 borderRadius: "100px",
                 width: "176px",
                 height: "56px",
@@ -752,11 +748,11 @@ export default function Home() {
               style={{
                 fontSize: 18,
                 fontWeight: 500,
-                backgroundColor: "#0780FD1F",
+                backgroundColor: "#473FE11F",
                 borderRadius: "10px",
                 width: "196px",
                 height: "40px",
-                color: "#0780FD",
+                color: "#473FE1",
                 border: "none",
               }}
             >
@@ -798,7 +794,7 @@ export default function Home() {
               style={{
                 fontSize: 16,
                 fontWeight: 500,
-                backgroundColor: "#0780FD",
+                backgroundColor: "#473FE1",
                 borderRadius: "100px",
                 width: "176px",
                 height: "56px",
@@ -821,7 +817,7 @@ export default function Home() {
             style={{
               fontSize: 16,
               fontWeight: 500,
-              backgroundColor: "#0780FD",
+              backgroundColor: "#473FE1",
               borderRadius: "100px",
               width: "176px",
               height: "56px",
@@ -906,7 +902,7 @@ export default function Home() {
               borderRadius: "100px",
               width: "189px",
               height: "56px",
-              color: "#0780FD",
+              color: "#473FE1",
             }}
           >
             Book a seat
@@ -926,9 +922,9 @@ export default function Home() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="29" cy="8" r="8" fill="#0780FD" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="layer12">
@@ -944,21 +940,21 @@ export default function Home() {
               cy="34"
               r="8"
               transform="rotate(-180 8 34)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="20.5"
               cy="10.5"
               r="10.5"
               transform="rotate(-180 20.5 10.5)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="31"
               cy="28"
               r="6"
               transform="rotate(-180 31 28)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
@@ -992,9 +988,9 @@ export default function Home() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="29" cy="8" r="8" fill="#0780FD" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="layer15">
@@ -1010,21 +1006,21 @@ export default function Home() {
               cy="34"
               r="8"
               transform="rotate(-180 8 34)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="20.5"
               cy="10.5"
               r="10.5"
               transform="rotate(-180 20.5 10.5)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="31"
               cy="28"
               r="6"
               transform="rotate(-180 31 28)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
@@ -1163,9 +1159,9 @@ export default function Home() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="29" cy="8" r="8" fill="#0780FD" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="layer17">
@@ -1181,21 +1177,21 @@ export default function Home() {
               cy="34"
               r="8"
               transform="rotate(-180 8 34)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="20.5"
               cy="10.5"
               r="10.5"
               transform="rotate(-180 20.5 10.5)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="31"
               cy="28"
               r="6"
               transform="rotate(-180 31 28)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
@@ -1267,7 +1263,7 @@ export default function Home() {
             borderRadius: "100px",
             width: "176px",
             height: "56px",
-            color: "#0780FD",
+            color: "#473FE1",
           }}
         >
           Enrol now

@@ -190,9 +190,9 @@ export default function About() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="29" cy="8" r="8" fill="#0780FD" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="layer2">
@@ -208,27 +208,27 @@ export default function About() {
               cy="34"
               r="8"
               transform="rotate(-180 8 34)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="20.5"
               cy="10.5"
               r="10.5"
               transform="rotate(-180 20.5 10.5)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="31"
               cy="28"
               r="6"
               transform="rotate(-180 31 28)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
         <div className="a-main-text">
           <p className="a-main-text-title">
-            Welcome to <span style={{ color: "#0780FD" }}>ExcelEdge</span>{" "}
+            Welcome to <span style={{ color: "#473FE1" }}>ExcelEdge</span>{" "}
           </p>
           <p className="a-main-text-sub-title">
             Learn more about our mission, values, and the team dedicated to
@@ -238,7 +238,7 @@ export default function About() {
             style={{
               fontSize: 16,
               fontWeight: 500,
-              backgroundColor: "#0780FD",
+              backgroundColor: "#473FE1",
               borderRadius: "100px",
               width: "176px",
               height: "56px",
@@ -263,9 +263,9 @@ export default function About() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="29" cy="8" r="8" fill="#0780FD" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="layer4">
@@ -281,21 +281,21 @@ export default function About() {
               cy="34"
               r="8"
               transform="rotate(-180 8 34)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="20.5"
               cy="10.5"
               r="10.5"
               transform="rotate(-180 20.5 10.5)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="31"
               cy="28"
               r="6"
               transform="rotate(-180 31 28)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
@@ -334,9 +334,9 @@ export default function About() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="29" cy="8" r="8" fill="#0780FD" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="Alayer2">
@@ -352,21 +352,21 @@ export default function About() {
               cy="34"
               r="8"
               transform="rotate(-180 8 34)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="20.5"
               cy="10.5"
               r="10.5"
               transform="rotate(-180 20.5 10.5)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="31"
               cy="28"
               r="6"
               transform="rotate(-180 31 28)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
@@ -426,9 +426,9 @@ export default function About() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="29" cy="8" r="8" fill="#0780FD" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="Alayer4">
@@ -444,28 +444,28 @@ export default function About() {
               cy="34"
               r="8"
               transform="rotate(-180 8 34)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="20.5"
               cy="10.5"
               r="10.5"
               transform="rotate(-180 20.5 10.5)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="31"
               cy="28"
               r="6"
               transform="rotate(-180 31 28)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
         <div className="a-main-text">
           <p className="a-main-text-title" style={{ fontSize: "" }}>
-            Build your <span style={{ color: "#0780FD" }}>Career</span> And
-            Upgrade <span style={{ color: "#0780FD" }}>Your Life</span>{" "}
+            Build your <span style={{ color: "#473FE1" }}>Career</span> And
+            Upgrade <span style={{ color: "#473FE1" }}>Your Life</span>{" "}
           </p>
           <p className="a-main-text-sub-title">
             Unlock endless possibilities with our comprehensive learning
@@ -480,7 +480,7 @@ export default function About() {
             style={{
               fontSize: 16,
               fontWeight: 500,
-              backgroundColor: "#0780FD",
+              backgroundColor: "#473FE1",
               borderRadius: "100px",
               width: "176px",
               height: "56px",
@@ -505,9 +505,9 @@ export default function About() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="29" cy="8" r="8" fill="#0780FD" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="Alayer6">
@@ -523,21 +523,21 @@ export default function About() {
               cy="34"
               r="8"
               transform="rotate(-180 8 34)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="20.5"
               cy="10.5"
               r="10.5"
               transform="rotate(-180 20.5 10.5)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="31"
               cy="28"
               r="6"
               transform="rotate(-180 31 28)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
@@ -553,7 +553,7 @@ export default function About() {
                 key={card.id}
                 style={{
                   width: "100%",
-                  border: "2px solid #0780FD",
+                  border: "2px solid #473FE1",
                   borderRadius: 20,
                 }}
               >
@@ -575,7 +575,7 @@ export default function About() {
                 key={card.id}
                 style={{
                   width: "100%",
-                  border: "2px solid #0780FD",
+                  border: "2px solid #473FE1",
                   borderRadius: 20,
                 }}
               >
@@ -604,7 +604,7 @@ export default function About() {
             style={{
               fontSize: 16,
               fontWeight: 500,
-              backgroundColor: "#0780FD",
+              backgroundColor: "#473FE1",
               borderRadius: "100px",
               width: "176px",
               height: "56px",
@@ -627,9 +627,9 @@ export default function About() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="29" cy="8" r="8" fill="#0780FD" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="layer15">
@@ -645,21 +645,21 @@ export default function About() {
               cy="34"
               r="8"
               transform="rotate(-180 8 34)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="20.5"
               cy="10.5"
               r="10.5"
               transform="rotate(-180 20.5 10.5)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="31"
               cy="28"
               r="6"
               transform="rotate(-180 31 28)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
@@ -798,9 +798,9 @@ export default function About() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="29" cy="8" r="8" fill="#0780FD" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#0780FD" />
-            <circle cx="6" cy="14" r="6" fill="#0780FD" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="layer17">
@@ -816,21 +816,21 @@ export default function About() {
               cy="34"
               r="8"
               transform="rotate(-180 8 34)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="20.5"
               cy="10.5"
               r="10.5"
               transform="rotate(-180 20.5 10.5)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
             <circle
               cx="31"
               cy="28"
               r="6"
               transform="rotate(-180 31 28)"
-              fill="#0780FD"
+              fill="#473FE1"
             />
           </svg>
         </div>
@@ -902,7 +902,7 @@ export default function About() {
             borderRadius: "100px",
             width: "176px",
             height: "56px",
-            color: "#0780FD",
+            color: "#473FE1",
           }}
         >
           Enrol now

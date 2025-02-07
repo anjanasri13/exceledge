@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Button } from "antd";
 import "../styles/Header.css";
 import Flogo from "../assests/Flogo.png";
+import { MenuFoldOutlined, CloseOutlined } from "@ant-design/icons";
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -14,7 +16,10 @@ export default function Header() {
       <div className="header-logo">
         <img src={Flogo} alt="logo" />
       </div>
-      <div className="header-nav">
+      <div className="menu-toggle" onClick={toggleMenu}>
+        {isMenuOpen ? <CloseOutlined /> : <MenuFoldOutlined />}
+      </div>
+      <div className={`header-nav ${isMenuOpen ? "open" : ""}`}>
         <Link to="/" className="nav-link">
           Home
         </Link>
@@ -30,13 +35,27 @@ export default function Header() {
         <Link to="/contact-us" className="nav-link">
           Contact Us
         </Link>
+        <Button
+          className="btn-responsive"
+          style={{
+            fontSize: 16,
+            fontWeight: 500,
+            backgroundColor: "#473FE1",
+            borderRadius: "100px",
+            width: "136px",
+            height: "44px",
+            color: "#FFFFFF",
+          }}
+        >
+          Enroll Now
+        </Button>
       </div>
-      <div>
+      <div className="btn">
         <Button
           style={{
             fontSize: 16,
             fontWeight: 500,
-            backgroundColor: "#0780FD",
+            backgroundColor: "#473FE1",
             borderRadius: "100px",
             width: "136px",
             height: "44px",
