@@ -84,46 +84,46 @@ export default function ContactUs() {
     <div>
       <Header />
       <div className="contact-section">
-        <div className="Clayer1">
+        <div className="Conlayer1">
           <svg
-            width="70"
-            height="78"
-            viewBox="0 0 70 78"
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="54.4284" cy="14.8571" r="14.8571" fill="#473FE1" />
-            <circle cx="31.2139" cy="58.5" r="19.5" fill="#473FE1" />
-            <circle cx="11.7141" cy="26" r="11.1429" fill="#473FE1" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
-        <div className="Clayer2">
+        <div className="Conlayer2">
           <svg
-            width="67"
-            height="75"
-            viewBox="0 0 67 75"
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <circle
-              cx="14.2856"
-              cy="60.7143"
-              r="14.2857"
-              transform="rotate(-180 14.2856 60.7143)"
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
               fill="#473FE1"
             />
             <circle
-              cx="36.6074"
-              cy="18.75"
-              r="18.75"
-              transform="rotate(-180 36.6074 18.75)"
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
               fill="#473FE1"
             />
             <circle
-              cx="55.357"
-              cy="50"
-              r="10.7143"
-              transform="rotate(-180 55.357 50)"
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
               fill="#473FE1"
             />
           </svg>
@@ -327,22 +327,18 @@ export default function ContactUs() {
 
             <div className="form-button-container">
               <button
+                className="login-btn"
                 type="submit"
                 disabled={isLoading}
                 style={{
-                  fontSize: 16,
-                  fontWeight: 500,
-                  // backgroundColor: "#ffffff",
                   backgroundColor: isLoading ? "#ccc" : "#ffffff",
                   borderRadius: "100px",
-                  width: "156px",
-                  height: "56px",
                   color: "#473FE1",
                   border: "none",
                   cursor: isLoading ? "not-allowed" : "pointer",
                 }}
               >
-                Login
+                Enroll Now
               </button>
             </div>
           </form>

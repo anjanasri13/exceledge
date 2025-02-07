@@ -1,3 +1,69 @@
+.Glayer1 {
+  position: absolute;
+  left: 10%;
+  top: -10%;
+}
+@media (max-width: 768px) {
+  .Glayer1 {
+    left: 2%;
+    top: -5%;
+  }
+}
+.Glayer2 {
+  position: absolute;
+  left: 80%;
+  top: 90%;
+}
+@media (max-width: 768px) {
+  .Glayer2 {
+    left: 85%;
+    top: 90%;
+  }
+}
+.Glayer3 {
+  position: absolute;
+  left: 15%;
+  top: 0%;
+}
+@media (max-width: 768px) {
+  .Glayer3 {
+    left: 5%;
+    top: -8%;
+  }
+}
+.Glayer4 {
+  position: absolute;
+  left: 75%;
+  top: 70%;
+}
+@media (max-width: 768px) {
+  .Glayer4 {
+    left: 85%;
+    top: 20%;
+  }
+}
+.Glayer20 {
+  position: absolute;
+  left: 25%;
+  top: 70%;
+}
+@media (max-width: 768px) {
+  .Glayer20 {
+    left: 5%;
+    top: 70%;
+  }
+}
+.Glayer21 {
+  position: absolute;
+  left: 75%;
+  top: 70%;
+}
+@media (max-width: 768px) {
+  .Glayer21 {
+    left: 80%;
+    top: 70%;
+  }
+}
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -5,6 +71,11 @@
   justify-content: center;
   margin-top: 5%;
   position: relative;
+}
+@media (max-width: 768px) {
+  .hero-section {
+    margin-top: 10%;
+  }
 }
 .hero-title {
   font-size: 56px;
@@ -25,7 +96,7 @@
   font-weight: 400;
   color: #1b1b1b;
   opacity: 80%;
-  width: 50%;
+  width: 60%;
   text-align: center;
   line-height: 34px;
 }
@@ -33,11 +104,17 @@
   .hero-description {
     font-size: 15px;
     width: 80%;
+    line-height: 22.5px;
   }
 }
 .service-container {
   margin-top: 15%;
   position: relative;
+}
+@media (max-width: 768px) {
+  .service-container {
+    margin-top: 25%;
+  }
 }
 .cta-container {
   background-color: #473fe1;
@@ -52,9 +129,9 @@
 @media (max-width: 768px) {
   .cta-container {
     margin: 15% 5%;
-    padding: 15% 5%;
-    /* padding: 20px 40px; */
+    padding: 10% 5%;
     gap: 10px;
+    border-radius: 30px;
   }
 }
 .cta-title {

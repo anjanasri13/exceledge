@@ -15,6 +15,12 @@
   left: 75%;
   top: 70%;
 }
+@media (max-width: 768px) {
+  .Clayer2 {
+    left: 75%;
+    top: 70%;
+  }
+}
 .course-desc {
   font-size: 18px;
   font-weight: 400;

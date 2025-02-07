@@ -1,22 +1,68 @@
+.Conlayer1 {
+  position: absolute;
+  left: 10%;
+  top: 0%;
+}
+@media (max-width: 768px) {
+  .Conlayer1 {
+    left: 15%;
+    top: -10%;
+  }
+}
+.Conlayer2 {
+  position: absolute;
+  left: 75%;
+  top: 70%;
+}
+@media (max-width: 768px) {
+  .Conlayer2 {
+    left: 78%;
+    top: 70%;
+  }
+}
 .Clayer3 {
   position: absolute;
   left: 35%;
   top: -10%;
+}
+@media (max-width: 768px) {
+  .Clayer3 {
+    left: 15%;
+    top: -10%;
+  }
 }
 .Clayer4 {
   position: absolute;
   left: 63%;
   top: 10%;
 }
+@media (max-width: 768px) {
+  .Clayer4 {
+    left: 75%;
+    top: 2%;
+  }
+}
 .Clayer5 {
   position: absolute;
   left: 25%;
   top: 0%;
 }
+@media (max-width: 768px) {
+  .Clayer5 {
+    left: 10%;
+    top: -7%;
+  }
+}
 .Clayer6 {
   position: absolute;
   left: 70%;
   top: 10%;
+}
+@media (max-width: 768px) {
+  .Clayer6 {
+    left: 85%;
+    top: 2%;
+  }
 }
 .contact-section {
   display: flex;
@@ -25,6 +71,11 @@
   justify-content: center;
   margin-top: 5%;
   position: relative;
+}
+@media (max-width: 768px) {
+  .contact-section {
+    margin-top: 10%;
+  }
 }
 .contact-title {
   font-size: 56px;
@@ -50,7 +101,7 @@
 }
 @media (max-width: 768px) {
   .contact-description {
-    font-size: 18px;
+    font-size: 15px;
     width: 80%;
     line-height: 22.5px;
   }
@@ -73,13 +124,24 @@
   margin-top: 15%;
   position: relative;
 }
+@media (max-width: 768px) {
+  .contact-container {
+    margin-top: 25%;
+  }
+}
 
 .contact-links {
   display: flex;
   gap: 30px;
   margin: 5% 5%;
 }
-
+@media (max-width: 768px) {
+  .contact-links {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 10%;
+  }
+}
 .contact-card {
   text-decoration: none;
   border: 1px solid #473fe1;
@@ -89,6 +151,12 @@
   padding: 2%;
   gap: 20px;
   width: 100%;
+}
+@media (max-width: 768px) {
+  .contact-card {
+    border-radius: 12px;
+    padding: 3%;
+  }
 }
 .contact-card-para {
   font-size: 20px;
@@ -101,15 +169,33 @@
   font-weight: 400;
   color: #1b1b1b;
 }
+@media (max-width: 768px) {
+  .contact-card p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}
 .contact-icon {
   width: 62px;
   height: 62px;
+}
+@media (max-width: 768px) {
+  .contact-icon {
+    width: 32px;
+    height: 32px;
+  }
 }
 .contact-form-container {
   background-color: #473fe1;
   border-radius: 50px;
   margin: 10%;
   padding: 5%;
+}
+@media (max-width: 768px) {
+  .contact-form-container {
+    border-radius: 16px;
+    margin: 10% 5%;
+  }
 }
 .contact-form {
   display: flex;
@@ -119,12 +205,28 @@
   display: flex;
   gap: 30px;
 }
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
 .form-label {
   font-size: 24px;
   font-weight: 400;
 }
+@media (max-width: 768px) {
+  .form-label {
+    font-size: 16px;
+  }
+}
 .form-input {
   margin-top: 15%;
+}
+@media (max-width: 768px) {
+  .form-input {
+    margin-top: 10%;
+  }
 }
 .form-textarea {
   margin-top: 5%;
@@ -145,6 +247,20 @@
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .login-btn {
+    width: 100% !important;
+    height: 44px !important;
+    font-size: 15px;
+    margin-top: 10%;
+  }
+}
+.login-btn {
+  width: 156px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 500;
+}
 .btn:focus {
   outline: 0;
 }
@@ -161,6 +277,11 @@
   position: relative;
   margin: 20px 0 40px;
   width: 300px;
+}
+@media (max-width: 768px) {
+  .form-control {
+    margin: 0px;
+  }
 }
 .form-control {
   display: block;
