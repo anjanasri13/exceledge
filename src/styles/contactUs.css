@@ -150,7 +150,11 @@
   align-items: center;
   padding: 2%;
   gap: 20px;
-  width: 100%;
+}
+@media (min-width: 769px) {
+  .contact-card {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
   .contact-card {

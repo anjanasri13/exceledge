@@ -23,13 +23,13 @@ export default function Footer() {
                 <div>
                   <Link to="" className="footer-contact">
                     <img src={phone} className="phone-icon" alt="" />
-                    +1 8888 8888
+                    <p>+1 8888 8888</p>
                   </Link>
                 </div>
                 <div>
                   <Link to="" className="footer-contact">
                     <img src={mail} className="phone-icon" alt="" />
-                    info@exceledge.com
+                    <p> info@exceledge.com</p>
                   </Link>
                 </div>
               </div>
