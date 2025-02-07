@@ -21,7 +21,7 @@ const services = [
     title: "Full Stack Engineering",
     description:
       "Master front-end & back-end development with React, Node.js, and databases.",
-    icon: <img src={Image2} width="80px" height="80px" alt="" />,
+    icon: <img src={Image2} className="service-image" alt="" />,
 
     backgroundColor: "#377dff1a",
   },
@@ -29,14 +29,14 @@ const services = [
     title: "Business Analyst",
     description:
       "Gain skills in data analysis, market research, and business strategy.",
-    icon: <img src={Image3} width="80px" height="80px" alt="" />,
+    icon: <img src={Image3} className="service-image" alt="" />,
     backgroundColor: "#FF9EC533",
   },
   {
     title: "Data Science",
     description:
       "Learn Python, machine learning, and AI to analyze and predict data trends.",
-    icon: <img src={Image4} width="80px" height="80px" alt="" />,
+    icon: <img src={Image4} className="service-image" alt="" />,
     backgroundColor: "#FFCB2A24",
   },
 ];
@@ -76,63 +76,60 @@ export default function Course() {
       <div className="hero-section">
         <div className="Clayer1">
           <svg
-            width="70"
-            height="78"
-            viewBox="0 0 70 78"
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="54.4284" cy="14.8571" r="14.8571" fill="#473FE1" />
-            <circle cx="31.2139" cy="58.5" r="19.5" fill="#473FE1" />
-            <circle cx="11.7141" cy="26" r="11.1429" fill="#473FE1" />
+            <circle cx="29" cy="8" r="8" fill="#473FE1" />
+            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
+            <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
         <div className="Clayer2">
           <svg
-            width="67"
-            height="75"
-            viewBox="0 0 67 75"
+            width="37"
+            height="42"
+            viewBox="0 0 37 42"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <circle
-              cx="14.2856"
-              cy="60.7143"
-              r="14.2857"
-              transform="rotate(-180 14.2856 60.7143)"
+              cx="8"
+              cy="34"
+              r="8"
+              transform="rotate(-180 8 34)"
               fill="#473FE1"
             />
             <circle
-              cx="36.6074"
-              cy="18.75"
-              r="18.75"
-              transform="rotate(-180 36.6074 18.75)"
+              cx="20.5"
+              cy="10.5"
+              r="10.5"
+              transform="rotate(-180 20.5 10.5)"
               fill="#473FE1"
             />
             <circle
-              cx="55.357"
-              cy="50"
-              r="10.7143"
-              transform="rotate(-180 55.357 50)"
+              cx="31"
+              cy="28"
+              r="6"
+              transform="rotate(-180 31 28)"
               fill="#473FE1"
             />
           </svg>
         </div>
-        <p className="hero-title">
+        <p className="cont-title">
           Transform Your Career with Our Expert-Led Courses
         </p>
-        <p className="course-desc">
+        <p className="cont-desc">
           Explore industry-aligned programs designed to prepare you for success
           in tech.
         </p>
         <Button
+          className="contact-btn"
           style={{
-            fontSize: 16,
-            fontWeight: 500,
             backgroundColor: "#473FE1",
             borderRadius: "100px",
-            width: "156px",
-            height: "56px",
             color: "#FFFFFF",
           }}
         >
@@ -154,7 +151,7 @@ export default function Course() {
             <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
-        <div className="layer4">
+        <div className="Clayer4">
           <svg
             width="37"
             height="42"
@@ -212,7 +209,7 @@ export default function Course() {
       </div>
 
       <div className="services-page">
-        <div className="layer5">
+        <div className="Clayer5">
           <svg
             width="37"
             height="42"
@@ -225,7 +222,7 @@ export default function Course() {
             <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
-        <div className="layer6">
+        <div className="Clayer6">
           <svg
             width="37"
             height="42"
@@ -284,7 +281,7 @@ export default function Course() {
         </div>
       </div>
 
-      <div className="upcoming-batch">
+      {/* <div className="upcoming-batch">
         <div className="layer11">
           <svg
             width="37"
@@ -650,10 +647,10 @@ export default function Course() {
             View More
           </Button>
         </div>
-      </div>
+      </div> */}
 
       <div className="demo-container">
-        <div className="layer18">
+        <div className="Clayer18">
           <svg
             width="37"
             height="42"
@@ -666,7 +663,7 @@ export default function Course() {
             <circle cx="6" cy="14" r="6" fill="white" />
           </svg>
         </div>
-        <div className="layer19">
+        <div className="Clayer19">
           <svg
             width="37"
             height="42"
@@ -697,15 +694,12 @@ export default function Course() {
             />
           </svg>
         </div>
-        <div>
+        <div className="demo">
           <Button
+            className="free-demo"
             style={{
-              fontSize: 18,
-              fontWeight: 500,
               backgroundColor: "#FFFFFF1A",
               borderRadius: "10px",
-              width: "187px",
-              height: "40px",
               color: "#FFFFFF",
               borderStyle: "none",
             }}
@@ -718,13 +712,10 @@ export default function Course() {
             with Industry Experts.
           </p>
           <Button
+            className="book-seat"
             style={{
-              fontSize: 16,
-              fontWeight: 500,
               backgroundColor: "#FFFFFF",
               borderRadius: "100px",
-              width: "189px",
-              height: "56px",
               color: "#473FE1",
             }}
           >
@@ -732,12 +723,18 @@ export default function Course() {
           </Button>
         </div>
         <div>
-          <img src={calltoimg} width="557px" height="370px" alt="" />
+          <img
+            src={calltoimg}
+            width="557px"
+            height="370px"
+            alt=""
+            className="call-img"
+          />
         </div>
       </div>
 
       <div className="upcoming-batch">
-        <div className="layer16">
+        <div className="Clayer16">
           <svg
             width="37"
             height="42"
@@ -750,7 +747,7 @@ export default function Course() {
             <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
-        <div className="layer17">
+        <div className="Clayer17">
           <svg
             width="37"
             height="42"
@@ -787,12 +784,12 @@ export default function Course() {
             Find answers to common questions about our courses, enrollment, and
             more.
           </p>
-          <Faq />
+          {/* <Faq /> */}
         </div>
       </div>
 
       <div className="cta-container">
-        <div className="layer20">
+        <div className="Clayer20">
           <svg
             width="37"
             height="42"
@@ -805,7 +802,7 @@ export default function Course() {
             <circle cx="6" cy="14" r="6" fill="white" />
           </svg>
         </div>
-        <div className="layer21">
+        <div className="Clayer21">
           <svg
             width="37"
             height="42"
@@ -842,13 +839,10 @@ export default function Course() {
           Industry Experts.
         </p>
         <Button
+          className="enroll-button"
           style={{
-            fontSize: 16,
-            fontWeight: 500,
             backgroundColor: "#FFFFFF",
             borderRadius: "100px",
-            width: "176px",
-            height: "56px",
             color: "#473FE1",
           }}
         >

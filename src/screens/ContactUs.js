@@ -146,7 +146,7 @@ export default function ContactUs() {
       </div>
 
       <div className="contact-container">
-        <div className="Clayer3">
+        <div className="Conlayer3">
           <svg
             width="37"
             height="42"
@@ -159,7 +159,7 @@ export default function ContactUs() {
             <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
-        <div className="Clayer4">
+        <div className="Conlayer4">
           <svg
             width="37"
             height="42"
@@ -215,7 +215,7 @@ export default function ContactUs() {
       </div>
 
       <div className="contact-container">
-        <div className="Clayer5">
+        <div className="Conlayer5">
           <svg
             width="37"
             height="42"
@@ -228,7 +228,7 @@ export default function ContactUs() {
             <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
-        <div className="Clayer6">
+        <div className="Conlayer6">
           <svg
             width="37"
             height="42"

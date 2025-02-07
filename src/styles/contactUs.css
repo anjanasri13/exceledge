@@ -20,46 +20,46 @@
     top: 70%;
   }
 }
-.Clayer3 {
+.Conlayer3 {
   position: absolute;
   left: 35%;
   top: -10%;
 }
 @media (max-width: 768px) {
-  .Clayer3 {
+  .Conlayer3 {
     left: 15%;
     top: -10%;
   }
 }
-.Clayer4 {
+.Conlayer4 {
   position: absolute;
   left: 63%;
   top: 10%;
 }
 @media (max-width: 768px) {
-  .Clayer4 {
+  .Conlayer4 {
     left: 75%;
     top: 2%;
   }
 }
-.Clayer5 {
+.Conlayer5 {
   position: absolute;
   left: 25%;
   top: 0%;
 }
 @media (max-width: 768px) {
-  .Clayer5 {
+  .Conlayer5 {
     left: 10%;
     top: -7%;
   }
 }
-.Clayer6 {
+.Conlayer6 {
   position: absolute;
   left: 70%;
   top: 10%;
 }
 @media (max-width: 768px) {
-  .Clayer6 {
+  .Conlayer6 {
     left: 85%;
     top: 2%;
   }
@@ -115,7 +115,6 @@
 @media (max-width: 768px) {
   .contact-btn {
     font-size: 15px;
-    font-weight: 500;
     width: 138px;
     height: 44px;
   }
