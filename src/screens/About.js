@@ -235,13 +235,10 @@ export default function About() {
             shaping the next generation of tech leaders.
           </p>
           <Button
+            className="enroll-button"
             style={{
-              fontSize: 16,
-              fontWeight: 500,
               backgroundColor: "#473FE1",
               borderRadius: "100px",
-              width: "176px",
-              height: "56px",
               color: "#FFFFFF",
             }}
           >
@@ -374,43 +371,48 @@ export default function About() {
           <img src={image12} className="main-image" alt="" />
           <img src={image13} alt="" className="overlay-image" />
         </div>
-        <div>
-          <div>
-            <p className="about-text">About Us</p>
-            <p className="about-sub-text">
-              Join a vibrant learning community, gain hands-on experience, and
-              take the next step toward a successful career.
-            </p>
-            <div className="benefits-list">
-              <div className="benefit-item">
-                <img src={frame} className="benefit-icon" alt="" />
-                <div>
-                  <p className="benefits-title">Experienced instructors</p>
-                  <p className="benefits-description">
-                    Learn from industry experts with real-world experience and
-                    deep knowledge.
-                  </p>
-                </div>
+
+        <div className="ab-con">
+          <p className="about-text">About Us</p>
+          <p className="about-sub-text">
+            Join a vibrant learning community, gain hands-on experience, and
+            take the next step toward a successful career.
+          </p>
+          <div className="benefits-list">
+            <div className="benefit-item">
+              <img src={frame} className="benefit-img" alt="" />
+              <div>
+                <p className="benefit-title" style={{ color: "#1B1B1B" }}>
+                  Experienced instructors
+                </p>
+                <p className="benefit-description" style={{ color: "#1B1B1B" }}>
+                  Learn from industry experts with real-world experience and
+                  deep knowledge.
+                </p>
               </div>
-              <div className="benefit-item">
-                <img src={frame1} className="benefit-icon" alt="" />
-                <div>
-                  <p className="benefits-title">Job placement support</p>
-                  <p className="benefits-description">
-                    Get career guidance, resume building, and access to job
-                    opportunities with our dedicated placement support.
-                  </p>
-                </div>
+            </div>
+            <div className="benefit-item">
+              <img src={frame1} className="benefit-img" alt="" />
+              <div>
+                <p className="benefit-title" style={{ color: "#1B1B1B" }}>
+                  Job placement support
+                </p>
+                <p className="benefit-description" style={{ color: "#1B1B1B" }}>
+                  Get career guidance, resume building, and access to job
+                  opportunities with our dedicated placement support.
+                </p>
               </div>
-              <div className="benefit-item">
-                <img src={frame2} className="benefit-icon" alt="" />
-                <div>
-                  <p className="benefits-title">Industry-aligned curriculum</p>
-                  <p className="benefits-description">
-                    Stay ahead with courses designed to meet current industry
-                    demands and skill requirements.
-                  </p>
-                </div>
+            </div>
+            <div className="benefit-item">
+              <img src={frame2} className="benefit-img" alt="" />
+              <div>
+                <p className="benefit-title" style={{ color: "#1B1B1B" }}>
+                  Industry-aligned curriculum
+                </p>
+                <p className="benefit-description" style={{ color: "#1B1B1B" }}>
+                  Stay ahead with courses designed to meet current industry
+                  demands and skill requirements.
+                </p>
               </div>
             </div>
           </div>
@@ -462,10 +464,10 @@ export default function About() {
             />
           </svg>
         </div>
-        <div className="a-main-text">
-          <p className="a-main-text-title" style={{ fontSize: "" }}>
+        <div className="main-a-text">
+          <p className="a-main-text-title">
             Build your <span style={{ color: "#473FE1" }}>Career</span> And
-            Upgrade <span style={{ color: "#473FE1" }}>Your Life</span>{" "}
+            Upgrade <span style={{ color: "#473FE1" }}>Your Life</span>
           </p>
           <p className="a-main-text-sub-title">
             Unlock endless possibilities with our comprehensive learning
@@ -477,13 +479,10 @@ export default function About() {
             needed to achieve your career and personal growth goals.
           </p>
           <Button
+            className="enroll-button"
             style={{
-              fontSize: 16,
-              fontWeight: 500,
               backgroundColor: "#473FE1",
               borderRadius: "100px",
-              width: "176px",
-              height: "56px",
               color: "#FFFFFF",
             }}
           >
@@ -491,7 +490,7 @@ export default function About() {
           </Button>
         </div>
 
-        <div className="customer-image-container">
+        <div>
           <img src={image14} alt="cus" className="youtube-image" />
         </div>
       </div>
@@ -601,13 +600,10 @@ export default function About() {
           }}
         >
           <Button
+            className="enroll-button"
             style={{
-              fontSize: 16,
-              fontWeight: 500,
               backgroundColor: "#473FE1",
               borderRadius: "100px",
-              width: "176px",
-              height: "56px",
               color: "#FFFFFF",
               alignItems: "center",
               justifyContent: "center",
@@ -618,7 +614,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="academy-container">
+      <div style={{ position: "relative" }}>
         <div className="layer14">
           <svg
             width="37"
@@ -664,7 +660,7 @@ export default function About() {
           </svg>
         </div>
         <p className="testimonials-heading">Testimonials!</p>
-        <div style={{ margin: "0% 5%" }}>
+        <div style={{ margin: "-5% 5%" }}>
           <Carousel
             dotListClass="custom-dots"
             showDots={!isDesktop}
@@ -753,7 +749,7 @@ export default function About() {
                     />
                   </svg>
                 </div>
-                <p className="testimonial-name">{testimonial.review}</p>
+                <p className="testimonial-review">{testimonial.review}</p>
                 <div style={{ display: "flex", gap: 10 }}>
                   <img
                     src={testimonial.image}
@@ -762,23 +758,8 @@ export default function About() {
                     alt={testimonial.name}
                   />
                   <div>
-                    <p
-                      style={{
-                        fontSize: 24,
-                        fontWeight: 500,
-                        color: "#FFFFFF",
-                        margin: 0,
-                      }}
-                    >
-                      {testimonial.name}
-                    </p>
-                    <p
-                      style={{
-                        fontSize: 16,
-                        fontWeight: 400,
-                        color: "#ffffff",
-                      }}
-                    >
+                    <p className="testimonial-name">{testimonial.name}</p>
+                    <p className="testimonial-description">
                       {testimonial.designation}
                     </p>
                   </div>
@@ -840,7 +821,7 @@ export default function About() {
             Find answers to common questions about our courses, enrollment, and
             more.
           </p>
-          <Faq />
+          {/* <Faq /> */}
         </div>
       </div>
 
@@ -895,13 +876,10 @@ export default function About() {
           Industry Experts.
         </p>
         <Button
+          className="enroll-button"
           style={{
-            fontSize: 16,
-            fontWeight: 500,
             backgroundColor: "#FFFFFF",
             borderRadius: "100px",
-            width: "176px",
-            height: "56px",
             color: "#473FE1",
           }}
         >

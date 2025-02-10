@@ -281,8 +281,8 @@ export default function Course() {
         </div>
       </div>
 
-      {/* <div className="upcoming-batch">
-        <div className="layer11">
+      <div className="upcoming-batch">
+        <div className="Clayer11">
           <svg
             width="37"
             height="42"
@@ -295,7 +295,7 @@ export default function Course() {
             <circle cx="6" cy="14" r="6" fill="#473FE1" />
           </svg>
         </div>
-        <div className="layer12">
+        <div className="Clayer12">
           <svg
             width="37"
             height="42"
@@ -335,7 +335,7 @@ export default function Course() {
         </div>
 
         <div className="batch-container">
-          <div
+          {/* <div
             style={{
               backgroundColor: "#473FE11F",
               borderRadius: "50%",
@@ -367,17 +367,14 @@ export default function Course() {
             >
               Feb
             </p>
-          </div>
+          </div> */}
 
           <div className="batch-header">
             <Button
+              className="offl-btn"
               style={{
-                fontSize: 18,
-                fontWeight: 500,
                 backgroundColor: "#473FE11F",
                 borderRadius: "10px",
-                width: "196px",
-                height: "40px",
                 color: "#473FE1",
                 border: "none",
               }}
@@ -415,15 +412,12 @@ export default function Course() {
             </div>
           </div>
 
-          <div>
+          <div className="form-button-container">
             <Button
+              className="enroll-btn"
               style={{
-                fontSize: 16,
-                fontWeight: 500,
                 backgroundColor: "#473FE1",
                 borderRadius: "100px",
-                width: "176px",
-                height: "56px",
                 color: "#FFFFFF",
               }}
             >
@@ -433,7 +427,7 @@ export default function Course() {
         </div>
 
         <div className="batch-container">
-          <div
+          {/* <div
             style={{
               backgroundColor: "#473FE11F",
               borderRadius: "50%",
@@ -465,7 +459,7 @@ export default function Course() {
             >
               Feb
             </p>
-          </div>
+          </div> */}
           <div className="batch-header">
             <Button
               style={{
@@ -512,15 +506,12 @@ export default function Course() {
             </div>
           </div>
 
-          <div>
+          <div className="form-button-container">
             <Button
+              className="enroll-btn"
               style={{
-                fontSize: 16,
-                fontWeight: 500,
                 backgroundColor: "#473FE1",
                 borderRadius: "100px",
-                width: "176px",
-                height: "56px",
                 color: "#FFFFFF",
               }}
             >
@@ -530,7 +521,7 @@ export default function Course() {
         </div>
 
         <div className="batch-container">
-          <div
+          {/* <div
             style={{
               backgroundColor: "#473FE11F",
               borderRadius: "50%",
@@ -562,7 +553,7 @@ export default function Course() {
             >
               Feb
             </p>
-          </div>
+          </div> */}
           <div className="batch-header">
             <Button
               style={{
@@ -609,15 +600,12 @@ export default function Course() {
             </div>
           </div>
 
-          <div>
+          <div className="form-button-container">
             <Button
+              className="enroll-btn"
               style={{
-                fontSize: 16,
-                fontWeight: 500,
                 backgroundColor: "#473FE1",
                 borderRadius: "100px",
-                width: "176px",
-                height: "56px",
                 color: "#FFFFFF",
               }}
             >
@@ -634,20 +622,17 @@ export default function Course() {
           }}
         >
           <Button
+            className="view-btn"
             style={{
-              fontSize: 16,
-              fontWeight: 500,
               backgroundColor: "#473FE1",
               borderRadius: "100px",
-              width: "176px",
-              height: "56px",
               color: "#FFFFFF",
             }}
           >
             View More
           </Button>
         </div>
-      </div> */}
+      </div>
 
       <div className="demo-container">
         <div className="Clayer18">
@@ -723,13 +708,7 @@ export default function Course() {
           </Button>
         </div>
         <div>
-          <img
-            src={calltoimg}
-            width="557px"
-            height="370px"
-            alt=""
-            className="call-img"
-          />
+          <img src={calltoimg} alt="" className="call-img" />
         </div>
       </div>
 

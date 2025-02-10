@@ -55,6 +55,29 @@
     top: 2%;
   }
 }
+.Clayer11 {
+  position: absolute;
+  left: 25%;
+  top: 0%;
+}
+@media (max-width: 768px) {
+  .Clayer11 {
+    position: absolute;
+    left: 7%;
+    top: 0%;
+  }
+}
+.Clayer12 {
+  position: absolute;
+  left: 75%;
+  top: 15%;
+}
+@media (max-width: 768px) {
+  .Clayer12 {
+    left: 85%;
+    top: 2%;
+  }
+}
 .Clayer16 {
   position: absolute;
   left: 40%;
@@ -199,19 +222,56 @@
   justify-content: space-around;
   width: auto;
 }
+@media (max-width: 768px) {
+  .batch-container {
+    border-radius: 30px;
+    border: 2px solid #473fe1;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 5%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .batch-header {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
+.offl-btn {
+  font-size: 18px;
+  font-weight: 500;
+  width: 196px;
+  height: 40px;
+}
+@media (max-width: 768px) {
+  .offl-btn {
+    font-size: 12px;
+    width: 132px;
+    height: 32px;
+  }
+}
 .course-title {
   font-size: 24px;
   font-weight: 500;
+}
+@media (max-width: 768px) {
+  .course-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
 }
 .batch-details {
   display: flex;
   gap: 40px;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .batch-details {
+    flex-direction: column;
+    gap: 2px;
+    align-items: normal;
+  }
 }
 .info-item {
   display: flex;
@@ -234,24 +294,46 @@
   font-weight: 400;
   margin-bottom: 0;
 }
-
+@media (max-width: 768px) {
+  .info-text {
+    font-size: 16px;
+  }
+}
 .slots-left {
   font-weight: 600;
 }
 
-.enroll-button {
+.enroll-btn {
   font-size: 16px;
   font-weight: 500;
-  background-color: #0780fd;
-  border-radius: 100px;
   width: 176px;
   height: 43px;
-  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .enroll-btn {
+    width: 100% !important;
+    height: 44px !important;
+    font-size: 15px;
+    margin-top: 6%;
+  }
+}
+.view-btn {
+  font-size: 16px;
+  font-weight: 500;
+  width: 176px;
+  height: 56px;
+}
+@media (max-width: 768px) {
+  .view-btn {
+    font-size: 15px;
+    width: 138px;
+    height: 44px;
+  }
 }
 .demo-container {
   background-color: #473fe1;
   border-radius: 80px;
-  margin: 8%;
+  margin: 5%;
   padding: 5%;
   display: flex;
   position: relative;
@@ -261,6 +343,7 @@
     flex-direction: column;
     border-radius: 30px;
     margin: 5%;
+    margin-top: 25%;
     gap: 30px;
   }
 }

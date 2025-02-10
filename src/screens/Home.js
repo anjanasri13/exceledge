@@ -124,14 +124,27 @@ const CustomRightArrow = ({ onClick }) => {
 export default function Home() {
   const [isDesktop, setIsDesktop] = useState(true);
 
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsDesktop(window.innerWidth > 1024);
+  //   };
+
+  //   window.addEventListener("resize", handleResize);
+  //   handleResize();
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
+
   useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth > 1024);
+    const checkScreenSize = () => {
+      setIsDesktop(window.innerWidth >= 1024);
     };
 
-    window.addEventListener("resize", handleResize);
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => {
+      window.removeEventListener("resize", checkScreenSize);
+    };
   }, []);
 
   const [startCount, setStartCount] = useState(false);
@@ -218,13 +231,10 @@ export default function Home() {
             with Industry Experts.
           </p>
           <Button
+            className="enroll-button"
             style={{
-              fontSize: 16,
-              fontWeight: 500,
               backgroundColor: "#473FE1",
               borderRadius: "100px",
-              width: "176px",
-              height: "56px",
               color: "#FFFFFF",
             }}
           >
@@ -443,13 +453,10 @@ export default function Home() {
           </p>
           <div>
             <Button
+              className="enroll-button"
               style={{
-                fontSize: 16,
-                fontWeight: 500,
                 backgroundColor: "#473FE1",
                 borderRadius: "100px",
-                width: "176px",
-                height: "56px",
                 color: "#FFFFFF",
               }}
             >
@@ -512,13 +519,10 @@ export default function Home() {
           </p>
           <div>
             <Button
+              className="enroll-button"
               style={{
-                fontSize: 16,
-                fontWeight: 500,
                 backgroundColor: "#FFFFFF",
                 borderRadius: "100px",
-                width: "176px",
-                height: "56px",
                 color: "#473FE1",
               }}
             >
@@ -527,7 +531,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div>
+        <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
           <div className="benefit-item">
             <img src={img1} className="benefit-img" alt="" />
             <div>
@@ -617,13 +621,10 @@ export default function Home() {
         <div className="batch-container">
           <div className="batch-header">
             <Button
+              className="offl-btn"
               style={{
-                fontSize: 18,
-                fontWeight: 500,
                 backgroundColor: "#473FE11F",
                 borderRadius: "10px",
-                width: "196px",
-                height: "40px",
                 color: "#473FE1",
                 border: "none",
               }}
@@ -661,15 +662,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div>
+          <div className="form-button-container">
             <Button
+              className="enroll-btn"
               style={{
-                fontSize: 16,
-                fontWeight: 500,
                 backgroundColor: "#473FE1",
                 borderRadius: "100px",
-                width: "176px",
-                height: "56px",
                 color: "#FFFFFF",
               }}
             >
@@ -681,13 +679,10 @@ export default function Home() {
         <div className="batch-container">
           <div className="batch-header">
             <Button
+              className="offl-btn"
               style={{
-                fontSize: 18,
-                fontWeight: 500,
                 backgroundColor: "#473FE11F",
                 borderRadius: "10px",
-                width: "196px",
-                height: "40px",
                 color: "#473FE1",
                 border: "none",
               }}
@@ -725,15 +720,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div>
+          <div className="form-button-container">
             <Button
+              className="enroll-btn"
               style={{
-                fontSize: 16,
-                fontWeight: 500,
                 backgroundColor: "#473FE1",
                 borderRadius: "100px",
-                width: "176px",
-                height: "56px",
                 color: "#FFFFFF",
               }}
             >
@@ -745,13 +737,10 @@ export default function Home() {
         <div className="batch-container">
           <div className="batch-header">
             <Button
+              className="offl-btn"
               style={{
-                fontSize: 18,
-                fontWeight: 500,
                 backgroundColor: "#473FE11F",
                 borderRadius: "10px",
-                width: "196px",
-                height: "40px",
                 color: "#473FE1",
                 border: "none",
               }}
@@ -789,15 +778,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div>
+          <div className="form-button-container">
             <Button
+              className="enroll-btn"
               style={{
-                fontSize: 16,
-                fontWeight: 500,
                 backgroundColor: "#473FE1",
                 borderRadius: "100px",
-                width: "176px",
-                height: "56px",
                 color: "#FFFFFF",
               }}
             >
@@ -814,13 +800,10 @@ export default function Home() {
           }}
         >
           <Button
+            className="view-btn"
             style={{
-              fontSize: 16,
-              fontWeight: 500,
               backgroundColor: "#473FE1",
               borderRadius: "100px",
-              width: "176px",
-              height: "56px",
               color: "#FFFFFF",
             }}
           >
@@ -874,15 +857,12 @@ export default function Home() {
             />
           </svg>
         </div>
-        <div>
+        <div className="demo">
           <Button
+            className="free-demo"
             style={{
-              fontSize: 18,
-              fontWeight: 500,
               backgroundColor: "#FFFFFF1A",
               borderRadius: "10px",
-              width: "187px",
-              height: "40px",
               color: "#FFFFFF",
               borderStyle: "none",
             }}
@@ -895,13 +875,10 @@ export default function Home() {
             with Industry Experts.
           </p>
           <Button
+            className="book-seat"
             style={{
-              fontSize: 16,
-              fontWeight: 500,
               backgroundColor: "#FFFFFF",
               borderRadius: "100px",
-              width: "189px",
-              height: "56px",
               color: "#473FE1",
             }}
           >
@@ -909,7 +886,7 @@ export default function Home() {
           </Button>
         </div>
         <div>
-          <img src={calltoimg} width="557px" height="370px" alt="" />
+          <img src={calltoimg} className="call-img" alt="" />
         </div>
       </div>
 
@@ -966,16 +943,16 @@ export default function Home() {
           </p>
         </div>
         <div className="gallery-images-row1">
-          <img src={Gallery1} width="417px" height="356px" alt="" />
+          <img src={Gallery1} alt="" className="Gimg1" />
           <div className="gallery-images-column">
-            <img src={Gallery2} width="368px" height="168px" alt="" />{" "}
-            <img src={Gallery3} width="368px" height="168px" alt="" />
+            <img src={Gallery2} alt="" className="Gimg2" />
+            <img src={Gallery3} className="Gimg2" alt="" />
           </div>
-          <img src={Gallery4} width="417px" height="356px" alt="" />
+          <img src={Gallery4} className="Gimg3" alt="" />
         </div>
         <div className="gallery-images-row2">
-          <img src={Gallery5} width="610px" height="320px" alt="" />
-          <img src={Gallery6} width="610px" height="320px" alt="" />
+          <img src={Gallery5} alt="" className="Gimg4" />
+          <img src={Gallery6} alt="" className="Gimg4" />
         </div>
       </div>
 
@@ -1025,10 +1002,10 @@ export default function Home() {
           </svg>
         </div>
         <p className="testimonials-heading">Testimonials!</p>
-        <div style={{ margin: "0% 5%" }}>
+        <div style={{ margin: "-5% 5%" }}>
           <Carousel
             dotListClass="custom-dots"
-            showDots={!isDesktop}
+            showDots={isDesktop === false}
             swipeable={true}
             customLeftArrow={isDesktop ? <CustomLeftArrow /> : null}
             customRightArrow={isDesktop ? <CustomRightArrow /> : null}
@@ -1114,7 +1091,7 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <p className="testimonial-name">{testimonial.review}</p>
+                <p className="testimonial-review">{testimonial.review}</p>
                 <div style={{ display: "flex", gap: 10 }}>
                   <img
                     src={testimonial.image}
@@ -1123,23 +1100,8 @@ export default function Home() {
                     alt={testimonial.name}
                   />
                   <div>
-                    <p
-                      style={{
-                        fontSize: 24,
-                        fontWeight: 500,
-                        color: "#FFFFFF",
-                        margin: 0,
-                      }}
-                    >
-                      {testimonial.name}
-                    </p>
-                    <p
-                      style={{
-                        fontSize: 16,
-                        fontWeight: 400,
-                        color: "#ffffff",
-                      }}
-                    >
+                    <p className="testimonial-name">{testimonial.name}</p>
+                    <p className="testimonial-description">
                       {testimonial.designation}
                     </p>
                   </div>
@@ -1201,7 +1163,7 @@ export default function Home() {
             Find answers to common questions about our courses, enrollment, and
             more.
           </p>
-          <Faq />
+          {/* <Faq /> */}
         </div>
       </div>
 
@@ -1256,13 +1218,10 @@ export default function Home() {
           Industry Experts.
         </p>
         <Button
+          className="enroll-button"
           style={{
-            fontSize: 16,
-            fontWeight: 500,
             backgroundColor: "#FFFFFF",
             borderRadius: "100px",
-            width: "176px",
-            height: "56px",
             color: "#473FE1",
           }}
         >

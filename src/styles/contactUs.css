@@ -251,6 +251,11 @@
   justify-content: center;
 }
 @media (max-width: 768px) {
+  .form-button-container {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
   .login-btn {
     width: 100% !important;
     height: 44px !important;
