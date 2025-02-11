@@ -80,24 +80,24 @@
 }
 .Clayer16 {
   position: absolute;
-  left: 40%;
+  left: 35%;
   top: 5%;
 }
 @media (max-width: 768px) {
   .Clayer16 {
     left: 15%;
-    top: 5%;
+    top: 0%;
   }
 }
 .Clayer17 {
   position: absolute;
   left: 70%;
-  top: 22%;
+  top: 20%;
 }
 @media (max-width: 768px) {
   .Clayer17 {
-    left: 75%;
-    top: 20%;
+    left: 80%;
+    top: 3%;
   }
 }
 .Clayer18 {

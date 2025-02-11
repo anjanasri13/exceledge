@@ -763,7 +763,7 @@ export default function Course() {
             Find answers to common questions about our courses, enrollment, and
             more.
           </p>
-          {/* <Faq /> */}
+          <Faq />
         </div>
       </div>
 

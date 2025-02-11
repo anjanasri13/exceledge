@@ -821,7 +821,7 @@ export default function About() {
             Find answers to common questions about our courses, enrollment, and
             more.
           </p>
-          {/* <Faq /> */}
+          <Faq />
         </div>
       </div>
 
