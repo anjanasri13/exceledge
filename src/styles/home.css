@@ -646,7 +646,7 @@
 @media (max-width: 768px) {
   .Gallery-page {
     margin-top: 25%;
-    gap: 10px;
+    gap: 18px;
   }
 }
 .Gallery-sub-title {
@@ -690,8 +690,7 @@
 @media (max-width: 768px) {
   .gallery-images-row2 {
     flex-direction: column;
-    /* width: 100%;
-    margin: 5%; */
+    margin: 0% 5%;
   }
 }
 .Gimg1 {
