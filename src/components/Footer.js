@@ -54,17 +54,20 @@ export default function Footer() {
             <p className="footer-title">Quick Links</p>
 
             <div className="footer-column">
-              <Link to="/services" className="footer-nav">
+              <Link to="/" className="footer-nav">
                 Home
               </Link>
-              <Link to="/education" className="footer-nav">
-                Solutions
+              <Link to="/about-us" className="footer-nav">
+                About Us
               </Link>
-              <Link to="/about" className="footer-nav">
-                Company
+              <Link to="/course" className="footer-nav">
+                Our courses
               </Link>
-              <Link to="/contact" className="footer-nav">
-                Resources
+              <Link to="/gallery" className="footer-nav">
+                Gallery
+              </Link>
+              <Link to="/contact-us" className="footer-nav">
+                Contact Us
               </Link>
             </div>
           </div>
