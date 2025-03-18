@@ -53,16 +53,16 @@ export default function Header() {
       <div className="btn">
         <Button
           style={{
-            fontSize: 16,
+            fontSize: 15,
             fontWeight: 500,
             backgroundColor: "#473FE1",
-            borderRadius: "100px",
+            borderRadius: "8px",
             width: "136px",
             height: "44px",
             color: "#FFFFFF",
           }}
         >
-          Enroll Now
+          Get in Touch
         </Button>
       </div>
     </div>

@@ -240,9 +240,11 @@
 }
 .offl-btn {
   font-size: 18px;
-  font-weight: 500;
-  width: 196px;
+  font-weight: 600;
+  width: 231px;
   height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 @media (max-width: 768px) {
   .offl-btn {
@@ -254,6 +256,7 @@
 .course-title {
   font-size: 24px;
   font-weight: 500;
+  color: #141f39;
 }
 @media (max-width: 768px) {
   .course-title {
@@ -293,6 +296,7 @@
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 0;
+  color: #3c4b5b;
 }
 @media (max-width: 768px) {
   .info-text {
@@ -307,7 +311,7 @@
   font-size: 16px;
   font-weight: 500;
   width: 176px;
-  height: 43px;
+  height: 56px;
 }
 @media (max-width: 768px) {
   .enroll-btn {
@@ -330,73 +334,7 @@
     height: 44px;
   }
 }
-.demo-container {
-  background-color: #473fe1;
-  border-radius: 80px;
-  margin: 5%;
-  padding: 5%;
-  display: flex;
-  position: relative;
-}
-@media (max-width: 768px) {
-  .demo-container {
-    flex-direction: column;
-    border-radius: 30px;
-    margin: 5%;
-    margin-top: 25%;
-    gap: 30px;
-  }
-}
-@media (max-width: 768px) {
-  .demo {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-}
-.demo-title {
-  font-size: 49px;
-  font-weight: 600;
-  color: #ffffff;
-  width: 70%;
-  line-height: 68.6px;
-}
-@media (max-width: 768px) {
-  .demo-title {
-    font-size: 24px;
-    line-height: 33.6px;
-    margin: 0;
-  }
-}
-.demo-description {
-  font-size: 18px;
-  font-weight: 400;
-  opacity: 80%;
-  color: #ffffff;
-  width: 70%;
-  line-height: 34px;
-}
-@media (max-width: 768px) {
-  .demo-description {
-    font-size: 14px;
-    line-height: 21px;
-    width: 90%;
-    margin: 0;
-  }
-}
-.book-seat {
-  font-size: 16px;
-  font-weight: 500;
-  width: 189px;
-  height: 56px;
-}
-@media (max-width: 768px) {
-  .book-seat {
-    font-size: 15px;
-    width: 128px;
-    height: 44px;
-  }
-}
+
 .free-demo {
   font-size: 18px;
   font-weight: 500;
@@ -408,15 +346,5 @@
     font-size: 14px;
     width: 143px;
     height: 34px;
-  }
-}
-.call-img {
-  width: 557px;
-  height: 370px;
-}
-@media (max-width: 768px) {
-  .call-img {
-    width: 100%;
-    height: 211px;
   }
 }
