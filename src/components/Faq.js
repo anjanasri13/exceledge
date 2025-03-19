@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Accordion } from "react-bootstrap";
 import { GoPlus } from "react-icons/go";
 import { HiMiniMinusSmall } from "react-icons/hi2";
+import "../styles/Faq.css";
 
 export default function Faq() {
   const [activeKey, setActiveKey] = useState("0");
@@ -16,13 +17,13 @@ export default function Faq() {
   };
 
   const getIconStyle = (key) => ({
-    fontSize: "20px",
+    fontSize: "25px",
     position: "absolute",
     right: "24px",
     transition: "transform 0.3s ease",
     transform: activeKey === key ? "rotate(0deg)" : "rotate(0deg)",
-    backgroundColor: activeKey === key ? "#ffffff" : "#473FE1",
-    color: activeKey === key ? "#473FE1" : "#fff",
+    backgroundColor: activeKey === key ? "#ffffff" : "#ffffff",
+    color: activeKey === key ? "#473FE1" : "#473FE1",
     borderRadius: "50%",
     width: "30px",
     height: "30px",
@@ -93,8 +94,7 @@ export default function Faq() {
                     <span style={getIconStyle("0")}>
                       {activeKey === "0" ? <HiMiniMinusSmall /> : <GoPlus />}
                     </span>
-                    01.
-                    <br /> Can I upgrade my class?
+                    1. Can I upgrade my class?
                   </Accordion.Header>
                   <Accordion.Body>
                     Yes, you can upgrade your class based on seat availability
@@ -107,8 +107,7 @@ export default function Faq() {
                     <span style={getIconStyle("1")}>
                       {activeKey === "1" ? <HiMiniMinusSmall /> : <GoPlus />}
                     </span>
-                    02.
-                    <br /> What is the refund policy?
+                    2. What is the refund policy?
                   </Accordion.Header>
                   <Accordion.Body>
                     We offer a refund within the first 7 days of enrollment.
@@ -121,8 +120,7 @@ export default function Faq() {
                     <span style={getIconStyle("2")}>
                       {activeKey === "2" ? <HiMiniMinusSmall /> : <GoPlus />}
                     </span>
-                    03.
-                    <br /> How can I access the course materials?
+                    3. How can I access the course materials?
                   </Accordion.Header>
                   <Accordion.Body>
                     Course materials are available in your student dashboard
@@ -135,8 +133,7 @@ export default function Faq() {
                     <span style={getIconStyle("3")}>
                       {activeKey === "3" ? <HiMiniMinusSmall /> : <GoPlus />}
                     </span>
-                    04.
-                    <br /> Do you provide certificates upon course completion?
+                    4. Do you provide certificates upon course completion?
                   </Accordion.Header>
                   <Accordion.Body>
                     Yes, all successfully completed courses come with a verified
@@ -148,8 +145,7 @@ export default function Faq() {
                     <span style={getIconStyle("4")}>
                       {activeKey === "4" ? <HiMiniMinusSmall /> : <GoPlus />}
                     </span>
-                    05.
-                    <br /> Can I take multiple courses at the same time?
+                    5. Can I take multiple courses at the same time?
                   </Accordion.Header>
                   <Accordion.Body>
                     Absolutely! We encourage learners to take multiple courses

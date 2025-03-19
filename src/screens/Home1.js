@@ -31,6 +31,8 @@ import cimg3 from "../assests/cimg3.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import quote from "../assests/quote.png";
+import Faq from "../components/Faq";
+import Footer from "../components/Footer";
 
 const testimonials = [
   {
@@ -261,9 +263,8 @@ export default function Home1() {
         style={{
           margin: "0 5%",
           display: "flex",
-
-          justifyContent: "space-between", // Distributes space evenly
-          gap: "40px", // Adjusts spacing between image and text
+          justifyContent: "space-between",
+          gap: "40px",
         }}
       >
         <div style={{ width: "50%", flexShrink: 0 }}>
@@ -658,7 +659,7 @@ export default function Home1() {
 
       <div style={{ position: "relative" }}>
         <p className="testimonials-heading">Testimonials</p>
-        <div style={{ margin: "-7% 5%" }}>
+        <div style={{ margin: "-7% 5% 10%" }}>
           <Carousel
             dotListClass="custom-dots"
             showDots={isDesktop === false}
@@ -737,6 +738,38 @@ export default function Home1() {
           </Carousel>
         </div>
       </div>
+
+      <div className="upcoming-batch">
+        <div className="services-text">
+          <p className="faq-title">FAQ</p>
+          <p className="faq-sub-title">
+            Find answers to common questions about our courses, enrollment, and
+            more.
+          </p>
+          <Faq />
+        </div>
+      </div>
+
+      <div className="cta-container">
+        <p className="cta-title">Kickstart Your Career in Tech Today!</p>
+        <p className="cta-subtitle">
+          Learn Full Stack Engineering, Business Analysis, and Data Science with
+          Industry Experts. Learn Full Stack Engineering, Business Analysis, and
+          Data Science with Industry Experts.
+        </p>
+        <Button
+          className="enroll-button"
+          style={{
+            backgroundColor: "#FFFFFF",
+            borderRadius: "12px",
+            color: "#473FE1",
+          }}
+        >
+          Enrol now
+        </Button>
+      </div>
+
+      <Footer />
     </div>
   );
 }
