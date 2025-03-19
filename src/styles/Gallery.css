@@ -69,7 +69,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 5%;
+  margin: 5% 0% 10%;
   position: relative;
 }
 @media (max-width: 768px) {

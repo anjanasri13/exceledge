@@ -21,7 +21,7 @@ const services = [
     title: "Full Stack Engineering",
     description:
       "Master front-end & back-end development with React, Node.js, and databases.",
-    icon: <img src={Image2} className="service-image" alt="" />,
+    icon: <img src={Image2} className="courseservices-card-image" alt="" />,
 
     backgroundColor: "#377dff1a",
   },
@@ -29,14 +29,14 @@ const services = [
     title: "Business Analyst",
     description:
       "Gain skills in data analysis, market research, and business strategy.",
-    icon: <img src={Image3} className="service-image" alt="" />,
+    icon: <img src={Image3} className="courseservices-card-image" alt="" />,
     backgroundColor: "#FF9EC533",
   },
   {
     title: "Data Science",
     description:
       "Learn Python, machine learning, and AI to analyze and predict data trends.",
-    icon: <img src={Image4} className="service-image" alt="" />,
+    icon: <img src={Image4} className="courseservices-card-image" alt="" />,
     backgroundColor: "#FFCB2A24",
   },
 ];
@@ -74,52 +74,19 @@ export default function Course() {
     <div>
       <Header />
       <div className="hero-section">
-        <div className="Clayer1">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="29" cy="8" r="8" fill="#473FE1" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
-            <circle cx="6" cy="14" r="6" fill="#473FE1" />
-          </svg>
-        </div>
-        <div className="Clayer2">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="8"
-              cy="34"
-              r="8"
-              transform="rotate(-180 8 34)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="20.5"
-              cy="10.5"
-              r="10.5"
-              transform="rotate(-180 20.5 10.5)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="31"
-              cy="28"
-              r="6"
-              transform="rotate(-180 31 28)"
-              fill="#473FE1"
-            />
-          </svg>
-        </div>
+        <p
+          style={{
+            fontSize: 18,
+            fontWeight: 600,
+            letterSpacing: "3px",
+            color: " #F461A6",
+            textAlign: "center",
+          }}
+        >
+          LEADING TRAINING CENTER
+        </p>
         <p className="cont-title">
-          Transform Your Career with Our Expert-Led Courses
+          Transform Your Career With Our Expert-Led Courses
         </p>
         <p className="cont-desc">
           Explore industry-aligned programs designed to prepare you for success
@@ -129,7 +96,7 @@ export default function Course() {
           className="contact-btn"
           style={{
             backgroundColor: "#473FE1",
-            borderRadius: "100px",
+            borderRadius: "12px",
             color: "#FFFFFF",
           }}
         >
@@ -137,51 +104,7 @@ export default function Course() {
         </Button>
       </div>
 
-      <div className="stats-grid" ref={statsRef}>
-        <div className="layer3">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="29" cy="8" r="8" fill="#473FE1" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
-            <circle cx="6" cy="14" r="6" fill="#473FE1" />
-          </svg>
-        </div>
-        <div className="Clayer4">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="8"
-              cy="34"
-              r="8"
-              transform="rotate(-180 8 34)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="20.5"
-              cy="10.5"
-              r="10.5"
-              transform="rotate(-180 20.5 10.5)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="31"
-              cy="28"
-              r="6"
-              transform="rotate(-180 31 28)"
-              fill="#473FE1"
-            />
-          </svg>
-        </div>
+      <div className="course-stats-grid" ref={statsRef}>
         <div className="stat-item">
           <h4>
             <CountUp start={0} end={startCount ? 10 : 0} duration={2} />+
@@ -209,50 +132,6 @@ export default function Course() {
       </div>
 
       <div className="services-page">
-        <div className="Clayer5">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="29" cy="8" r="8" fill="#473FE1" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
-            <circle cx="6" cy="14" r="6" fill="#473FE1" />
-          </svg>
-        </div>
-        <div className="Clayer6">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="8"
-              cy="34"
-              r="8"
-              transform="rotate(-180 8 34)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="20.5"
-              cy="10.5"
-              r="10.5"
-              transform="rotate(-180 20.5 10.5)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="31"
-              cy="28"
-              r="6"
-              transform="rotate(-180 31 28)"
-              fill="#473FE1"
-            />
-          </svg>
-        </div>
         <div className="services-text">
           <p className="services-title"> Explore Our Courses</p>
           <p className="services-sub-title">
@@ -263,69 +142,25 @@ export default function Course() {
         <div className="services-card-container">
           {services.map((service, index) => (
             <Card key={index} className="services-card">
-              <div className="card-image">{service.icon}</div>
-              <div className="card-details">
-                <p className="service-card-title">{service.title}</p>
-                <p className="service-card-description">
+              <div className="courseservices-card-image">{service.icon}</div>
+              <div className="courseservices-card-details">
+                <p className="courseservices-card-title">{service.title}</p>
+                <p className="courseservices-card-description">
                   {service.description}
                 </p>
               </div>
-              <Link className="learn-more-link">
+              {/* <Link className="learn-more-link">
                 <div className="learn-more-container">
                   <span>Learn more</span>
                   <FaArrowRightLong className="fa-arrow-right-long" />
                 </div>
-              </Link>
+              </Link> */}
             </Card>
           ))}
         </div>
       </div>
 
       <div className="upcoming-batch">
-        <div className="Clayer11">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="29" cy="8" r="8" fill="#473FE1" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
-            <circle cx="6" cy="14" r="6" fill="#473FE1" />
-          </svg>
-        </div>
-        <div className="Clayer12">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="8"
-              cy="34"
-              r="8"
-              transform="rotate(-180 8 34)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="20.5"
-              cy="10.5"
-              r="10.5"
-              transform="rotate(-180 20.5 10.5)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="31"
-              cy="28"
-              r="6"
-              transform="rotate(-180 31 28)"
-              fill="#473FE1"
-            />
-          </svg>
-        </div>
         <div className="services-text">
           <p className="services-title">Upcoming Batches</p>
           <p className="services-sub-title">
@@ -334,48 +169,14 @@ export default function Course() {
           </p>
         </div>
 
-        <div className="batch-container">
-          {/* <div
-            style={{
-              backgroundColor: "#473FE11F",
-              borderRadius: "50%",
-              width: "98px",
-              height: "98px",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <p
-              style={{
-                fontSize: 34,
-                fontWeight: 500,
-                color: "#473FE1",
-                margin: 0,
-              }}
-            >
-              06
-            </p>
-            <p
-              style={{
-                fontSize: 18,
-                fontWeight: 300,
-                margin: 0,
-                color: "#473FE1",
-              }}
-            >
-              Feb
-            </p>
-          </div> */}
-
+        <div className="upcoming-batch-container">
           <div className="batch-header">
             <Button
               className="offl-btn"
               style={{
-                backgroundColor: "#473FE11F",
+                backgroundColor: "#D6F2E5",
                 borderRadius: "10px",
-                color: "#473FE1",
+                color: "#1B7A4D",
                 border: "none",
               }}
             >
@@ -417,7 +218,7 @@ export default function Course() {
               className="enroll-btn"
               style={{
                 backgroundColor: "#473FE1",
-                borderRadius: "100px",
+                borderRadius: "12px",
                 color: "#FFFFFF",
               }}
             >
@@ -426,54 +227,18 @@ export default function Course() {
           </div>
         </div>
 
-        <div className="batch-container">
-          {/* <div
-            style={{
-              backgroundColor: "#473FE11F",
-              borderRadius: "50%",
-              width: "98px",
-              height: "98px",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <p
-              style={{
-                fontSize: 34,
-                fontWeight: 500,
-                color: "#473FE1",
-                margin: 0,
-              }}
-            >
-              06
-            </p>
-            <p
-              style={{
-                fontSize: 18,
-                fontWeight: 300,
-                margin: 0,
-                color: "#473FE1",
-              }}
-            >
-              Feb
-            </p>
-          </div> */}
+        <div className="upcoming-batch-container">
           <div className="batch-header">
             <Button
+              className="offl-btn"
               style={{
-                fontSize: 18,
-                fontWeight: 500,
-                backgroundColor: "#473FE11F",
+                backgroundColor: "#FDE9F3",
                 borderRadius: "10px",
-                width: "196px",
-                height: "40px",
-                color: "#473FE1",
+                color: "#F461A6",
                 border: "none",
               }}
             >
-              Offline Classroom
+              Online Classroom
             </Button>
             <p className="course-title">Business Analyst</p>
           </div>
@@ -511,7 +276,7 @@ export default function Course() {
               className="enroll-btn"
               style={{
                 backgroundColor: "#473FE1",
-                borderRadius: "100px",
+                borderRadius: "12px",
                 color: "#FFFFFF",
               }}
             >
@@ -520,50 +285,14 @@ export default function Course() {
           </div>
         </div>
 
-        <div className="batch-container">
-          {/* <div
-            style={{
-              backgroundColor: "#473FE11F",
-              borderRadius: "50%",
-              width: "98px",
-              height: "98px",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <p
-              style={{
-                fontSize: 34,
-                fontWeight: 500,
-                color: "#473FE1",
-                margin: 0,
-              }}
-            >
-              06
-            </p>
-            <p
-              style={{
-                fontSize: 18,
-                fontWeight: 300,
-                margin: 0,
-                color: "#473FE1",
-              }}
-            >
-              Feb
-            </p>
-          </div> */}
+        <div className="upcoming-batch-container">
           <div className="batch-header">
             <Button
+              className="offl-btn"
               style={{
-                fontSize: 18,
-                fontWeight: 500,
-                backgroundColor: "#473FE11F",
+                backgroundColor: "#D6F2E5",
                 borderRadius: "10px",
-                width: "196px",
-                height: "40px",
-                color: "#473FE1",
+                color: "#1B7A4D",
                 border: "none",
               }}
             >
@@ -605,7 +334,7 @@ export default function Course() {
               className="enroll-btn"
               style={{
                 backgroundColor: "#473FE1",
-                borderRadius: "100px",
+                borderRadius: "12px",
                 color: "#FFFFFF",
               }}
             >
@@ -621,64 +350,23 @@ export default function Course() {
             justifyContent: "center",
           }}
         >
-          <Button
-            className="view-btn"
+          <Link
             style={{
-              backgroundColor: "#473FE1",
-              borderRadius: "100px",
-              color: "#FFFFFF",
+              color: "#473FE1",
+              textDecoration: "none",
+              fontSize: 16,
+              fontWeight: 600,
             }}
           >
-            View More
-          </Button>
+            <div className="learn-more-container">
+              <span>View More</span>{" "}
+              <FaArrowRightLong className="fa-arrow-right-long" />
+            </div>
+          </Link>
         </div>
       </div>
 
       <div className="demo-container">
-        <div className="Clayer18">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="29" cy="8" r="8" fill="white" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="white" />
-            <circle cx="6" cy="14" r="6" fill="white" />
-          </svg>
-        </div>
-        <div className="Clayer19">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="8"
-              cy="34"
-              r="8"
-              transform="rotate(-180 8 34)"
-              fill="white"
-            />
-            <circle
-              cx="20.5"
-              cy="10.5"
-              r="10.5"
-              transform="rotate(-180 20.5 10.5)"
-              fill="white"
-            />
-            <circle
-              cx="31"
-              cy="28"
-              r="6"
-              transform="rotate(-180 31 28)"
-              fill="white"
-            />
-          </svg>
-        </div>
         <div className="demo">
           <Button
             className="free-demo"
@@ -700,7 +388,7 @@ export default function Course() {
             className="book-seat"
             style={{
               backgroundColor: "#FFFFFF",
-              borderRadius: "100px",
+              borderRadius: "12px",
               color: "#473FE1",
             }}
           >
@@ -708,55 +396,11 @@ export default function Course() {
           </Button>
         </div>
         <div>
-          <img src={calltoimg} alt="" className="call-img" />
+          <img src={calltoimg} className="call-img" alt="" />
         </div>
       </div>
 
       <div className="upcoming-batch">
-        <div className="Clayer16">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="29" cy="8" r="8" fill="#473FE1" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
-            <circle cx="6" cy="14" r="6" fill="#473FE1" />
-          </svg>
-        </div>
-        <div className="Clayer17">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="8"
-              cy="34"
-              r="8"
-              transform="rotate(-180 8 34)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="20.5"
-              cy="10.5"
-              r="10.5"
-              transform="rotate(-180 20.5 10.5)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="31"
-              cy="28"
-              r="6"
-              transform="rotate(-180 31 28)"
-              fill="#473FE1"
-            />
-          </svg>
-        </div>
         <div className="services-text">
           <p className="faq-title">FAQ</p>
           <p className="faq-sub-title">
@@ -768,60 +412,17 @@ export default function Course() {
       </div>
 
       <div className="cta-container">
-        <div className="Clayer20">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="29" cy="8" r="8" fill="white" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="white" />
-            <circle cx="6" cy="14" r="6" fill="white" />
-          </svg>
-        </div>
-        <div className="Clayer21">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="8"
-              cy="34"
-              r="8"
-              transform="rotate(-180 8 34)"
-              fill="white"
-            />
-            <circle
-              cx="20.5"
-              cy="10.5"
-              r="10.5"
-              transform="rotate(-180 20.5 10.5)"
-              fill="white"
-            />
-            <circle
-              cx="31"
-              cy="28"
-              r="6"
-              transform="rotate(-180 31 28)"
-              fill="white"
-            />
-          </svg>
-        </div>
         <p className="cta-title">Kickstart Your Career in Tech Today!</p>
         <p className="cta-subtitle">
           Learn Full Stack Engineering, Business Analysis, and Data Science with
-          Industry Experts.
+          Industry Experts. Learn Full Stack Engineering, Business Analysis, and
+          Data Science with Industry Experts.
         </p>
         <Button
           className="enroll-button"
           style={{
             backgroundColor: "#FFFFFF",
-            borderRadius: "100px",
+            borderRadius: "12px",
             color: "#473FE1",
           }}
         >
