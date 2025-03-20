@@ -24,6 +24,10 @@ import "../styles/about.css";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
 import CountUp from "react-countup";
+import img1 from "../assests/staricon.png";
+import img2 from "../assests/crticon.png";
+import img3 from "../assests/balicon.png";
+import quote from "../assests/quote.png";
 
 const cardData = [
   {
@@ -181,121 +185,36 @@ export default function About() {
     <div>
       <Header />
 
-      <div className="aboutus-container">
-        <div className="layer1">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="29" cy="8" r="8" fill="#473FE1" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
-            <circle cx="6" cy="14" r="6" fill="#473FE1" />
-          </svg>
-        </div>
-        <div className="layer2">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="8"
-              cy="34"
-              r="8"
-              transform="rotate(-180 8 34)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="20.5"
-              cy="10.5"
-              r="10.5"
-              transform="rotate(-180 20.5 10.5)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="31"
-              cy="28"
-              r="6"
-              transform="rotate(-180 31 28)"
-              fill="#473FE1"
-            />
-          </svg>
-        </div>
-        <div className="a-main-text">
-          <p className="a-main-text-title">
-            Welcome to <span style={{ color: "#473FE1" }}>ExcelEdge</span>{" "}
-          </p>
-          <p className="a-main-text-sub-title">
-            Learn more about our mission, values, and the team dedicated to
-            shaping the next generation of tech leaders.
-          </p>
-          <Button
-            className="enroll-button"
-            style={{
-              backgroundColor: "#473FE1",
-              borderRadius: "100px",
-              color: "#FFFFFF",
-            }}
-          >
-            Courses
-          </Button>
-        </div>
-
-        <div className="customer-image-container">
-          <img src={image11} alt="cus" className="customer-image" />
-        </div>
+      <div className="hero-section">
+        <p
+          style={{
+            fontSize: 18,
+            fontWeight: 600,
+            letterSpacing: "3px",
+            color: " #F461A6",
+            textAlign: "center",
+          }}
+        >
+          LEADING TRAINING CENTER
+        </p>
+        <p className="cont-title">Welcome to ExcelEdge</p>
+        <p className="cont-desc">
+          Learn more about our mission, values, and the team dedicated to
+          shaping the next generation of tech leaders.
+        </p>
+        <Button
+          className="contact-btn"
+          style={{
+            backgroundColor: "#473FE1",
+            borderRadius: "12px",
+            color: "#FFFFFF",
+          }}
+        >
+          Courses
+        </Button>
       </div>
 
-      <div className="stats-grid" ref={statsRef}>
-        <div className="layer3">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="29" cy="8" r="8" fill="#473FE1" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
-            <circle cx="6" cy="14" r="6" fill="#473FE1" />
-          </svg>
-        </div>
-        <div className="layer4">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="8"
-              cy="34"
-              r="8"
-              transform="rotate(-180 8 34)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="20.5"
-              cy="10.5"
-              r="10.5"
-              transform="rotate(-180 20.5 10.5)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="31"
-              cy="28"
-              r="6"
-              transform="rotate(-180 31 28)"
-              fill="#473FE1"
-            />
-          </svg>
-        </div>
+      <div className="course-stats-grid" ref={statsRef}>
         <div className="stat-item">
           <h4>
             <CountUp start={0} end={startCount ? 10 : 0} duration={2} />+
@@ -323,50 +242,6 @@ export default function About() {
       </div>
 
       <div className="about-section">
-        <div className="Alayer1">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="29" cy="8" r="8" fill="#473FE1" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
-            <circle cx="6" cy="14" r="6" fill="#473FE1" />
-          </svg>
-        </div>
-        <div className="Alayer2">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="8"
-              cy="34"
-              r="8"
-              transform="rotate(-180 8 34)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="20.5"
-              cy="10.5"
-              r="10.5"
-              transform="rotate(-180 20.5 10.5)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="31"
-              cy="28"
-              r="6"
-              transform="rotate(-180 31 28)"
-              fill="#473FE1"
-            />
-          </svg>
-        </div>
         <div>
           <img src={image12} className="main-image" alt="" />
           <img src={image13} alt="" className="overlay-image" />
@@ -379,37 +254,37 @@ export default function About() {
             take the next step toward a successful career.
           </p>
           <div className="benefits-list">
-            <div className="benefit-item">
-              <img src={frame} className="benefit-img" alt="" />
-              <div>
-                <p className="benefit-title" style={{ color: "#1B1B1B" }}>
-                  Experienced instructors
-                </p>
-                <p className="benefit-description" style={{ color: "#1B1B1B" }}>
+            <div className="benefits-item">
+              <img src={img1} className="benefit-img" alt="" />
+              <div
+                style={{ display: "flex", flexDirection: "column", gap: "4px" }}
+              >
+                <p className="benefit-title">Rewards</p>
+                <p className="benefit-description">
                   Learn from industry experts with real-world experience and
                   deep knowledge.
                 </p>
               </div>
             </div>
-            <div className="benefit-item">
-              <img src={frame1} className="benefit-img" alt="" />
-              <div>
-                <p className="benefit-title" style={{ color: "#1B1B1B" }}>
-                  Job placement support
-                </p>
-                <p className="benefit-description" style={{ color: "#1B1B1B" }}>
+            <div className="benefits-item">
+              <img src={img2} className="benefit-img" alt="" />
+              <div
+                style={{ display: "flex", flexDirection: "column", gap: "4px" }}
+              >
+                <p className="benefit-title">100% Secured</p>
+                <p className="benefit-description">
                   Get career guidance, resume building, and access to job
                   opportunities with our dedicated placement support.
                 </p>
               </div>
             </div>
-            <div className="benefit-item">
-              <img src={frame2} className="benefit-img" alt="" />
-              <div>
-                <p className="benefit-title" style={{ color: "#1B1B1B" }}>
-                  Industry-aligned curriculum
-                </p>
-                <p className="benefit-description" style={{ color: "#1B1B1B" }}>
+            <div className="benefits-item">
+              <img src={img3} className="benefit-img" alt="" />
+              <div
+                style={{ display: "flex", flexDirection: "column", gap: "4px" }}
+              >
+                <p className="benefit-title">Balance Transfer</p>
+                <p className="benefit-description">
                   Stay ahead with courses designed to meet current industry
                   demands and skill requirements.
                 </p>
@@ -420,54 +295,9 @@ export default function About() {
       </div>
 
       <div className="a-main-container">
-        <div className="Alayer3">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="29" cy="8" r="8" fill="#473FE1" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
-            <circle cx="6" cy="14" r="6" fill="#473FE1" />
-          </svg>
-        </div>
-        <div className="Alayer4">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="8"
-              cy="34"
-              r="8"
-              transform="rotate(-180 8 34)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="20.5"
-              cy="10.5"
-              r="10.5"
-              transform="rotate(-180 20.5 10.5)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="31"
-              cy="28"
-              r="6"
-              transform="rotate(-180 31 28)"
-              fill="#473FE1"
-            />
-          </svg>
-        </div>
         <div className="main-a-text">
           <p className="a-main-text-title">
-            Build your <span style={{ color: "#473FE1" }}>Career</span> And
-            Upgrade <span style={{ color: "#473FE1" }}>Your Life</span>
+            Build your Career and Upgrade Your Life
           </p>
           <p className="a-main-text-sub-title">
             Unlock endless possibilities with our comprehensive learning
@@ -482,7 +312,7 @@ export default function About() {
             className="enroll-button"
             style={{
               backgroundColor: "#473FE1",
-              borderRadius: "100px",
+              borderRadius: "12px",
               color: "#FFFFFF",
             }}
           >
@@ -496,50 +326,6 @@ export default function About() {
       </div>
 
       <div className="academy-container">
-        <div className="Alayer5">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="29" cy="8" r="8" fill="#473FE1" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
-            <circle cx="6" cy="14" r="6" fill="#473FE1" />
-          </svg>
-        </div>
-        <div className="Alayer6">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="8"
-              cy="34"
-              r="8"
-              transform="rotate(-180 8 34)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="20.5"
-              cy="10.5"
-              r="10.5"
-              transform="rotate(-180 20.5 10.5)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="31"
-              cy="28"
-              r="6"
-              transform="rotate(-180 31 28)"
-              fill="#473FE1"
-            />
-          </svg>
-        </div>
         <p className="academy-text">Our Academy Way of Learning</p>
         <p className="academy-sub-text">
           Learn Full Stack Engineering, Business Analysis, and Data Science with
@@ -552,8 +338,9 @@ export default function About() {
                 key={card.id}
                 style={{
                   width: "100%",
-                  border: "2px solid #473FE1",
-                  borderRadius: 20,
+                  borderRadius: "20px",
+                  backgroundColor: "#FFFFFF",
+                  padding: "2% 1%",
                 }}
               >
                 <div className="academy-card">
@@ -574,8 +361,8 @@ export default function About() {
                 key={card.id}
                 style={{
                   width: "100%",
-                  border: "2px solid #473FE1",
-                  borderRadius: 20,
+                  borderRadius: "20px",
+                  backgroundColor: "#FFFFFF",
                 }}
               >
                 <div className="academy-card">
@@ -591,7 +378,7 @@ export default function About() {
             ))}
           </div>
         </div>
-        <div
+        {/* <div
           style={{
             display: "flex",
             alignItems: "center",
@@ -611,59 +398,15 @@ export default function About() {
           >
             Enroll Now
           </Button>
-        </div>
+        </div> */}
       </div>
 
       <div style={{ position: "relative" }}>
-        <div className="layer14">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="29" cy="8" r="8" fill="#473FE1" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
-            <circle cx="6" cy="14" r="6" fill="#473FE1" />
-          </svg>
-        </div>
-        <div className="layer15">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="8"
-              cy="34"
-              r="8"
-              transform="rotate(-180 8 34)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="20.5"
-              cy="10.5"
-              r="10.5"
-              transform="rotate(-180 20.5 10.5)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="31"
-              cy="28"
-              r="6"
-              transform="rotate(-180 31 28)"
-              fill="#473FE1"
-            />
-          </svg>
-        </div>
-        <p className="testimonials-heading">Testimonials!</p>
-        <div style={{ margin: "-5% 5%" }}>
+        <p className="testimonials-heading">Testimonials</p>
+        <div style={{ margin: "-7% 5% 10%" }}>
           <Carousel
             dotListClass="custom-dots"
-            showDots={!isDesktop}
+            showDots={isDesktop === false}
             swipeable={true}
             customLeftArrow={isDesktop ? <CustomLeftArrow /> : null}
             customRightArrow={isDesktop ? <CustomRightArrow /> : null}
@@ -716,41 +459,11 @@ export default function About() {
             sliderClass=""
             slidesToSlide={1}
           >
-            {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="testimonial-card1">
-                <div className="layer21">
-                  <svg
-                    width="37"
-                    height="42"
-                    viewBox="0 0 37 42"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle
-                      cx="8"
-                      cy="34"
-                      r="8"
-                      transform="rotate(-180 8 34)"
-                      fill="white"
-                    />
-                    <circle
-                      cx="20.5"
-                      cy="10.5"
-                      r="10.5"
-                      transform="rotate(-180 20.5 10.5)"
-                      fill="white"
-                    />
-                    <circle
-                      cx="31"
-                      cy="28"
-                      r="6"
-                      transform="rotate(-180 31 28)"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="testimonial-card1">
+                <img src={quote} alt="quote" width="44px" height="36px" />
                 <p className="testimonial-review">{testimonial.review}</p>
-                <div style={{ display: "flex", gap: 10 }}>
+                <div style={{ display: "flex", gap: 12 }}>
                   <img
                     src={testimonial.image}
                     width="46px"
@@ -771,50 +484,6 @@ export default function About() {
       </div>
 
       <div className="upcoming-batch">
-        <div className="layer16">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="29" cy="8" r="8" fill="#473FE1" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
-            <circle cx="6" cy="14" r="6" fill="#473FE1" />
-          </svg>
-        </div>
-        <div className="layer17">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="8"
-              cy="34"
-              r="8"
-              transform="rotate(-180 8 34)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="20.5"
-              cy="10.5"
-              r="10.5"
-              transform="rotate(-180 20.5 10.5)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="31"
-              cy="28"
-              r="6"
-              transform="rotate(-180 31 28)"
-              fill="#473FE1"
-            />
-          </svg>
-        </div>
         <div className="services-text">
           <p className="faq-title">FAQ</p>
           <p className="faq-sub-title">
@@ -826,60 +495,17 @@ export default function About() {
       </div>
 
       <div className="cta-container">
-        <div className="layer20">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="29" cy="8" r="8" fill="white" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="white" />
-            <circle cx="6" cy="14" r="6" fill="white" />
-          </svg>
-        </div>
-        <div className="layer21">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="8"
-              cy="34"
-              r="8"
-              transform="rotate(-180 8 34)"
-              fill="white"
-            />
-            <circle
-              cx="20.5"
-              cy="10.5"
-              r="10.5"
-              transform="rotate(-180 20.5 10.5)"
-              fill="white"
-            />
-            <circle
-              cx="31"
-              cy="28"
-              r="6"
-              transform="rotate(-180 31 28)"
-              fill="white"
-            />
-          </svg>
-        </div>
         <p className="cta-title">Kickstart Your Career in Tech Today!</p>
         <p className="cta-subtitle">
           Learn Full Stack Engineering, Business Analysis, and Data Science with
-          Industry Experts.
+          Industry Experts. Learn Full Stack Engineering, Business Analysis, and
+          Data Science with Industry Experts.
         </p>
         <Button
           className="enroll-button"
           style={{
             backgroundColor: "#FFFFFF",
-            borderRadius: "100px",
+            borderRadius: "12px",
             color: "#473FE1",
           }}
         >

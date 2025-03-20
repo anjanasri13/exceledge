@@ -361,10 +361,12 @@ export default function Home1() {
           </div>
         </div>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+        <div className="benefits-list">
           <div className="benefit-item">
             <img src={img1} className="benefit-img" alt="" />
-            <div>
+            <div
+              style={{ display: "flex", flexDirection: "column", gap: "4px" }}
+            >
               <p className="benefit-title">Rewards</p>
               <p className="benefit-description">
                 Learn from industry experts with real-world experience and deep
@@ -374,7 +376,9 @@ export default function Home1() {
           </div>
           <div className="benefit-item">
             <img src={img2} className="benefit-img" alt="" />
-            <div>
+            <div
+              style={{ display: "flex", flexDirection: "column", gap: "4px" }}
+            >
               <p className="benefit-title">100% Secured</p>
               <p className="benefit-description">
                 Get career guidance, resume building, and access to job
@@ -384,7 +388,9 @@ export default function Home1() {
           </div>
           <div className="benefit-item">
             <img src={img3} className="benefit-img" alt="" />
-            <div>
+            <div
+              style={{ display: "flex", flexDirection: "column", gap: "4px" }}
+            >
               <p className="benefit-title">Balance Transfer</p>
               <p className="benefit-description">
                 Stay ahead with courses designed to meet current industry

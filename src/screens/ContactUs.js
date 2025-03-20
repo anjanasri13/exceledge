@@ -10,6 +10,9 @@ import { Button } from "antd";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { IoLocationSharp } from "react-icons/io5";
+import { FaPhone } from "react-icons/fa6";
+import { IoMail } from "react-icons/io5";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -83,52 +86,19 @@ export default function ContactUs() {
   return (
     <div>
       <Header />
-      <div className="contact-section">
-        <div className="Conlayer1">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="29" cy="8" r="8" fill="#473FE1" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
-            <circle cx="6" cy="14" r="6" fill="#473FE1" />
-          </svg>
-        </div>
-        <div className="Conlayer2">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="8"
-              cy="34"
-              r="8"
-              transform="rotate(-180 8 34)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="20.5"
-              cy="10.5"
-              r="10.5"
-              transform="rotate(-180 20.5 10.5)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="31"
-              cy="28"
-              r="6"
-              transform="rotate(-180 31 28)"
-              fill="#473FE1"
-            />
-          </svg>
-        </div>
-        <p className="contact-title">Contact Us</p>
+      <div className="hero-section">
+        <p
+          style={{
+            fontSize: 18,
+            fontWeight: 600,
+            letterSpacing: "3px",
+            color: " #F461A6",
+            textAlign: "center",
+          }}
+        >
+          Contact Us
+        </p>
+        <p className="contact-title">Get in Touch with us</p>
         <p className="contact-description">
           Explore industry-aligned programs designed to prepare you for success
           in tech.
@@ -137,7 +107,7 @@ export default function ContactUs() {
           className="contact-btn"
           style={{
             backgroundColor: "#473FE1",
-            borderRadius: "100px",
+            borderRadius: "12px",
             color: "#FFFFFF",
           }}
         >
@@ -146,75 +116,31 @@ export default function ContactUs() {
       </div>
 
       <div className="contact-container">
-        <div className="Conlayer3">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="29" cy="8" r="8" fill="#473FE1" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
-            <circle cx="6" cy="14" r="6" fill="#473FE1" />
-          </svg>
-        </div>
-        <div className="Conlayer4">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="8"
-              cy="34"
-              r="8"
-              transform="rotate(-180 8 34)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="20.5"
-              cy="10.5"
-              r="10.5"
-              transform="rotate(-180 20.5 10.5)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="31"
-              cy="28"
-              r="6"
-              transform="rotate(-180 31 28)"
-              fill="#473FE1"
-            />
-          </svg>
-        </div>
-        <div className="services-text">
-          <p className="services-title">Get in Touch</p>
-        </div>
-        <div className="contact-links">
-          <Link className="contact-card">
-            <img src={location} className="contact-icon" alt="" />
-            <p className="contact-card-p">
-              31/13, 2nd floor, Burkit Rd, near CANARA BANK, CIT Nagar East, T.
-              Nagar, Chennai, Tamil Nadu 600017
-            </p>
-          </Link>
+        <Link className="contact-card">
+          {/* <img src={location} className="contact-icon" alt="" /> */}
+          <IoLocationSharp className="contact-icon" />
 
-          <Link className="contact-card">
-            <img src={phone} className="contact-icon" alt="" />
-            <p>+1 8888 8888</p>
-          </Link>
+          <p>
+            31/13, 2nd floor, Burkit Rd, near CANARA BANK, CIT Nagar East, T.
+            Nagar, Chennai, Tamil Nadu 600017
+          </p>
+        </Link>
 
-          <Link className="contact-card">
-            <img src={mail} className="contact-icon" alt="" />
-            <p>info@scalegreat.group</p>
-          </Link>
-        </div>
+        <Link className="contact-card">
+          {/* <img src={phone} className="contact-icon" alt="" /> */}
+          <FaPhone className="contact-icon" />
+          <p>+1 8888 8888</p>
+        </Link>
+
+        <Link className="contact-card">
+          {/* <img src={mail} className="contact-icon" alt="" /> */}
+          <IoMail className="contact-icon" />
+
+          <p>info@scalegreat.group</p>
+        </Link>
       </div>
 
-      <div className="contact-container">
+      {/* <div className="contact-container">
         <div className="Conlayer5">
           <svg
             width="37"
@@ -343,6 +269,25 @@ export default function ContactUs() {
             </div>
           </form>
         </div>
+      </div> */}
+
+      <div className="cta-container">
+        <p className="cta-title">Kickstart Your Career in Tech Today!</p>
+        <p className="cta-subtitle">
+          Learn Full Stack Engineering, Business Analysis, and Data Science with
+          Industry Experts. Learn Full Stack Engineering, Business Analysis, and
+          Data Science with Industry Experts.
+        </p>
+        <Button
+          className="enroll-button"
+          style={{
+            backgroundColor: "#FFFFFF",
+            borderRadius: "12px",
+            color: "#473FE1",
+          }}
+        >
+          Enrol now
+        </Button>
       </div>
       <Footer />
       <ToastContainer
