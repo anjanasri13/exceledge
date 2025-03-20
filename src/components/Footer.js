@@ -8,6 +8,8 @@ import phone from "../assests/phone.png";
 import mail from "../assests/mail.png";
 import "../styles/Footer.css";
 import Flogo from "../assests/Flogo.png";
+import fdot1 from "../assests/fdot1.png";
+import fdot2 from "../assests/fdot2.png";
 
 export default function Footer() {
   return (
@@ -101,6 +103,8 @@ export default function Footer() {
       </div> */}
 
       <div className="footer">
+        <img src={fdot1} alt="" className="Footerlayer1" />
+        <img src={fdot2} alt="" className="Footerlayer2" />
         <div className="footer-container">
           {/* Left Section - Company Info */}
           <div className="footer-column company-info">

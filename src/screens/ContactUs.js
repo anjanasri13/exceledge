@@ -14,6 +14,10 @@ import { IoLocationSharp } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import image12 from "../assests/image12.png";
+import dot1 from "../assests/dot1.png";
+import dot2 from "../assests/dot2.png";
+import dot3 from "../assests/dot3.png";
+import dot4 from "../assests/dot4.png";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -92,6 +96,10 @@ export default function ContactUs() {
     <div>
       <Header />
       <div className="hero-section">
+        <img src={dot1} alt="" className="Conlayer1" />
+        <img src={dot2} alt="" className="Conlayer2" />{" "}
+        <img src={dot3} alt="" className="Conlayer3" />{" "}
+        <img src={dot4} alt="" className="Conlayer4" />
         <p
           style={{
             fontSize: 18,

@@ -28,6 +28,13 @@ import img1 from "../assests/staricon.png";
 import img2 from "../assests/crticon.png";
 import img3 from "../assests/balicon.png";
 import quote from "../assests/quote.png";
+import dot1 from "../assests/dot1.png";
+import dot2 from "../assests/dot2.png";
+import dot3 from "../assests/dot3.png";
+import dot4 from "../assests/dot4.png";
+import fdot2 from "../assests/fdot2.png";
+import fdot1 from "../assests/fdot1.png";
+import dot5 from "../assests/dot5.png";
 
 const cardData = [
   {
@@ -186,6 +193,10 @@ export default function About() {
       <Header />
 
       <div className="hero-section">
+        <img src={dot1} alt="" className="Glayer1" />
+        <img src={dot2} alt="" className="Conlayer2" />
+        <img src={dot3} alt="" className="Conlayer3" />
+        <img src={dot4} alt="" className="Conlayer4" />
         <p
           style={{
             fontSize: 18,
@@ -242,11 +253,12 @@ export default function About() {
       </div>
 
       <div className="about-section">
+        <img src={fdot1} alt="" className="Alayer1" />
+        <img src={fdot2} alt="" className="Alayer2" />
         <div>
           <img src={image12} className="main-image" alt="" />
           <img src={image13} alt="" className="overlay-image" />
         </div>
-
         <div className="ab-con">
           <p className="about-text">About Us</p>
           <p className="about-sub-text">
@@ -295,6 +307,8 @@ export default function About() {
       </div>
 
       <div className="a-main-container">
+        <img src={dot5} alt="" className="Alayer3" />
+        <img src={fdot2} alt="" className="Alayer4" />
         <div className="main-a-text">
           <p className="a-main-text-title">
             Build your Career and Upgrade Your Life
@@ -319,13 +333,14 @@ export default function About() {
             Enroll Now
           </Button>
         </div>
-
         <div>
           <img src={image14} alt="cus" className="youtube-image" />
         </div>
       </div>
 
       <div className="academy-container">
+        <img src={dot3} alt="" className="Clayer3" />
+        <img src={fdot2} alt="" className="Clayer2" />
         <p className="academy-text">Our Academy Way of Learning</p>
         <p className="academy-sub-text">
           Learn Full Stack Engineering, Business Analysis, and Data Science with
@@ -484,6 +499,8 @@ export default function About() {
       </div>
 
       <div className="upcoming-batch">
+        <img src={fdot1} alt="" className="Faqlayer1" />
+        <img src={fdot2} alt="" className="Faqlayer2" />
         <div className="services-text">
           <p className="faq-title">FAQ</p>
           <p className="faq-sub-title">

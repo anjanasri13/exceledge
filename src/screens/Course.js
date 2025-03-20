@@ -15,6 +15,12 @@ import Faq from "../components/Faq";
 import calltoimg from "../assests/calltoimg.png";
 import "../styles/course.css";
 import CountUp from "react-countup";
+import fdot2 from "../assests/fdot2.png";
+import fdot1 from "../assests/fdot1.png";
+import dot1 from "../assests/dot1.png";
+import dot2 from "../assests/dot2.png";
+import dot3 from "../assests/dot3.png";
+import dot4 from "../assests/dot4.png";
 
 const services = [
   {
@@ -74,6 +80,10 @@ export default function Course() {
     <div>
       <Header />
       <div className="hero-section">
+        <img src={dot1} alt="" className="Glayer1" />
+        <img src={dot2} alt="" className="Conlayer2" />
+        <img src={dot3} alt="" className="Conlayer3" />
+        <img src={dot4} alt="" className="Conlayer4" />
         <p
           style={{
             fontSize: 18,
@@ -132,6 +142,8 @@ export default function Course() {
       </div>
 
       <div className="services-page">
+        <img src={dot3} alt="" className="Clayer1" />
+        <img src={fdot2} alt="" className="Clayer2" />
         <div className="services-text">
           <p className="services-title"> Explore Our Courses</p>
           <p className="services-sub-title">
@@ -161,6 +173,8 @@ export default function Course() {
       </div>
 
       <div className="upcoming-batch">
+        <img src={dot3} alt="" className="Clayer3" />
+        <img src={fdot2} alt="" className="Clayer2" />
         <div className="services-text">
           <p className="services-title">Upcoming Batches</p>
           <p className="services-sub-title">
@@ -168,7 +182,6 @@ export default function Course() {
             with Industry Experts.
           </p>
         </div>
-
         <div className="upcoming-batch-container">
           <div className="batch-header">
             <Button
@@ -226,7 +239,6 @@ export default function Course() {
             </Button>
           </div>
         </div>
-
         <div className="upcoming-batch-container">
           <div className="batch-header">
             <Button
@@ -284,7 +296,6 @@ export default function Course() {
             </Button>
           </div>
         </div>
-
         <div className="upcoming-batch-container">
           <div className="batch-header">
             <Button
@@ -342,7 +353,6 @@ export default function Course() {
             </Button>
           </div>
         </div>
-
         <div
           style={{
             display: "flex",
@@ -401,6 +411,8 @@ export default function Course() {
       </div>
 
       <div className="upcoming-batch">
+        <img src={fdot1} alt="" className="Faqlayer1" />
+        <img src={fdot2} alt="" className="Faqlayer2" />
         <div className="services-text">
           <p className="faq-title">FAQ</p>
           <p className="faq-sub-title">

@@ -1,7 +1,9 @@
 .Alayer1 {
   position: absolute;
-  left: 5%;
-  top: -10%;
+  top: -7%;
+  left: 28%;
+  width: 145px;
+  height: 130px;
 }
 @media (max-width: 768px) {
   .Alayer1 {
@@ -11,8 +13,10 @@
 }
 .Alayer2 {
   position: absolute;
-  left: 75%;
-  top: 0%;
+  top: -5%;
+  left: 82%;
+  width: 42px;
+  height: 85px;
 }
 @media (max-width: 768px) {
   .Alayer2 {
@@ -22,47 +26,17 @@
 }
 .Alayer3 {
   position: absolute;
-  left: -3%;
   top: -10%;
-}
-@media (max-width: 768px) {
-  .Alayer3 {
-    left: 5%;
-    top: -7%;
-  }
+  left: 40%;
+  width: 90px;
+  height: 90px;
 }
 .Alayer4 {
   position: absolute;
-  left: 20%;
-  top: 90%;
-}
-@media (max-width: 768px) {
-  .Alayer4 {
-    left: 80%;
-    top: 55%;
-  }
-}
-.Alayer5 {
-  position: absolute;
-  left: 15%;
-  top: 0%;
-}
-@media (max-width: 768px) {
-  .Alayer5 {
-    left: 4%;
-    top: -1%;
-  }
-}
-.Alayer6 {
-  position: absolute;
-  left: 77%;
-  top: 15%;
-}
-@media (max-width: 768px) {
-  .Alayer6 {
-    left: 90%;
-    top: 2%;
-  }
+  top: -10%;
+  left: 82%;
+  width: 42px;
+  height: 85px;
 }
 
 .a-main-text {

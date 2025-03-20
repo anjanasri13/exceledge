@@ -178,7 +178,20 @@
     gap: 30px;
   }
 } */
-
+.Footerlayer1 {
+  position: absolute;
+  top: -5%;
+  left: 22%;
+  width: 120px;
+  height: 115px;
+}
+.Footerlayer2 {
+  position: absolute;
+  top: 60%;
+  left: 82%;
+  width: 42px;
+  height: 85px;
+}
 .footer {
   padding: 5%;
   position: relative;

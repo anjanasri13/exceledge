@@ -1,6 +1,6 @@
 .Conlayer1 {
   position: absolute;
-  left: 10%;
+  left: 5%;
   top: 0%;
 }
 @media (max-width: 768px) {
@@ -11,8 +11,10 @@
 }
 .Conlayer2 {
   position: absolute;
-  left: 75%;
-  top: 70%;
+  left: 18%;
+  top: 130%;
+  width: 13px;
+  height: 13px;
 }
 @media (max-width: 768px) {
   .Conlayer2 {
@@ -22,8 +24,10 @@
 }
 .Conlayer3 {
   position: absolute;
-  left: 35%;
-  top: -10%;
+  left: 75%;
+  top: -15%;
+  width: 54px;
+  height: 54px;
 }
 @media (max-width: 768px) {
   .Conlayer3 {
@@ -33,34 +37,14 @@
 }
 .Conlayer4 {
   position: absolute;
-  left: 63%;
-  top: 10%;
+  left: 85%;
+  top: 80%;
+  width: 76px;
+  height: 92px;
 }
 @media (max-width: 768px) {
   .Conlayer4 {
     left: 75%;
-    top: 2%;
-  }
-}
-.Conlayer5 {
-  position: absolute;
-  left: 25%;
-  top: 0%;
-}
-@media (max-width: 768px) {
-  .Conlayer5 {
-    left: 10%;
-    top: -7%;
-  }
-}
-.Conlayer6 {
-  position: absolute;
-  left: 70%;
-  top: 10%;
-}
-@media (max-width: 768px) {
-  .Conlayer6 {
-    left: 85%;
     top: 2%;
   }
 }

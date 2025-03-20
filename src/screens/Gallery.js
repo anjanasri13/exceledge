@@ -14,6 +14,12 @@ import Gimg9 from "../assests/Gimg9.png";
 import "../styles/Gallery.css";
 import Faq from "../components/Faq";
 import { WiDayCloudy } from "react-icons/wi";
+import dot1 from "../assests/dot1.png";
+import dot2 from "../assests/dot2.png";
+import dot3 from "../assests/dot3.png";
+import dot4 from "../assests/dot4.png";
+import fdot2 from "../assests/fdot2.png";
+import fdot1 from "../assests/fdot1.png";
 
 const images = [
   { id: 1, src: Gimg1, alt: "Image 1", width: "346px", height: "478px" },
@@ -33,6 +39,10 @@ export default function Gallery() {
     <div>
       <Header />
       <div className="hero-section">
+        <img src={dot1} alt="" className="Glayer1" />
+        <img src={dot2} alt="" className="Glayer2" />
+        <img src={dot3} alt="" className="Conlayer3" />
+        <img src={dot4} alt="" className="Conlayer4" />
         <p
           style={{
             fontSize: 18,
@@ -65,6 +75,8 @@ export default function Gallery() {
       </div>
 
       <div className="service-container">
+        <img src={dot3} alt="" className="Glayer3" />
+        <img src={fdot2} alt="" className="Glayer4" />
         <div className="services-text">
           <p className="services-title">Moments Of Joy Through Work</p>
           <p className="services-sub-title">
@@ -111,6 +123,8 @@ export default function Gallery() {
       </div>
 
       <div className="upcoming-batch">
+        <img src={fdot1} alt="" className="Faqlayer1" />
+        <img src={fdot2} alt="" className="Faqlayer2" />
         <div className="services-text">
           <p className="faq-title">FAQ</p>
           <p className="faq-sub-title">
