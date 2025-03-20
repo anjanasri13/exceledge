@@ -78,9 +78,9 @@
   }
 }
 .hero-title {
-  font-size: 56px;
-  font-weight: 600;
-  color: #1b1b1b;
+  font-size: 52px;
+  font-weight: 700;
+  color: #141f39;
   width: 70%;
   text-align: center;
 }
@@ -94,8 +94,7 @@
 .hero-description {
   font-size: 18px;
   font-weight: 400;
-  color: #1b1b1b;
-  opacity: 80%;
+  color: #5d6c7c;
   width: 60%;
   text-align: center;
   line-height: 34px;
@@ -108,7 +107,7 @@
   }
 }
 .service-container {
-  margin-top: 15%;
+  margin: 10% 0% 5%;
   position: relative;
 }
 @media (max-width: 768px) {
@@ -124,18 +123,49 @@
   gap: 40px;
   margin: 5%;
 }
-.image-container {
-  border-radius: 30px;
-  overflow: hidden;
-}
-.image-container img {
+/* .image-container img {
   width: 100%;
   height: auto;
-  object-fit: cover;
-}
+} */
 @media (max-width: 768px) {
   .image-grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
+  }
+}
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.hover-rotate:hover {
+  transform: rotate(10deg);
+  transition: transform 0.4s ease-in-out;
+}
+.image-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-track {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+  min-width: 200%;
+  animation: scrollImages 10s linear infinite;
+}
+
+@keyframes scrollImages {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
