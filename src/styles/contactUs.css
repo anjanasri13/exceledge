@@ -106,6 +106,12 @@
     height: 44px;
   }
 }
+.connect-btn {
+  font-size: 16px;
+  font-weight: 500;
+  width: 230px;
+  height: 56px;
+}
 .contact-container {
   /* margin-top: 15%; */
   position: relative;

@@ -6,13 +6,14 @@ import phone from "../assests/phone.png";
 import mail from "../assests/mail.png";
 import "../styles/contactUs.css";
 import { Link } from "react-router-dom";
-import { Button } from "antd";
+import { Button, Form, Input } from "antd";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
+import image12 from "../assests/image12.png";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -82,7 +83,11 @@ export default function ContactUs() {
       setIsLoading(false);
     }
   };
-
+  const [form] = Form.useForm();
+  const [formLayout, setFormLayout] = useState("vertical");
+  const onFormLayoutChange = ({ layout }) => {
+    setFormLayout(layout);
+  };
   return (
     <div>
       <Header />
@@ -113,6 +118,120 @@ export default function ContactUs() {
         >
           Enroll Now
         </Button>
+      </div>
+
+      <div
+        style={{
+          margin: "0% 5% 5%",
+          display: "flex",
+          gap: 50,
+        }}
+      >
+        <div>
+          <img src={image12} className="main-image" alt="" />
+        </div>
+        <div>
+          <p style={{ fontSize: 56, fontWeight: 600, color: "#141F39" }}>
+            Send us a Message
+          </p>
+          <Form
+            layout={formLayout}
+            form={form}
+            initialValues={{
+              layout: formLayout,
+            }}
+            onValuesChange={onFormLayoutChange}
+          >
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                gap: 40,
+              }}
+            >
+              <Form.Item
+                label="First Name"
+                style={{ fontSize: 16, fontWeight: 600, color: "#141F39" }}
+              >
+                <Input
+                  placeholder="eg:- Mark"
+                  name="firstname"
+                  value=""
+                  style={{
+                    width: "370px",
+                    height: "56px",
+                    borderRadius: "12px",
+                  }}
+                />
+              </Form.Item>
+              <Form.Item
+                label="Last Name"
+                style={{ fontSize: 16, fontWeight: 600, color: "#141F39" }}
+              >
+                <Input
+                  placeholder="eg:- Hendry"
+                  name="lastname"
+                  value=""
+                  style={{
+                    width: "370px",
+                    height: "56px",
+                    borderRadius: "12px",
+                  }}
+                />
+              </Form.Item>
+            </div>
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <Form.Item
+                label="Email"
+                style={{ fontSize: 16, fontWeight: 600, color: "#141F39" }}
+              >
+                <Input
+                  placeholder="eg:- elfiranurul02@gmail.com"
+                  name="firstname"
+                  value=""
+                  style={{
+                    width: "370px",
+                    height: "56px",
+                    borderRadius: "12px",
+                  }}
+                />
+              </Form.Item>
+              <Form.Item
+                label="Phone Number"
+                style={{ fontSize: 16, fontWeight: 600, color: "#141F39" }}
+              >
+                <Input
+                  placeholder="eg:- +1 09019 09091"
+                  name="lastname"
+                  value=""
+                  style={{
+                    width: "370px",
+                    height: "56px",
+                    borderRadius: "12px",
+                  }}
+                />
+              </Form.Item>
+            </div>
+            <Form.Item
+              label="Message"
+              style={{ fontSize: 16, fontWeight: 600, color: "#141F39" }}
+            >
+              <Input.TextArea autoSize={{ minRows: 5, maxRows: 10 }} />
+            </Form.Item>
+            <Form.Item>
+              <Button
+                className="connect-btn"
+                style={{
+                  backgroundColor: "#473FE1",
+                  borderRadius: "12px",
+                  color: "#FBFDFD",
+                }}
+              >
+                Connect with us
+              </Button>
+            </Form.Item>
+          </Form>
+        </div>
       </div>
 
       <div className="contact-container">
