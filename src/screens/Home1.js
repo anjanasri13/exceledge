@@ -306,15 +306,15 @@ export default function Home1() {
           margin: "0 5%",
           display: "flex",
           justifyContent: "space-between",
-          gap: "40px",
+          // gap: "40px",
           position: "relative",
         }}
       >
         <img src={fdot1} alt="" className="Alayer1" />
         <img src={fdot2} alt="" className="Alayer2" />{" "}
         <img src={dot3} alt="" className="Hlayer5" />
-        <div style={{ width: "50%", flexShrink: 0 }}>
-          <img src={whoimg} alt="" width="100%" height="630px" />
+        <div style={{ width: "55%", flexShrink: 0 }}>
+          <img src={whoimg} alt="" width="100%" height="700px" />
         </div>
         <div
           style={{
@@ -322,7 +322,9 @@ export default function Home1() {
             display: "flex",
             flexDirection: "column",
             gap: 5,
-            justifyContent: "center",
+            // justifyContent: "center",
+            // height: "auto",
+            marginTop: "5%",
           }}
         >
           <p

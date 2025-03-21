@@ -380,15 +380,7 @@ export default function About() {
         <div className="card-container">
           <div className="card-container-1">
             {cardData.slice(0, 3).map((card) => (
-              <Card
-                key={card.id}
-                style={{
-                  width: "100%",
-                  borderRadius: "20px",
-                  backgroundColor: "#FFFFFF",
-                  padding: "2% 1%",
-                }}
-              >
+              <Card key={card.id} className="academy-card-container">
                 <div className="academy-card">
                   <img
                     className="card-image"
@@ -403,14 +395,7 @@ export default function About() {
           </div>
           <div className="card-container-2">
             {cardData.slice(3, 6).map((card) => (
-              <Card
-                key={card.id}
-                style={{
-                  width: "100%",
-                  borderRadius: "20px",
-                  backgroundColor: "#FFFFFF",
-                }}
-              >
+              <Card key={card.id} className="academy-card-container">
                 <div className="academy-card">
                   <img
                     className="card-image"

@@ -95,7 +95,7 @@ export default function ContactUs() {
   return (
     <div>
       <Header />
-      <div className="hero-section">
+      {/* <div className="hero-section">
         <img src={dot1} alt="" className="Conlayer1" />
         <img src={dot2} alt="" className="Conlayer2" />{" "}
         <img src={dot3} alt="" className="Conlayer3" />{" "}
@@ -244,7 +244,6 @@ export default function ContactUs() {
 
       <div className="contact-container">
         <Link className="contact-card">
-          {/* <img src={location} className="contact-icon" alt="" /> */}
           <IoLocationSharp className="contact-icon" />
 
           <p>
@@ -254,18 +253,16 @@ export default function ContactUs() {
         </Link>
 
         <Link className="contact-card">
-          {/* <img src={phone} className="contact-icon" alt="" /> */}
           <FaPhone className="contact-icon" />
           <p>+1 8888 8888</p>
         </Link>
 
         <Link className="contact-card">
-          {/* <img src={mail} className="contact-icon" alt="" /> */}
           <IoMail className="contact-icon" />
 
           <p>info@scalegreat.group</p>
         </Link>
-      </div>
+      </div> */}
 
       {/* <div className="contact-container">
         <div className="Conlayer5">
@@ -398,7 +395,7 @@ export default function ContactUs() {
         </div>
       </div> */}
 
-      <div className="cta-container">
+      {/* <div className="cta-container">
         <p className="cta-title">Kickstart Your Career in Tech Today!</p>
         <p className="cta-subtitle">
           Learn Full Stack Engineering, Business Analysis, and Data Science with
@@ -428,7 +425,7 @@ export default function ContactUs() {
         draggable
         pauseOnHover
         theme="colored"
-      />
+      /> */}
     </div>
   );
 }
