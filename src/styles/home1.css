@@ -1,3 +1,43 @@
+.Hlayer1 {
+  position: absolute;
+  left: 50%;
+  top: 85%;
+}
+.Hlayer2 {
+  position: absolute;
+  left: 63%;
+  top: 35%;
+  width: 13px;
+  height: 13px;
+}
+.Hlayer3 {
+  position: absolute;
+  left: 77%;
+  top: 22%;
+  width: 54px;
+  height: 54px;
+}
+.Hlayer4 {
+  position: absolute;
+  left: 95%;
+  top: 60%;
+  width: 76px;
+  height: 92px;
+}
+.Hlayer5 {
+  position: absolute;
+  left: 90%;
+  top: 75%;
+  width: 54px;
+  height: 54px;
+}
+.Hlayer6 {
+  position: absolute;
+  top: 0%;
+  left: 15%;
+  width: 150px;
+  height: 130px;
+}
 .main-div {
   display: flex;
   gap: 40px;
@@ -16,6 +56,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  position: relative;
 }
 @media (max-width: 768px) {
   .main-text {
@@ -507,7 +548,7 @@
   }
 }
 .Gimg1 {
-  width: 417px;
+  width: 450px;
   height: 356px;
 }
 @media (max-width: 768px) {
@@ -517,7 +558,7 @@
   }
 }
 .Gimg2 {
-  width: 368px;
+  width: 388px;
   height: 168px;
 }
 @media (max-width: 768px) {
@@ -527,7 +568,7 @@
   }
 }
 .Gimg3 {
-  width: 417px;
+  width: 450px;
   height: 356px;
 }
 @media (max-width: 768px) {
@@ -537,7 +578,7 @@
   }
 }
 .Gimg4 {
-  width: 610px;
+  width: 650px;
   height: 320px;
 }
 @media (max-width: 768px) {
@@ -727,7 +768,6 @@
   position: absolute;
   top: 10%;
   transform: translateY(-50%);
-  background: #473fe1;
   border: none;
   border-radius: 50%;
   width: 54px;
@@ -742,10 +782,18 @@
 
 .custom-arrow-left {
   left: 81%;
+  color: #141f39;
+  border: 1.5px solid #141f3933;
+}
+.custom-arrow-left.active {
+  background: #473fe1;
+  color: white;
+  border: none;
 }
 
 .custom-arrow-right {
   right: 10%;
+  background: #473fe1;
 }
 
 @media (max-width: 576px) {

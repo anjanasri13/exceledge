@@ -132,23 +132,10 @@ const testimonials = [
   },
 ];
 
-const CustomLeftArrow = ({ onClick }) => {
-  return (
-    <button className="custom-arrow custom-arrow-left" onClick={onClick}>
-      <IoIosArrowRoundBack />
-    </button>
-  );
-};
-
-const CustomRightArrow = ({ onClick }) => {
-  return (
-    <button className="custom-arrow custom-arrow-right" onClick={onClick}>
-      <IoIosArrowRoundForward />
-    </button>
-  );
-};
 export default function About() {
   const [isDesktop, setIsDesktop] = useState(true);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [leftArrowActive, setLeftArrowActive] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -188,6 +175,50 @@ export default function About() {
     };
   }, []);
 
+  const handleNext = (onClick) => {
+    setActiveIndex((prev) => {
+      const newIndex = Math.min(prev + 1, testimonials.length - 1);
+      if (newIndex > 0) setLeftArrowActive(true);
+      return newIndex;
+    });
+    onClick();
+  };
+
+  const handlePrev = (onClick) => {
+    setActiveIndex((prev) => {
+      const newIndex = Math.max(prev - 1, 0);
+      if (newIndex === 0) setLeftArrowActive(true);
+      return newIndex;
+    });
+    onClick();
+  };
+
+  const CustomLeftArrow = ({ onClick }) => {
+    return (
+      <button
+        // className="custom-arrow custom-arrow-left"
+        className={`custom-arrow custom-arrow-left ${
+          leftArrowActive ? "active" : ""
+        }`}
+        // onClick={onClick}
+        onClick={() => handlePrev(onClick)}
+      >
+        <IoIosArrowRoundBack />
+      </button>
+    );
+  };
+
+  const CustomRightArrow = ({ onClick }) => {
+    return (
+      <button
+        className="custom-arrow custom-arrow-right"
+        // onClick={onClick}
+        onClick={() => handleNext(onClick)}
+      >
+        <IoIosArrowRoundForward />
+      </button>
+    );
+  };
   return (
     <div>
       <Header />
@@ -418,7 +449,7 @@ export default function About() {
 
       <div style={{ position: "relative" }}>
         <p className="testimonials-heading">Testimonials</p>
-        <div style={{ margin: "-7% 5% 10%" }}>
+        <div style={{ margin: "-7% 4% 10%" }}>
           <Carousel
             dotListClass="custom-dots"
             showDots={isDesktop === false}
@@ -473,6 +504,10 @@ export default function About() {
             shouldResetAutoplay
             sliderClass=""
             slidesToSlide={1}
+            beforeChange={(nextSlide) => {
+              setActiveIndex(nextSlide);
+              if (nextSlide > 0) setLeftArrowActive(true); // Ensure left arrow turns blue after moving right
+            }}
           >
             {testimonials.map((testimonial, index) => (
               <div key={index} className="testimonial-card1">

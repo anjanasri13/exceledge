@@ -32,6 +32,8 @@ import cimg from "../assests/cimg.png";
 import cimg2 from "../assests/cimg2.png";
 import cimg3 from "../assests/cimg3.png";
 import CountUp from "react-countup";
+import fdot1 from "../assests/fdot1.png";
+import fdot2 from "../assests/fdot2.png";
 
 const services = [
   {
@@ -1113,50 +1115,8 @@ export default function Home() {
       </div>
 
       <div className="upcoming-batch">
-        <div className="layer16">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="29" cy="8" r="8" fill="#473FE1" />
-            <circle cx="16.5" cy="31.5" r="10.5" fill="#473FE1" />
-            <circle cx="6" cy="14" r="6" fill="#473FE1" />
-          </svg>
-        </div>
-        <div className="layer17">
-          <svg
-            width="37"
-            height="42"
-            viewBox="0 0 37 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="8"
-              cy="34"
-              r="8"
-              transform="rotate(-180 8 34)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="20.5"
-              cy="10.5"
-              r="10.5"
-              transform="rotate(-180 20.5 10.5)"
-              fill="#473FE1"
-            />
-            <circle
-              cx="31"
-              cy="28"
-              r="6"
-              transform="rotate(-180 31 28)"
-              fill="#473FE1"
-            />
-          </svg>
-        </div>
+        <img src={fdot1} alt="" className="Faqlayer1" />
+        <img src={fdot2} alt="" className="Faqlayer2" />
         <div className="services-text">
           <p className="faq-title">FAQ</p>
           <p className="faq-sub-title">

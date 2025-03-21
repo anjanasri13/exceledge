@@ -33,6 +33,12 @@ import "react-multi-carousel/lib/styles.css";
 import quote from "../assests/quote.png";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
+import fdot1 from "../assests/fdot1.png";
+import fdot2 from "../assests/fdot2.png";
+import dot1 from "../assests/dot1.png";
+import dot2 from "../assests/dot2.png";
+import dot3 from "../assests/dot3.png";
+import dot4 from "../assests/dot4.png";
 
 const testimonials = [
   {
@@ -85,25 +91,12 @@ const testimonials = [
   },
 ];
 
-const CustomLeftArrow = ({ onClick }) => {
-  return (
-    <button className="custom-arrow custom-arrow-left" onClick={onClick}>
-      <IoIosArrowRoundBack />
-    </button>
-  );
-};
-
-const CustomRightArrow = ({ onClick }) => {
-  return (
-    <button className="custom-arrow custom-arrow-right" onClick={onClick}>
-      <IoIosArrowRoundForward />
-    </button>
-  );
-};
-
 export default function Home1() {
   const [startCount, setStartCount] = useState(false);
   const [isDesktop, setIsDesktop] = useState(true);
+
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [leftArrowActive, setLeftArrowActive] = useState(false);
 
   const statsRef = useRef(null);
 
@@ -163,6 +156,51 @@ export default function Home1() {
       window.removeEventListener("resize", checkScreenSize);
     };
   }, []);
+
+  const handleNext = (onClick) => {
+    setActiveIndex((prev) => {
+      const newIndex = Math.min(prev + 1, testimonials.length - 1);
+      if (newIndex > 0) setLeftArrowActive(true);
+      return newIndex;
+    });
+    onClick();
+  };
+
+  const handlePrev = (onClick) => {
+    setActiveIndex((prev) => {
+      const newIndex = Math.max(prev - 1, 0);
+      if (newIndex === 0) setLeftArrowActive(true);
+      return newIndex;
+    });
+    onClick();
+  };
+
+  const CustomLeftArrow = ({ onClick }) => {
+    return (
+      <button
+        // className="custom-arrow custom-arrow-left"
+        className={`custom-arrow custom-arrow-left ${
+          leftArrowActive ? "active" : ""
+        }`}
+        // onClick={onClick}
+        onClick={() => handlePrev(onClick)}
+      >
+        <IoIosArrowRoundBack />
+      </button>
+    );
+  };
+
+  const CustomRightArrow = ({ onClick }) => {
+    return (
+      <button
+        className="custom-arrow custom-arrow-right"
+        // onClick={onClick}
+        onClick={() => handleNext(onClick)}
+      >
+        <IoIosArrowRoundForward />
+      </button>
+    );
+  };
   return (
     <div>
       <Header />
@@ -232,6 +270,10 @@ export default function Home1() {
         </div>
 
         <div className="image-container-homeimg">
+          <img src={dot1} alt="" className="Hlayer1" />
+          <img src={dot2} alt="" className="Hlayer2" />
+          <img src={dot3} alt="" className="Hlayer3" />
+          <img src={dot4} alt="" className="Hlayer4" />
           <img src={homeimg} alt="cus" className="home-image" />
         </div>
       </div>
@@ -265,8 +307,12 @@ export default function Home1() {
           display: "flex",
           justifyContent: "space-between",
           gap: "40px",
+          position: "relative",
         }}
       >
+        <img src={fdot1} alt="" className="Alayer1" />
+        <img src={fdot2} alt="" className="Alayer2" />{" "}
+        <img src={dot3} alt="" className="Hlayer5" />
         <div style={{ width: "50%", flexShrink: 0 }}>
           <img src={whoimg} alt="" width="100%" height="630px" />
         </div>
@@ -402,6 +448,8 @@ export default function Home1() {
       </div>
 
       <div className="upcoming-batch">
+        <img src={dot3} alt="" className="Clayer3" />
+        <img src={fdot2} alt="" className="Clayer2" />
         <div className="services-text">
           <p className="services-title">Upcoming Batches</p>
           <p className="services-sub-title">
@@ -409,7 +457,6 @@ export default function Home1() {
             with Industry Experts.
           </p>
         </div>
-
         <div className="upcoming-batch-container">
           <div className="batch-header">
             <Button
@@ -467,7 +514,6 @@ export default function Home1() {
             </Button>
           </div>
         </div>
-
         <div className="upcoming-batch-container">
           <div className="batch-header">
             <Button
@@ -525,7 +571,6 @@ export default function Home1() {
             </Button>
           </div>
         </div>
-
         <div className="upcoming-batch-container">
           <div className="batch-header">
             <Button
@@ -583,7 +628,6 @@ export default function Home1() {
             </Button>
           </div>
         </div>
-
         <div
           style={{
             display: "flex",
@@ -642,6 +686,8 @@ export default function Home1() {
       </div>
 
       <div className="Gallery-page">
+        <img src={fdot1} alt="" className="Hlayer6" />
+        <img src={fdot2} alt="" className="Clayer2" />
         <div className="services-text">
           <p className="services-title">Students Work Activity</p>
           <p className="Gallery-sub-title">
@@ -665,7 +711,7 @@ export default function Home1() {
 
       <div style={{ position: "relative" }}>
         <p className="testimonials-heading">Testimonials</p>
-        <div style={{ margin: "-7% 5% 10%" }}>
+        <div style={{ margin: "-7% 4% 10%" }}>
           <Carousel
             dotListClass="custom-dots"
             showDots={isDesktop === false}
@@ -720,6 +766,10 @@ export default function Home1() {
             shouldResetAutoplay
             sliderClass=""
             slidesToSlide={1}
+            beforeChange={(nextSlide) => {
+              setActiveIndex(nextSlide);
+              if (nextSlide > 0) setLeftArrowActive(true); // Ensure left arrow turns blue after moving right
+            }}
           >
             {testimonials.map((testimonial, index) => (
               <div key={index} className="testimonial-card1">
@@ -746,6 +796,8 @@ export default function Home1() {
       </div>
 
       <div className="upcoming-batch">
+        <img src={fdot1} alt="" className="Faqlayer1" />
+        <img src={fdot2} alt="" className="Faqlayer2" />
         <div className="services-text">
           <p className="faq-title">FAQ</p>
           <p className="faq-sub-title">
