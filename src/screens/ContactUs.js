@@ -95,7 +95,7 @@ export default function ContactUs() {
   return (
     <div>
       <Header />
-      {/* <div className="hero-section">
+      <div className="hero-section">
         <img src={dot1} alt="" className="Conlayer1" />
         <img src={dot2} alt="" className="Conlayer2" />{" "}
         <img src={dot3} alt="" className="Conlayer3" />{" "}
@@ -127,7 +127,6 @@ export default function ContactUs() {
           Enroll Now
         </Button>
       </div>
-
       <div
         style={{
           margin: "0% 5% 5%",
@@ -164,7 +163,7 @@ export default function ContactUs() {
                 <Input
                   placeholder="eg:- Mark"
                   name="firstname"
-                  value=""
+                  type="text"
                   style={{
                     width: "370px",
                     height: "56px",
@@ -179,7 +178,7 @@ export default function ContactUs() {
                 <Input
                   placeholder="eg:- Hendry"
                   name="lastname"
-                  value=""
+                  type="text"
                   style={{
                     width: "370px",
                     height: "56px",
@@ -195,8 +194,8 @@ export default function ContactUs() {
               >
                 <Input
                   placeholder="eg:- elfiranurul02@gmail.com"
-                  name="firstname"
-                  value=""
+                  name="email"
+                  type="email"
                   style={{
                     width: "370px",
                     height: "56px",
@@ -210,8 +209,8 @@ export default function ContactUs() {
               >
                 <Input
                   placeholder="eg:- +1 09019 09091"
-                  name="lastname"
-                  value=""
+                  name="Phone Number"
+                  type="tel"
                   style={{
                     width: "370px",
                     height: "56px",
@@ -241,7 +240,6 @@ export default function ContactUs() {
           </Form>
         </div>
       </div>
-
       <div className="contact-container">
         <Link className="contact-card">
           <IoLocationSharp className="contact-icon" />
@@ -262,8 +260,7 @@ export default function ContactUs() {
 
           <p>info@scalegreat.group</p>
         </Link>
-      </div> */}
-
+      </div>
       {/* <div className="contact-container">
         <div className="Conlayer5">
           <svg
@@ -394,8 +391,7 @@ export default function ContactUs() {
           </form>
         </div>
       </div> */}
-
-      {/* <div className="cta-container">
+      <div className="cta-container">
         <p className="cta-title">Kickstart Your Career in Tech Today!</p>
         <p className="cta-subtitle">
           Learn Full Stack Engineering, Business Analysis, and Data Science with
@@ -425,7 +421,7 @@ export default function ContactUs() {
         draggable
         pauseOnHover
         theme="colored"
-      /> */}
+      />
     </div>
   );
 }
