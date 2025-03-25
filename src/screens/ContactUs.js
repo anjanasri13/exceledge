@@ -97,8 +97,8 @@ export default function ContactUs() {
       <Header />
       <div className="hero-section">
         <img src={dot1} alt="" className="Conlayer1" />
-        <img src={dot2} alt="" className="Conlayer2" />{" "}
-        <img src={dot3} alt="" className="Conlayer3" />{" "}
+        <img src={dot2} alt="" className="Conlayer2" />
+        <img src={dot3} alt="" className="Conlayer3" />
         <img src={dot4} alt="" className="Conlayer4" />
         <p
           style={{
@@ -127,20 +127,19 @@ export default function ContactUs() {
           Enroll Now
         </Button>
       </div>
-      <div
-        style={{
-          margin: "0% 5% 5%",
-          display: "flex",
-          gap: 50,
-        }}
-      >
-        <div>
+      <div className="contact-form-container">
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "100%",
+          }}
+        >
           <img src={image12} className="main-image" alt="" />
         </div>
         <div>
-          <p style={{ fontSize: 56, fontWeight: 600, color: "#141F39" }}>
-            Send us a Message
-          </p>
+          <p className="contact-heading">Send us a Message</p>
           <Form
             layout={formLayout}
             form={form}
@@ -149,80 +148,43 @@ export default function ContactUs() {
             }}
             onValuesChange={onFormLayoutChange}
           >
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                gap: 40,
-              }}
-            >
-              <Form.Item
-                label="First Name"
-                style={{ fontSize: 16, fontWeight: 600, color: "#141F39" }}
-              >
+            <div className="form-row">
+              <Form.Item label="First Name" className="form-label">
                 <Input
                   placeholder="eg:- Mark"
                   name="firstname"
                   type="text"
-                  style={{
-                    width: "370px",
-                    height: "56px",
-                    borderRadius: "12px",
-                  }}
+                  className="input-field"
                 />
               </Form.Item>
-              <Form.Item
-                label="Last Name"
-                style={{ fontSize: 16, fontWeight: 600, color: "#141F39" }}
-              >
+              <Form.Item label="Last Name" className="form-label">
                 <Input
                   placeholder="eg:- Hendry"
                   name="lastname"
                   type="text"
-                  style={{
-                    width: "370px",
-                    height: "56px",
-                    borderRadius: "12px",
-                  }}
+                  className="input-field"
                 />
               </Form.Item>
             </div>
-            <div style={{ display: "flex", justifyContent: "space-between" }}>
-              <Form.Item
-                label="Email"
-                style={{ fontSize: 16, fontWeight: 600, color: "#141F39" }}
-              >
+            <div className="form-row">
+              <Form.Item label="Email" className="form-label">
                 <Input
                   placeholder="eg:- elfiranurul02@gmail.com"
                   name="email"
                   type="email"
-                  style={{
-                    width: "370px",
-                    height: "56px",
-                    borderRadius: "12px",
-                  }}
+                  className="input-field"
                 />
               </Form.Item>
-              <Form.Item
-                label="Phone Number"
-                style={{ fontSize: 16, fontWeight: 600, color: "#141F39" }}
-              >
+              <Form.Item label="Phone Number" className="form-label">
                 <Input
                   placeholder="eg:- +1 09019 09091"
                   name="Phone Number"
                   type="tel"
-                  style={{
-                    width: "370px",
-                    height: "56px",
-                    borderRadius: "12px",
-                  }}
+                  className="input-field"
                 />
               </Form.Item>
             </div>
-            <Form.Item
-              label="Message"
-              style={{ fontSize: 16, fontWeight: 600, color: "#141F39" }}
-            >
+            <Form.Item label="Message" className="form-label">
               <Input.TextArea autoSize={{ minRows: 5, maxRows: 10 }} />
             </Form.Item>
             <Form.Item>

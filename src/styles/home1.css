@@ -208,7 +208,7 @@
 @media (max-width: 768px) {
   .services-sub-title {
     font-size: 15px;
-    width: 85%;
+    width: 90%;
     line-height: 22.5px;
   }
 }
@@ -219,6 +219,7 @@
 @media (max-width: 768px) {
   .services-card-container {
     flex-direction: column;
+    gap: 25px;
   }
 }
 .services-card {
@@ -690,7 +691,7 @@
 .cta-container {
   background-color: #473fe1;
   border-radius: 30px;
-  margin: 8% 5%;
+  margin: 5% 5%;
   padding: 5%;
   display: flex;
   flex-direction: column;
@@ -700,10 +701,9 @@
 }
 @media (max-width: 768px) {
   .cta-container {
-    margin: 15% 5%;
+    margin: 0% 5% 10%;
     padding: 10% 5%;
     gap: 10px;
-    border-radius: 30px;
   }
 }
 .cta-title {
@@ -880,7 +880,7 @@
 }
 .react-multi-carousel-dot-list {
   position: absolute;
-  bottom: -7px !important;
+  bottom: -2px !important;
   display: flex;
   left: 0;
   right: 0;

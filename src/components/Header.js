@@ -41,7 +41,7 @@ export default function Header() {
             fontSize: 16,
             fontWeight: 500,
             backgroundColor: "#473FE1",
-            borderRadius: "100px",
+            borderRadius: "12px",
             width: "136px",
             height: "44px",
             color: "#FFFFFF",

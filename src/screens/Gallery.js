@@ -30,8 +30,8 @@ const images = [
   { id: 6, src: Gimg3, alt: "Image 6", width: "382px", height: "574px" },
   { id: 7, src: Gimg1, alt: "Image 7", width: "346px", height: "478px" },
   { id: 8, src: Gimg2, alt: "Image 8", width: "382px", height: "574px" },
-  { id: 8, src: Gimg3, alt: "Image 9", width: "346px", height: "478px" },
-  { id: 9, src: Gimg1, alt: "Image 10", width: "382px", height: "574px" },
+  { id: 9, src: Gimg3, alt: "Image 9", width: "346px", height: "478px" },
+  { id: 10, src: Gimg1, alt: "Image 10", width: "382px", height: "574px" },
 ];
 
 export default function Gallery() {

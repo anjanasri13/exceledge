@@ -106,7 +106,6 @@ export default function Footer() {
         <img src={fdot1} alt="" className="Footerlayer1" />
         <img src={fdot2} alt="" className="Footerlayer2" />
         <div className="footer-container">
-          {/* Left Section - Company Info */}
           <div className="footer-column company-info">
             <img src={Flogo} className="footer-logo" alt="logo" />
             <p className="footer-desc">
@@ -115,7 +114,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Middle Section - Quick Links */}
           <div className="footer-column">
             <p className="footer-title">Quick Links</p>
             <Link to="/" className="footer-nav">
@@ -135,7 +133,6 @@ export default function Footer() {
             </Link>
           </div>
 
-          {/* Right Section - Contact Info */}
           <div className="footer-column">
             <p className="footer-title">Contact</p>
 
@@ -153,7 +150,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Social Media Icons */}
           <div className="footer-column">
             <p className="footer-title">Follow us on</p>
             <div className="social-icons">

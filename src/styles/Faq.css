@@ -8,7 +8,7 @@
 @media (max-width: 768px) {
   .faq-content {
     width: auto !important;
-    padding-right: 8% !important;
+    padding-right: 4% !important;
     padding-left: 4% !important;
   }
 }

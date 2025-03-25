@@ -5,7 +5,14 @@
   width: 54px;
   height: 54px;
 }
-
+@media (max-width: 768px) {
+  .Clayer1 {
+    left: 5%;
+    top: 10%;
+    width: 54px;
+    height: 54px;
+  }
+}
 .Clayer2 {
   position: absolute;
   top: -3%;
@@ -13,6 +20,7 @@
   width: 42px;
   height: 85px;
 }
+
 .Clayer3 {
   position: absolute;
   left: 15%;
@@ -20,7 +28,14 @@
   width: 54px;
   height: 54px;
 }
-
+@media (max-width: 768px) {
+  .Clayer3 {
+    left: 5%;
+    top: 8%;
+    width: 54px;
+    height: 54px;
+  }
+}
 .cont-title {
   font-size: 52px;
   font-weight: 700;
@@ -81,7 +96,7 @@
 }
 @media (max-width: 768px) {
   .courseservices-card-title {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 .courseservices-card-description {
@@ -137,7 +152,7 @@
 @media (max-width: 768px) {
   .offl-btn {
     font-size: 12px;
-    width: 132px;
+    width: 152px;
     height: 32px;
   }
 }
@@ -236,8 +251,9 @@
     border-radius: 40px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 25% 5%;
+    margin: 5%;
     padding: 15% 5%;
     gap: 20px;
+    text-align: center;
   }
 }
