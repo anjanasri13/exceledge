@@ -301,50 +301,16 @@ export default function Home1() {
         </div>
       </div>
 
-      <div
-        style={{
-          margin: "0 5%",
-          display: "flex",
-          justifyContent: "space-between",
-          // gap: "40px",
-          position: "relative",
-        }}
-      >
+      <div className="who-we-are-container">
         <img src={fdot1} alt="" className="Alayer1" />
         <img src={fdot2} alt="" className="Alayer2" />{" "}
         <img src={dot3} alt="" className="Hlayer5" />
-        <div style={{ width: "55%", flexShrink: 0 }}>
-          <img src={whoimg} alt="" width="100%" height="700px" />
+        <div className="who-we-are-left">
+          <img src={whoimg} alt="" className="who-image" />
         </div>
-        <div
-          style={{
-            width: "45%",
-            display: "flex",
-            flexDirection: "column",
-            gap: 5,
-            // justifyContent: "center",
-            // height: "auto",
-            marginTop: "5%",
-          }}
-        >
-          <p
-            style={{
-              fontSize: 36,
-              fontWeight: 700,
-              lineHeight: "44px",
-              color: "#141F39",
-            }}
-          >
-            Who we are
-          </p>
-          <p
-            style={{
-              fontSize: 16,
-              fontWeight: 400,
-              lineHeight: "160%",
-              color: "#5D6C7C",
-            }}
-          >
+        <div className="who-we-are-right">
+          <p className="who-title">Who we are</p>
+          <p className="who-paragraph">
             Class aptent taciti sociosqu ad litora torquen conubia nostramase
             inceptos himenaeo. Phasellus metus nisl euismod eget lorem. Class
             aptent taciti sociosqu ad litora torquen conubia nostramase inceptos
@@ -352,14 +318,7 @@ export default function Home1() {
             taciti sociosqu ad litora torquen conubia nostramase inceptos
             himenaeo. Phasellus metus nisl euismod eget lorem{" "}
           </p>
-          <p
-            style={{
-              fontSize: 16,
-              fontWeight: 400,
-              lineHeight: "160%",
-              color: "#5D6C7C",
-            }}
-          >
+          <p className="who-paragraph">
             Class aptent taciti sociosqu ad litora torquen conubia nostramase
             inceptos himenaeo. Phasellus metus nisl euismod eget lorem.Class
             aptent taciti sociosqu ad litora torquen conubia nostramase inceptos

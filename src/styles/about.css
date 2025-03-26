@@ -31,6 +31,12 @@
   width: 90px;
   height: 90px;
 }
+@media (max-width: 768px) {
+  .Alayer3 {
+    top: 45%;
+    left: 0%;
+  }
+}
 .Alayer4 {
   position: absolute;
   top: -10%;
