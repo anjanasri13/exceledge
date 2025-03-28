@@ -212,7 +212,6 @@ export default function About() {
     return (
       <button
         className="custom-arrow custom-arrow-right"
-        // onClick={onClick}
         onClick={() => handleNext(onClick)}
       >
         <IoIosArrowRoundForward />
