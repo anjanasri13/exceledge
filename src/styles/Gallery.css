@@ -182,9 +182,30 @@
     transform: translateX(-50%);
   }
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .animated-image {
     width: 100%;
     height: auto;
+  }
+} */
+
+.small-img {
+  width: 346px;
+  height: 478px;
+}
+
+.large-img {
+  width: 382px;
+  height: 574px;
+}
+
+@media (max-width: 768px) {
+  .small-img {
+    width: 250px;
+    height: 310px;
+  }
+  .large-img {
+    width: 250px;
+    height: 350px;
   }
 }

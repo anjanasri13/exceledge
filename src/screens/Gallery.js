@@ -111,11 +111,10 @@ export default function Gallery() {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="animated-image"
-                style={{
-                  width: image.width,
-                  height: image.height,
-                }}
+                // className="animated-image"
+                className={`gallery-image ${
+                  index % 2 === 0 ? "small-img" : "large-img"
+                }`}
               />
             </div>
           ))}

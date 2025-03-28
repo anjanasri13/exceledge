@@ -729,7 +729,7 @@ export default function Home1() {
             slidesToSlide={1}
             beforeChange={(nextSlide) => {
               setActiveIndex(nextSlide);
-              if (nextSlide > 0) setLeftArrowActive(true); // Ensure left arrow turns blue after moving right
+              if (nextSlide > 0) setLeftArrowActive(true);
             }}
           >
             {testimonials.map((testimonial, index) => (
