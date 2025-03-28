@@ -363,6 +363,7 @@
 @media (max-width: 768px) {
   .who-image {
     height: 500px;
+    margin-top: 10%;
   }
 }
 .who-we-are-right {

@@ -61,19 +61,20 @@ export default function ContactUs() {
     setIsLoading(true);
 
     try {
-      const payload = {
-        name: formData.name,
-        email: formData.email,
-        mobileNumber: formData.mobileNumber,
-        message: formData.message,
-      };
-      console.log("payload", payload);
+      // const payload = {
+      //   name: formData.name,
+      //   email: formData.email,
+      //   mobileNumber: formData.mobileNumber,
+      //   message: formData.message,
+      //   lastname: formData.lastname,
+      // };
+      // console.log("payload", payload);
       const response = await axios.post(
         "https://creativa.academy/backend/api/enquiry",
-        payload
+        formData
       );
       toast.success("Form submitted successfully!");
-      console.log("Response:", response.data);
+      console.log("Response:", formData);
       setFormData({
         name: "",
         email: "",
@@ -152,9 +153,11 @@ export default function ContactUs() {
               <Form.Item label="First Name" className="form-label">
                 <Input
                   placeholder="eg:- Mark"
-                  name="firstname"
+                  name="name"
                   type="text"
                   className="input-field"
+                  value={formData.name}
+                  onChange={handleChange}
                 />
               </Form.Item>
               <Form.Item label="Last Name" className="form-label">
@@ -163,6 +166,8 @@ export default function ContactUs() {
                   name="lastname"
                   type="text"
                   className="input-field"
+                  value={formData.lastname}
+                  onChange={handleChange}
                 />
               </Form.Item>
             </div>
@@ -173,19 +178,28 @@ export default function ContactUs() {
                   name="email"
                   type="email"
                   className="input-field"
+                  value={formData.email}
+                  onChange={handleChange}
                 />
               </Form.Item>
               <Form.Item label="Phone Number" className="form-label">
                 <Input
                   placeholder="eg:- +1 09019 09091"
-                  name="Phone Number"
+                  name="mobileNumber"
                   type="tel"
                   className="input-field"
+                  value={formData.mobileNumber}
+                  onChange={handleChange}
                 />
               </Form.Item>
             </div>
             <Form.Item label="Message" className="form-label">
-              <Input.TextArea autoSize={{ minRows: 5, maxRows: 10 }} />
+              <Input.TextArea
+                autoSize={{ minRows: 5, maxRows: 10 }}
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+              />
             </Form.Item>
             <Form.Item>
               <Button
@@ -195,6 +209,7 @@ export default function ContactUs() {
                   borderRadius: "12px",
                   color: "#FBFDFD",
                 }}
+                // onClick={handleSubmit}
               >
                 Connect with us
               </Button>
